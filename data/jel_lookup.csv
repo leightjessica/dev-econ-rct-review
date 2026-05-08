@@ -1,0 +1,857 @@
+code,parent_code,parent_name,top_letter,top_name,descriptor_bare,descriptor_prefixed
+A10,A1,General Economics,A,General Economics and Teaching,General,General Economics: General
+A11,A1,General Economics,A,General Economics and Teaching,Role of Economics; Role of Economists; Market for Economists,General Economics: Role of Economics; Role of Economists; Market for Economists
+A12,A1,General Economics,A,General Economics and Teaching,Relation of Economics to Other Disciplines,General Economics: Relation of Economics to Other Disciplines
+A13,A1,General Economics,A,General Economics and Teaching,Relation of Economics to Social Values,General Economics: Relation of Economics to Social Values
+A14,A1,General Economics,A,General Economics and Teaching,Sociology of Economics,General Economics: Sociology of Economics
+A19,A1,General Economics,A,General Economics and Teaching,Other,General Economics: Other
+A20,A2,Economic Education and Teaching of Economics,A,General Economics and Teaching,General,Economic Education and Teaching of Economics: General
+A21,A2,Economic Education and Teaching of Economics,A,General Economics and Teaching,Pre-college,Economic Education and Teaching of Economics: Pre-college
+A22,A2,Economic Education and Teaching of Economics,A,General Economics and Teaching,Undergraduate,Economic Education and Teaching of Economics: Undergraduate
+A23,A2,Economic Education and Teaching of Economics,A,General Economics and Teaching,Graduate,Economic Education and Teaching of Economics: Graduate
+A29,A2,Economic Education and Teaching of Economics,A,General Economics and Teaching,Other,Economic Education and Teaching of Economics: Other
+A30,A3,Collective Works,A,General Economics and Teaching,General,Collective Works: General
+A31,A3,Collective Works,A,General Economics and Teaching,Collected Writings of Individuals,Collective Works: Collected Writings of Individuals
+A32,A3,Collective Works,A,General Economics and Teaching,Collective Volumes,Collective Works: Collective Volumes
+A33,A3,Collective Works,A,General Economics and Teaching,Handbooks,Collective Works: Handbooks
+A39,A3,Collective Works,A,General Economics and Teaching,Other,Collective Works: Other
+B00,B0,,B,"History of Economic Thought, Methodology, and Heterodox Approaches",General,General
+B10,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",General,History of Economic Thought through 1925: General
+B11,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches","Preclassical (Ancient, Medieval, Mercantilist, Physiocratic)","History of Economic Thought through 1925: Preclassical (Ancient, Medieval, Mercantilist, Physiocratic)"
+B12,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Classical (includes Adam Smith),History of Economic Thought through 1925: Classical (includes Adam Smith)
+B13,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches","Neoclassical through 1925 (Austrian, Marshallian, Walrasian, Wicksellian)","History of Economic Thought through 1925: Neoclassical through 1925 (Austrian, Marshallian, Walrasian, Wicksellian)"
+B14,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Socialist; Marxist,History of Economic Thought through 1925: Socialist; Marxist
+B15,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Historical; Institutional; Evolutionary,History of Economic Thought through 1925: Historical; Institutional; Evolutionary
+B16,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Quantitative and Mathematical,History of Economic Thought through 1925: Quantitative and Mathematical
+B17,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",International Trade and Finance,History of Economic Thought through 1925: International Trade and Finance
+B19,B1,History of Economic Thought through 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Other,History of Economic Thought through 1925: Other
+B20,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",General,History of Economic Thought since 1925: General
+B21,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Microeconomics,History of Economic Thought since 1925: Microeconomics
+B22,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Macroeconomics,History of Economic Thought since 1925: Macroeconomics
+B23,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Econometrics; Quantitative and Mathematical Studies,History of Economic Thought since 1925: Econometrics; Quantitative and Mathematical Studies
+B24,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Socialist; Marxist; Sraffian,History of Economic Thought since 1925: Socialist; Marxist; Sraffian
+B25,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Historical; Institutional; Evolutionary; Austrian; Stockholm School,History of Economic Thought since 1925: Historical; Institutional; Evolutionary; Austrian; Stockholm School
+B26,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Financial Economics,History of Economic Thought since 1925: Financial Economics
+B27,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",International Trade and Finance,History of Economic Thought since 1925: International Trade and Finance
+B29,B2,History of Economic Thought since 1925,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Other,History of Economic Thought since 1925: Other
+B30,B3,History of Economic Thought: Individuals,B,"History of Economic Thought, Methodology, and Heterodox Approaches",General,History of Economic Thought: Individuals: General
+B31,B3,History of Economic Thought: Individuals,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Individuals,History of Economic Thought: Individuals: Individuals
+B32,B3,History of Economic Thought: Individuals,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Obituaries,History of Economic Thought: Individuals: Obituaries
+B40,B4,Economic Methodology,B,"History of Economic Thought, Methodology, and Heterodox Approaches",General,Economic Methodology: General
+B41,B4,Economic Methodology,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Economic Methodology,Economic Methodology: Economic Methodology
+B49,B4,Economic Methodology,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Other,Economic Methodology: Other
+B50,B5,Current Heterodox Approaches,B,"History of Economic Thought, Methodology, and Heterodox Approaches",General,Current Heterodox Approaches: General
+B51,B5,Current Heterodox Approaches,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Socialist; Marxian; Sraffian,Current Heterodox Approaches: Socialist; Marxian; Sraffian
+B52,B5,Current Heterodox Approaches,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Historical; Institutional; Evolutionary; Modern Monetary Theory,Current Heterodox Approaches: Historical; Institutional; Evolutionary; Modern Monetary Theory
+B53,B5,Current Heterodox Approaches,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Austrian,Current Heterodox Approaches: Austrian
+B54,B5,Current Heterodox Approaches,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Feminist Economics,Current Heterodox Approaches: Feminist Economics
+B55,B5,Current Heterodox Approaches,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Social Economics,Current Heterodox Approaches: Social Economics
+B59,B5,Current Heterodox Approaches,B,"History of Economic Thought, Methodology, and Heterodox Approaches",Other,Current Heterodox Approaches: Other
+C00,C0,,C,Mathematical and Quantitative Methods,General,General
+C01,C0,,C,Mathematical and Quantitative Methods,Econometrics,Econometrics
+C02,C0,,C,Mathematical and Quantitative Methods,Mathematical Methods,Mathematical Methods
+C10,C1,Econometric and Statistical Methods and Methodology: General,C,Mathematical and Quantitative Methods,General,Econometric and Statistical Methods and Methodology: General: General
+C11,C1,Econometric and Statistical Methods and Methodology: General,C,Mathematical and Quantitative Methods,Bayesian Analysis: General,Econometric and Statistical Methods and Methodology: General: Bayesian Analysis: General
+C12,C1,Econometric and Statistical Methods and Methodology: General,C,Mathematical and Quantitative Methods,Hypothesis Testing: General,Econometric and Statistical Methods and Methodology: General: Hypothesis Testing: General
+C13,C1,Econometric and Statistical Methods and Methodology: General,C,Mathematical and Quantitative Methods,Estimation: General,Econometric and Statistical Methods and Methodology: General: Estimation: General
+C14,C1,Econometric and Statistical Methods and Methodology: General,C,Mathematical and Quantitative Methods,Semiparametric and Nonparametric Methods: General,Econometric and Statistical Methods and Methodology: General: Semiparametric and Nonparametric Methods: General
+C15,C1,Econometric and Statistical Methods and Methodology: General,C,Mathematical and Quantitative Methods,Statistical Simulation Methods: General,Econometric and Statistical Methods and Methodology: General: Statistical Simulation Methods: General
+C18,C1,Econometric and Statistical Methods and Methodology: General,C,Mathematical and Quantitative Methods,Methodological Issues: General,Econometric and Statistical Methods and Methodology: General: Methodological Issues: General
+C19,C1,Econometric and Statistical Methods and Methodology: General,C,Mathematical and Quantitative Methods,Other,Econometric and Statistical Methods and Methodology: General: Other
+C20,C2,Single Equation Models; Single Variables,C,Mathematical and Quantitative Methods,General,Single Equation Models; Single Variables: General
+C21,C2,Single Equation Models; Single Variables,C,Mathematical and Quantitative Methods,Cross-Sectional Models; Spatial Models; Treatment Effect Models; Quantile Regressions,Single Equation Models; Single Variables: Cross-Sectional Models; Spatial Models; Treatment Effect Models; Quantile Regressions
+C22,C2,Single Equation Models; Single Variables,C,Mathematical and Quantitative Methods,Time-Series Models; Dynamic Quantile Regressions; Dynamic Treatment Effect Models; Diffusion Processes,Single Equation Models; Single Variables: Time-Series Models; Dynamic Quantile Regressions; Dynamic Treatment Effect Models; Diffusion Processes
+C23,C2,Single Equation Models; Single Variables,C,Mathematical and Quantitative Methods,Panel Data Models; Spatio-temporal Models,Single Equation Models; Single Variables: Panel Data Models; Spatio-temporal Models
+C24,C2,Single Equation Models; Single Variables,C,Mathematical and Quantitative Methods,Truncated and Censored Models; Switching Regression Models; Threshold Regression Models,Single Equation Models; Single Variables: Truncated and Censored Models; Switching Regression Models; Threshold Regression Models
+C25,C2,Single Equation Models; Single Variables,C,Mathematical and Quantitative Methods,Discrete Regression and Qualitative Choice Models; Discrete Regressors; Proportions; Probabilities,Single Equation Models; Single Variables: Discrete Regression and Qualitative Choice Models; Discrete Regressors; Proportions; Probabilities
+C26,C2,Single Equation Models; Single Variables,C,Mathematical and Quantitative Methods,Instrumental Variables (IV) Estimation,Single Equation Models; Single Variables: Instrumental Variables (IV) Estimation
+C29,C2,Single Equation Models; Single Variables,C,Mathematical and Quantitative Methods,Other,Single Equation Models; Single Variables: Other
+C30,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,General,Multiple or Simultaneous Equation Models; Multiple Variables: General
+C31,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,Cross-Sectional Models; Spatial Models; Treatment Effect Models; Quantile Regressions; Social Interaction Models,Multiple or Simultaneous Equation Models; Multiple Variables: Cross-Sectional Models; Spatial Models; Treatment Effect Models; Quantile Regressions; Social Interaction Models
+C32,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,Time-Series Models; Dynamic Quantile Regressions; Dynamic Treatment Effect Models; Diffusion Processes; State Space Models,Multiple or Simultaneous Equation Models; Multiple Variables: Time-Series Models; Dynamic Quantile Regressions; Dynamic Treatment Effect Models; Diffusion Processes; State Space Models
+C33,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,Panel Data Models; Spatio-temporal Models,Multiple or Simultaneous Equation Models; Multiple Variables: Panel Data Models; Spatio-temporal Models
+C34,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,Truncated and Censored Models; Switching Regression Models,Multiple or Simultaneous Equation Models; Multiple Variables: Truncated and Censored Models; Switching Regression Models
+C35,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,Discrete Regression and Qualitative Choice Models; Discrete Regressors; Proportions,Multiple or Simultaneous Equation Models; Multiple Variables: Discrete Regression and Qualitative Choice Models; Discrete Regressors; Proportions
+C36,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,Instrumental Variables (IV) Estimation,Multiple or Simultaneous Equation Models; Multiple Variables: Instrumental Variables (IV) Estimation
+C38,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,Classification Methods; Cluster Analysis; Principal Components; Factor Models,Multiple or Simultaneous Equation Models; Multiple Variables: Classification Methods; Cluster Analysis; Principal Components; Factor Models
+C39,C3,Multiple or Simultaneous Equation Models; Multiple Variables,C,Mathematical and Quantitative Methods,Other,Multiple or Simultaneous Equation Models; Multiple Variables: Other
+C40,C4,Econometric and Statistical Methods: Special Topics,C,Mathematical and Quantitative Methods,General,Econometric and Statistical Methods: Special Topics: General
+C41,C4,Econometric and Statistical Methods: Special Topics,C,Mathematical and Quantitative Methods,Duration Analysis; Optimal Timing Strategies,Econometric and Statistical Methods: Special Topics: Duration Analysis; Optimal Timing Strategies
+C43,C4,Econometric and Statistical Methods: Special Topics,C,Mathematical and Quantitative Methods,Index Numbers and Aggregation,Econometric and Statistical Methods: Special Topics: Index Numbers and Aggregation
+C44,C4,Econometric and Statistical Methods: Special Topics,C,Mathematical and Quantitative Methods,Operations Research; Statistical Decision Theory,Econometric and Statistical Methods: Special Topics: Operations Research; Statistical Decision Theory
+C45,C4,Econometric and Statistical Methods: Special Topics,C,Mathematical and Quantitative Methods,Neural Networks and Related Topics,Econometric and Statistical Methods: Special Topics: Neural Networks and Related Topics
+C46,C4,Econometric and Statistical Methods: Special Topics,C,Mathematical and Quantitative Methods,Specific Distributions; Specific Statistics,Econometric and Statistical Methods: Special Topics: Specific Distributions; Specific Statistics
+C49,C4,Econometric and Statistical Methods: Special Topics,C,Mathematical and Quantitative Methods,Other,Econometric and Statistical Methods: Special Topics: Other
+C50,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,General,Econometric Modeling: General
+C51,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,Model Construction and Estimation,Econometric Modeling: Model Construction and Estimation
+C52,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,"Model Evaluation, Validation, and Selection","Econometric Modeling: Model Evaluation, Validation, and Selection"
+C53,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,Forecasting and Prediction Methods; Simulation Methods,Econometric Modeling: Forecasting and Prediction Methods; Simulation Methods
+C54,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,Quantitative Policy Modeling,Econometric Modeling: Quantitative Policy Modeling
+C55,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,Large Data Sets: Modeling and Analysis,Econometric Modeling: Large Data Sets: Modeling and Analysis
+C57,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,Econometrics of Games and Auctions,Econometric Modeling: Econometrics of Games and Auctions
+C58,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,Financial Econometrics,Econometric Modeling: Financial Econometrics
+C59,C5,Econometric Modeling,C,Mathematical and Quantitative Methods,Other,Econometric Modeling: Other
+C60,C6,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling,C,Mathematical and Quantitative Methods,General,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling: General
+C61,C6,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling,C,Mathematical and Quantitative Methods,Optimization Techniques; Programming Models; Dynamic Analysis,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling: Optimization Techniques; Programming Models; Dynamic Analysis
+C62,C6,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling,C,Mathematical and Quantitative Methods,Existence and Stability Conditions of Equilibrium,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling: Existence and Stability Conditions of Equilibrium
+C63,C6,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling,C,Mathematical and Quantitative Methods,Computational Techniques; Simulation Modeling,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling: Computational Techniques; Simulation Modeling
+C65,C6,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling,C,Mathematical and Quantitative Methods,Miscellaneous Mathematical Tools,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling: Miscellaneous Mathematical Tools
+C67,C6,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling,C,Mathematical and Quantitative Methods,Input–Output Models,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling: Input–Output Models
+C68,C6,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling,C,Mathematical and Quantitative Methods,Computable General Equilibrium Models,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling: Computable General Equilibrium Models
+C69,C6,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling,C,Mathematical and Quantitative Methods,Other,Mathematical Methods; Programming Models; Mathematical and Simulation Modeling: Other
+C70,C7,Game Theory and Bargaining Theory,C,Mathematical and Quantitative Methods,General,Game Theory and Bargaining Theory: General
+C71,C7,Game Theory and Bargaining Theory,C,Mathematical and Quantitative Methods,Cooperative Games,Game Theory and Bargaining Theory: Cooperative Games
+C72,C7,Game Theory and Bargaining Theory,C,Mathematical and Quantitative Methods,Noncooperative Games,Game Theory and Bargaining Theory: Noncooperative Games
+C73,C7,Game Theory and Bargaining Theory,C,Mathematical and Quantitative Methods,Stochastic and Dynamic Games; Evolutionary Games; Repeated Games,Game Theory and Bargaining Theory: Stochastic and Dynamic Games; Evolutionary Games; Repeated Games
+C78,C7,Game Theory and Bargaining Theory,C,Mathematical and Quantitative Methods,Bargaining Theory; Matching Theory,Game Theory and Bargaining Theory: Bargaining Theory; Matching Theory
+C79,C7,Game Theory and Bargaining Theory,C,Mathematical and Quantitative Methods,Other,Game Theory and Bargaining Theory: Other
+C80,C8,Data Collection and Data Estimation Methodology; Computer Programs,C,Mathematical and Quantitative Methods,General,Data Collection and Data Estimation Methodology; Computer Programs: General
+C81,C8,Data Collection and Data Estimation Methodology; Computer Programs,C,Mathematical and Quantitative Methods,"Methodology for Collecting, Estimating, and Organizing Microeconomic Data; Data Access","Data Collection and Data Estimation Methodology; Computer Programs: Methodology for Collecting, Estimating, and Organizing Microeconomic Data; Data Access"
+C82,C8,Data Collection and Data Estimation Methodology; Computer Programs,C,Mathematical and Quantitative Methods,"Methodology for Collecting, Estimating, and Organizing Macroeconomic Data; Data Access","Data Collection and Data Estimation Methodology; Computer Programs: Methodology for Collecting, Estimating, and Organizing Macroeconomic Data; Data Access"
+C83,C8,Data Collection and Data Estimation Methodology; Computer Programs,C,Mathematical and Quantitative Methods,Survey Methods; Sampling Methods,Data Collection and Data Estimation Methodology; Computer Programs: Survey Methods; Sampling Methods
+C87,C8,Data Collection and Data Estimation Methodology; Computer Programs,C,Mathematical and Quantitative Methods,Econometric Software,Data Collection and Data Estimation Methodology; Computer Programs: Econometric Software
+C88,C8,Data Collection and Data Estimation Methodology; Computer Programs,C,Mathematical and Quantitative Methods,Other Computer Software,Data Collection and Data Estimation Methodology; Computer Programs: Other Computer Software
+C89,C8,Data Collection and Data Estimation Methodology; Computer Programs,C,Mathematical and Quantitative Methods,Other,Data Collection and Data Estimation Methodology; Computer Programs: Other
+C90,C9,Design of Experiments,C,Mathematical and Quantitative Methods,General,Design of Experiments: General
+C91,C9,Design of Experiments,C,Mathematical and Quantitative Methods,"Laboratory, Individual Behavior","Design of Experiments: Laboratory, Individual Behavior"
+C92,C9,Design of Experiments,C,Mathematical and Quantitative Methods,"Laboratory, Group Behavior","Design of Experiments: Laboratory, Group Behavior"
+C93,C9,Design of Experiments,C,Mathematical and Quantitative Methods,Field Experiments,Design of Experiments: Field Experiments
+C99,C9,Design of Experiments,C,Mathematical and Quantitative Methods,Other,Design of Experiments: Other
+D00,D0,,D,Microeconomics,General,General
+D01,D0,,D,Microeconomics,Microeconomic Behavior: Underlying Principles,Microeconomic Behavior: Underlying Principles
+D02,D0,,D,Microeconomics,"Institutions: Design, Formation, Operations, and Impact","Institutions: Design, Formation, Operations, and Impact"
+D04,D0,,D,Microeconomics,"Microeconomic Policy: Formulation, Implementation, and Evaluation","Microeconomic Policy: Formulation, Implementation, and Evaluation"
+D10,D1,Household Behavior and Family Economics,D,Microeconomics,General,Household Behavior and Family Economics: General
+D11,D1,Household Behavior and Family Economics,D,Microeconomics,Consumer Economics: Theory,Household Behavior and Family Economics: Consumer Economics: Theory
+D12,D1,Household Behavior and Family Economics,D,Microeconomics,Consumer Economics: Empirical Analysis,Household Behavior and Family Economics: Consumer Economics: Empirical Analysis
+D13,D1,Household Behavior and Family Economics,D,Microeconomics,Household Production and Intrahousehold Allocation,Household Behavior and Family Economics: Household Production and Intrahousehold Allocation
+D14,D1,Household Behavior and Family Economics,D,Microeconomics,Household Saving; Personal Finance,Household Behavior and Family Economics: Household Saving; Personal Finance
+D15,D1,Household Behavior and Family Economics,D,Microeconomics,Intertemporal Household Choice; Life Cycle Models and Saving,Household Behavior and Family Economics: Intertemporal Household Choice; Life Cycle Models and Saving
+D16,D1,Household Behavior and Family Economics,D,Microeconomics,Collaborative Consumption,Household Behavior and Family Economics: Collaborative Consumption
+D18,D1,Household Behavior and Family Economics,D,Microeconomics,Consumer Protection,Household Behavior and Family Economics: Consumer Protection
+D19,D1,Household Behavior and Family Economics,D,Microeconomics,Other,Household Behavior and Family Economics: Other
+D20,D2,Production and Organizations,D,Microeconomics,General,Production and Organizations: General
+D21,D2,Production and Organizations,D,Microeconomics,Firm Behavior: Theory,Production and Organizations: Firm Behavior: Theory
+D22,D2,Production and Organizations,D,Microeconomics,Firm Behavior: Empirical Analysis,Production and Organizations: Firm Behavior: Empirical Analysis
+D23,D2,Production and Organizations,D,Microeconomics,Organizational Behavior; Transaction Costs; Property Rights,Production and Organizations: Organizational Behavior; Transaction Costs; Property Rights
+D24,D2,Production and Organizations,D,Microeconomics,"Production; Cost; Capital; Capital, Total Factor, and Multifactor Productivity; Capacity","Production and Organizations: Production; Cost; Capital; Capital, Total Factor, and Multifactor Productivity; Capacity"
+D25,D2,Production and Organizations,D,Microeconomics,"Intertemporal Firm Choice: Investment, Capacity, and Financing","Production and Organizations: Intertemporal Firm Choice: Investment, Capacity, and Financing"
+D26,D2,Production and Organizations,D,Microeconomics,Crowd-Based Firms,Production and Organizations: Crowd-Based Firms
+D29,D2,Production and Organizations,D,Microeconomics,Other,Production and Organizations: Other
+D30,D3,Distribution,D,Microeconomics,General,Distribution: General
+D31,D3,Distribution,D,Microeconomics,"Personal Income, Wealth, and Their Distributions","Distribution: Personal Income, Wealth, and Their Distributions"
+D33,D3,Distribution,D,Microeconomics,Factor Income Distribution,Distribution: Factor Income Distribution
+D39,D3,Distribution,D,Microeconomics,Other,Distribution: Other
+D40,D4,"Market Structure, Pricing, and Design",D,Microeconomics,General,"Market Structure, Pricing, and Design: General"
+D41,D4,"Market Structure, Pricing, and Design",D,Microeconomics,Perfect Competition,"Market Structure, Pricing, and Design: Perfect Competition"
+D42,D4,"Market Structure, Pricing, and Design",D,Microeconomics,Monopoly,"Market Structure, Pricing, and Design: Monopoly"
+D43,D4,"Market Structure, Pricing, and Design",D,Microeconomics,Oligopoly and Other Forms of Market Imperfection,"Market Structure, Pricing, and Design: Oligopoly and Other Forms of Market Imperfection"
+D44,D4,"Market Structure, Pricing, and Design",D,Microeconomics,Auctions,"Market Structure, Pricing, and Design: Auctions"
+D45,D4,"Market Structure, Pricing, and Design",D,Microeconomics,Rationing; Licensing,"Market Structure, Pricing, and Design: Rationing; Licensing"
+D46,D4,"Market Structure, Pricing, and Design",D,Microeconomics,Value Theory,"Market Structure, Pricing, and Design: Value Theory"
+D47,D4,"Market Structure, Pricing, and Design",D,Microeconomics,Market Design,"Market Structure, Pricing, and Design: Market Design"
+D49,D4,"Market Structure, Pricing, and Design",D,Microeconomics,Other,"Market Structure, Pricing, and Design: Other"
+D50,D5,General Equilibrium and Disequilibrium,D,Microeconomics,General,General Equilibrium and Disequilibrium: General
+D51,D5,General Equilibrium and Disequilibrium,D,Microeconomics,Exchange and Production Economies,General Equilibrium and Disequilibrium: Exchange and Production Economies
+D52,D5,General Equilibrium and Disequilibrium,D,Microeconomics,Incomplete Markets,General Equilibrium and Disequilibrium: Incomplete Markets
+D53,D5,General Equilibrium and Disequilibrium,D,Microeconomics,Financial Markets,General Equilibrium and Disequilibrium: Financial Markets
+D57,D5,General Equilibrium and Disequilibrium,D,Microeconomics,Input–Output Tables and Analysis,General Equilibrium and Disequilibrium: Input–Output Tables and Analysis
+D58,D5,General Equilibrium and Disequilibrium,D,Microeconomics,Computable and Other Applied General Equilibrium Models,General Equilibrium and Disequilibrium: Computable and Other Applied General Equilibrium Models
+D59,D5,General Equilibrium and Disequilibrium,D,Microeconomics,Other,General Equilibrium and Disequilibrium: Other
+D60,D6,Welfare Economics,D,Microeconomics,General,Welfare Economics: General
+D61,D6,Welfare Economics,D,Microeconomics,Allocative Efficiency; Cost–Benefit Analysis,Welfare Economics: Allocative Efficiency; Cost–Benefit Analysis
+D62,D6,Welfare Economics,D,Microeconomics,Externalities,Welfare Economics: Externalities
+D63,D6,Welfare Economics,D,Microeconomics,"Equity, Justice, Inequality, and Other Normative Criteria and Measurement","Welfare Economics: Equity, Justice, Inequality, and Other Normative Criteria and Measurement"
+D64,D6,Welfare Economics,D,Microeconomics,Altruism; Philanthropy; Intergenerational Transfers,Welfare Economics: Altruism; Philanthropy; Intergenerational Transfers
+D69,D6,Welfare Economics,D,Microeconomics,Other,Welfare Economics: Other
+D70,D7,Analysis of Collective Decision-Making,D,Microeconomics,General,Analysis of Collective Decision-Making: General
+D71,D7,Analysis of Collective Decision-Making,D,Microeconomics,Social Choice; Clubs; Committees; Associations,Analysis of Collective Decision-Making: Social Choice; Clubs; Committees; Associations
+D72,D7,Analysis of Collective Decision-Making,D,Microeconomics,"Political Processes: Rent-Seeking, Lobbying, Elections, Legislatures, and Voting Behavior","Analysis of Collective Decision-Making: Political Processes: Rent-Seeking, Lobbying, Elections, Legislatures, and Voting Behavior"
+D73,D7,Analysis of Collective Decision-Making,D,Microeconomics,Bureaucracy; Administrative Processes in Public Organizations; Corruption,Analysis of Collective Decision-Making: Bureaucracy; Administrative Processes in Public Organizations; Corruption
+D74,D7,Analysis of Collective Decision-Making,D,Microeconomics,Conflict; Conflict Resolution; Alliances; Revolutions,Analysis of Collective Decision-Making: Conflict; Conflict Resolution; Alliances; Revolutions
+D78,D7,Analysis of Collective Decision-Making,D,Microeconomics,Positive Analysis of Policy Formulation and Implementation,Analysis of Collective Decision-Making: Positive Analysis of Policy Formulation and Implementation
+D79,D7,Analysis of Collective Decision-Making,D,Microeconomics,Other,Analysis of Collective Decision-Making: Other
+D80,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,General,"Information, Knowledge, and Uncertainty: General"
+D81,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,Criteria for Decision-Making under Risk and Uncertainty,"Information, Knowledge, and Uncertainty: Criteria for Decision-Making under Risk and Uncertainty"
+D82,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,Asymmetric and Private Information; Mechanism Design,"Information, Knowledge, and Uncertainty: Asymmetric and Private Information; Mechanism Design"
+D83,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,Search; Learning; Information and Knowledge; Communication; Belief; Unawareness,"Information, Knowledge, and Uncertainty: Search; Learning; Information and Knowledge; Communication; Belief; Unawareness"
+D84,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,Expectations; Speculations,"Information, Knowledge, and Uncertainty: Expectations; Speculations"
+D85,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,Network Formation and Analysis: Theory,"Information, Knowledge, and Uncertainty: Network Formation and Analysis: Theory"
+D86,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,Economics of Contract: Theory,"Information, Knowledge, and Uncertainty: Economics of Contract: Theory"
+D87,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,Neuroeconomics,"Information, Knowledge, and Uncertainty: Neuroeconomics"
+D89,D8,"Information, Knowledge, and Uncertainty",D,Microeconomics,Other,"Information, Knowledge, and Uncertainty: Other"
+D90,D9,Micro-Based Behavioral Economics,D,Microeconomics,General,Micro-Based Behavioral Economics: General
+D91,D9,Micro-Based Behavioral Economics,D,Microeconomics,"Role and Effects of Psychological, Emotional, Social, and Cognitive Factors on Decision Making","Micro-Based Behavioral Economics: Role and Effects of Psychological, Emotional, Social, and Cognitive Factors on Decision Making"
+E00,E0,,E,Macroeconomics and Monetary Economics,General,General
+E01,E0,,E,Macroeconomics and Monetary Economics,Measurement and Data on National Income and Product Accounts and Wealth; Environmental Accounts,Measurement and Data on National Income and Product Accounts and Wealth; Environmental Accounts
+E02,E0,,E,Macroeconomics and Monetary Economics,Institutions and the Macroeconomy,Institutions and the Macroeconomy
+E10,E1,General Aggregative Models,E,Macroeconomics and Monetary Economics,General,General Aggregative Models: General
+E11,E1,General Aggregative Models,E,Macroeconomics and Monetary Economics,Marxian; Sraffian; Kaleckian,General Aggregative Models: Marxian; Sraffian; Kaleckian
+E12,E1,General Aggregative Models,E,Macroeconomics and Monetary Economics,Keynes; Keynesian; Post-Keynesian; Modern Monetary Theory,General Aggregative Models: Keynes; Keynesian; Post-Keynesian; Modern Monetary Theory
+E13,E1,General Aggregative Models,E,Macroeconomics and Monetary Economics,Neoclassical,General Aggregative Models: Neoclassical
+E14,E1,General Aggregative Models,E,Macroeconomics and Monetary Economics,Austrian; Evolutionary; Institutional,General Aggregative Models: Austrian; Evolutionary; Institutional
+E16,E1,General Aggregative Models,E,Macroeconomics and Monetary Economics,Social Accounting Matrix,General Aggregative Models: Social Accounting Matrix
+E17,E1,General Aggregative Models,E,Macroeconomics and Monetary Economics,Forecasting and Simulation: Models and Applications,General Aggregative Models: Forecasting and Simulation: Models and Applications
+E19,E1,General Aggregative Models,E,Macroeconomics and Monetary Economics,Other,General Aggregative Models: Other
+E20,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,General,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: General"
+E21,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,Consumption; Saving; Wealth,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: Consumption; Saving; Wealth"
+E22,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,Investment; Capital; Intangible Capital; Capacity,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: Investment; Capital; Intangible Capital; Capacity"
+E23,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,Production,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: Production"
+E24,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,Employment; Unemployment; Wages; Intergenerational Income Distribution; Aggregate Human Capital; Aggregate Labor Productivity,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: Employment; Unemployment; Wages; Intergenerational Income Distribution; Aggregate Human Capital; Aggregate Labor Productivity"
+E25,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,Aggregate Factor Income Distribution,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: Aggregate Factor Income Distribution"
+E26,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,Informal Economy; Underground Economy,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: Informal Economy; Underground Economy"
+E27,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,Forecasting and Simulation: Models and Applications,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: Forecasting and Simulation: Models and Applications"
+E29,E2,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy",E,Macroeconomics and Monetary Economics,Other,"Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy: Other"
+E30,E3,"Prices, Business Fluctuations, and Cycles",E,Macroeconomics and Monetary Economics,General,"Prices, Business Fluctuations, and Cycles: General"
+E31,E3,"Prices, Business Fluctuations, and Cycles",E,Macroeconomics and Monetary Economics,Price Level; Inflation; Deflation,"Prices, Business Fluctuations, and Cycles: Price Level; Inflation; Deflation"
+E32,E3,"Prices, Business Fluctuations, and Cycles",E,Macroeconomics and Monetary Economics,Business Fluctuations; Cycles,"Prices, Business Fluctuations, and Cycles: Business Fluctuations; Cycles"
+E37,E3,"Prices, Business Fluctuations, and Cycles",E,Macroeconomics and Monetary Economics,Forecasting and Simulation: Models and Applications,"Prices, Business Fluctuations, and Cycles: Forecasting and Simulation: Models and Applications"
+E39,E3,"Prices, Business Fluctuations, and Cycles",E,Macroeconomics and Monetary Economics,Other,"Prices, Business Fluctuations, and Cycles: Other"
+E40,E4,Money and Interest Rates,E,Macroeconomics and Monetary Economics,General,Money and Interest Rates: General
+E41,E4,Money and Interest Rates,E,Macroeconomics and Monetary Economics,Demand for Money,Money and Interest Rates: Demand for Money
+E42,E4,Money and Interest Rates,E,Macroeconomics and Monetary Economics,Monetary Systems; Standards; Regimes; Government and the Monetary System; Payment Systems,Money and Interest Rates: Monetary Systems; Standards; Regimes; Government and the Monetary System; Payment Systems
+E43,E4,Money and Interest Rates,E,Macroeconomics and Monetary Economics,"Interest Rates: Determination, Term Structure, and Effects","Money and Interest Rates: Interest Rates: Determination, Term Structure, and Effects"
+E44,E4,Money and Interest Rates,E,Macroeconomics and Monetary Economics,Financial Markets and the Macroeconomy,Money and Interest Rates: Financial Markets and the Macroeconomy
+E47,E4,Money and Interest Rates,E,Macroeconomics and Monetary Economics,Forecasting and Simulation: Models and Applications,Money and Interest Rates: Forecasting and Simulation: Models and Applications
+E49,E4,Money and Interest Rates,E,Macroeconomics and Monetary Economics,Other,Money and Interest Rates: Other
+E50,E5,"Monetary Policy, Central Banking, and the Supply of Money and Credit",E,Macroeconomics and Monetary Economics,General,"Monetary Policy, Central Banking, and the Supply of Money and Credit: General"
+E51,E5,"Monetary Policy, Central Banking, and the Supply of Money and Credit",E,Macroeconomics and Monetary Economics,Money Supply; Credit; Money Multipliers,"Monetary Policy, Central Banking, and the Supply of Money and Credit: Money Supply; Credit; Money Multipliers"
+E52,E5,"Monetary Policy, Central Banking, and the Supply of Money and Credit",E,Macroeconomics and Monetary Economics,Monetary Policy,"Monetary Policy, Central Banking, and the Supply of Money and Credit: Monetary Policy"
+E58,E5,"Monetary Policy, Central Banking, and the Supply of Money and Credit",E,Macroeconomics and Monetary Economics,Central Banks and Their Policies,"Monetary Policy, Central Banking, and the Supply of Money and Credit: Central Banks and Their Policies"
+E59,E5,"Monetary Policy, Central Banking, and the Supply of Money and Credit",E,Macroeconomics and Monetary Economics,Other,"Monetary Policy, Central Banking, and the Supply of Money and Credit: Other"
+E60,E6,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook",E,Macroeconomics and Monetary Economics,General,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook: General"
+E61,E6,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook",E,Macroeconomics and Monetary Economics,Policy Objectives; Policy Designs and Consistency; Policy Coordination,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook: Policy Objectives; Policy Designs and Consistency; Policy Coordination"
+E62,E6,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook",E,Macroeconomics and Monetary Economics,Fiscal Policy; Modern Monetary Theory,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook: Fiscal Policy; Modern Monetary Theory"
+E63,E6,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook",E,Macroeconomics and Monetary Economics,Comparative or Joint Analysis of Fiscal and Monetary Policy; Stabilization; Treasury Policy,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook: Comparative or Joint Analysis of Fiscal and Monetary Policy; Stabilization; Treasury Policy"
+E64,E6,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook",E,Macroeconomics and Monetary Economics,Incomes Policy; Price Policy,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook: Incomes Policy; Price Policy"
+E65,E6,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook",E,Macroeconomics and Monetary Economics,Studies of Particular Policy Episodes,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook: Studies of Particular Policy Episodes"
+E66,E6,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook",E,Macroeconomics and Monetary Economics,General Outlook and Conditions,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook: General Outlook and Conditions"
+E69,E6,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook",E,Macroeconomics and Monetary Economics,Other,"Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook: Other"
+E70,E7,Macro-Based Behavioral Economics,E,Macroeconomics and Monetary Economics,General,Macro-Based Behavioral Economics: General
+E71,E7,Macro-Based Behavioral Economics,E,Macroeconomics and Monetary Economics,"Role and Effects of Psychological, Emotional, Social, and Cognitive Factors on the Macro Economy","Macro-Based Behavioral Economics: Role and Effects of Psychological, Emotional, Social, and Cognitive Factors on the Macro Economy"
+F00,F0,,F,International Economics,General,General
+F01,F0,,F,International Economics,Global Outlook,Global Outlook
+F02,F0,,F,International Economics,International Economic Order and Integration,International Economic Order and Integration
+F10,F1,Trade,F,International Economics,General,Trade: General
+F11,F1,Trade,F,International Economics,Neoclassical Models of Trade,Trade: Neoclassical Models of Trade
+F12,F1,Trade,F,International Economics,Models of Trade with Imperfect Competition and Scale Economies; Fragmentation,Trade: Models of Trade with Imperfect Competition and Scale Economies; Fragmentation
+F13,F1,Trade,F,International Economics,Trade Policy; International Trade Organizations,Trade: Trade Policy; International Trade Organizations
+F14,F1,Trade,F,International Economics,Empirical Studies of Trade,Trade: Empirical Studies of Trade
+F15,F1,Trade,F,International Economics,Economic Integration,Trade: Economic Integration
+F16,F1,Trade,F,International Economics,Trade and Labor Market Interactions,Trade: Trade and Labor Market Interactions
+F17,F1,Trade,F,International Economics,Trade Forecasting and Simulation,Trade: Trade Forecasting and Simulation
+F18,F1,Trade,F,International Economics,Trade and Environment,Trade: Trade and Environment
+F19,F1,Trade,F,International Economics,Other,Trade: Other
+F20,F2,International Factor Movements and International Business,F,International Economics,General,International Factor Movements and International Business: General
+F21,F2,International Factor Movements and International Business,F,International Economics,International Investment; Long-Term Capital Movements,International Factor Movements and International Business: International Investment; Long-Term Capital Movements
+F22,F2,International Factor Movements and International Business,F,International Economics,International Migration,International Factor Movements and International Business: International Migration
+F23,F2,International Factor Movements and International Business,F,International Economics,Multinational Firms; International Business,International Factor Movements and International Business: Multinational Firms; International Business
+F24,F2,International Factor Movements and International Business,F,International Economics,Remittances,International Factor Movements and International Business: Remittances
+F29,F2,International Factor Movements and International Business,F,International Economics,Other,International Factor Movements and International Business: Other
+F30,F3,International Finance,F,International Economics,General,International Finance: General
+F31,F3,International Finance,F,International Economics,Foreign Exchange,International Finance: Foreign Exchange
+F32,F3,International Finance,F,International Economics,Current Account Adjustment; Short-Term Capital Movements,International Finance: Current Account Adjustment; Short-Term Capital Movements
+F33,F3,International Finance,F,International Economics,International Monetary Arrangements and Institutions,International Finance: International Monetary Arrangements and Institutions
+F34,F3,International Finance,F,International Economics,International Lending and Debt Problems,International Finance: International Lending and Debt Problems
+F35,F3,International Finance,F,International Economics,Foreign Aid,International Finance: Foreign Aid
+F36,F3,International Finance,F,International Economics,Financial Aspects of Economic Integration,International Finance: Financial Aspects of Economic Integration
+F37,F3,International Finance,F,International Economics,International Finance Forecasting and Simulation: Models and Applications,International Finance: International Finance Forecasting and Simulation: Models and Applications
+F38,F3,International Finance,F,International Economics,International Financial Policy: Financial Transactions Tax; Capital Controls,International Finance: International Financial Policy: Financial Transactions Tax; Capital Controls
+F39,F3,International Finance,F,International Economics,Other,International Finance: Other
+F40,F4,Macroeconomic Aspects of International Trade and Finance,F,International Economics,General,Macroeconomic Aspects of International Trade and Finance: General
+F41,F4,Macroeconomic Aspects of International Trade and Finance,F,International Economics,Open Economy Macroeconomics,Macroeconomic Aspects of International Trade and Finance: Open Economy Macroeconomics
+F42,F4,Macroeconomic Aspects of International Trade and Finance,F,International Economics,International Policy Coordination and Transmission,Macroeconomic Aspects of International Trade and Finance: International Policy Coordination and Transmission
+F43,F4,Macroeconomic Aspects of International Trade and Finance,F,International Economics,Economic Growth of Open Economies,Macroeconomic Aspects of International Trade and Finance: Economic Growth of Open Economies
+F44,F4,Macroeconomic Aspects of International Trade and Finance,F,International Economics,International Business Cycles,Macroeconomic Aspects of International Trade and Finance: International Business Cycles
+F45,F4,Macroeconomic Aspects of International Trade and Finance,F,International Economics,Macroeconomic Issues of Monetary Unions,Macroeconomic Aspects of International Trade and Finance: Macroeconomic Issues of Monetary Unions
+F47,F4,Macroeconomic Aspects of International Trade and Finance,F,International Economics,Forecasting and Simulation: Models and Applications,Macroeconomic Aspects of International Trade and Finance: Forecasting and Simulation: Models and Applications
+F49,F4,Macroeconomic Aspects of International Trade and Finance,F,International Economics,Other,Macroeconomic Aspects of International Trade and Finance: Other
+F50,F5,"International Relations, National Security, and International Political Economy",F,International Economics,General,"International Relations, National Security, and International Political Economy: General"
+F51,F5,"International Relations, National Security, and International Political Economy",F,International Economics,International Conflicts; Negotiations; Sanctions,"International Relations, National Security, and International Political Economy: International Conflicts; Negotiations; Sanctions"
+F52,F5,"International Relations, National Security, and International Political Economy",F,International Economics,National Security; Economic Nationalism,"International Relations, National Security, and International Political Economy: National Security; Economic Nationalism"
+F53,F5,"International Relations, National Security, and International Political Economy",F,International Economics,International Agreements and Observance; International Organizations,"International Relations, National Security, and International Political Economy: International Agreements and Observance; International Organizations"
+F54,F5,"International Relations, National Security, and International Political Economy",F,International Economics,Colonialism; Imperialism; Postcolonialism,"International Relations, National Security, and International Political Economy: Colonialism; Imperialism; Postcolonialism"
+F55,F5,"International Relations, National Security, and International Political Economy",F,International Economics,International Institutional Arrangements,"International Relations, National Security, and International Political Economy: International Institutional Arrangements"
+F59,F5,"International Relations, National Security, and International Political Economy",F,International Economics,Other,"International Relations, National Security, and International Political Economy: Other"
+F60,F6,Economic Impacts of Globalization,F,International Economics,General,Economic Impacts of Globalization: General
+F61,F6,Economic Impacts of Globalization,F,International Economics,Microeconomic Impacts,Economic Impacts of Globalization: Microeconomic Impacts
+F62,F6,Economic Impacts of Globalization,F,International Economics,Macroeconomic Impacts,Economic Impacts of Globalization: Macroeconomic Impacts
+F63,F6,Economic Impacts of Globalization,F,International Economics,Economic Development,Economic Impacts of Globalization: Economic Development
+F64,F6,Economic Impacts of Globalization,F,International Economics,Environment,Economic Impacts of Globalization: Environment
+F65,F6,Economic Impacts of Globalization,F,International Economics,Finance,Economic Impacts of Globalization: Finance
+F66,F6,Economic Impacts of Globalization,F,International Economics,Labor,Economic Impacts of Globalization: Labor
+F68,F6,Economic Impacts of Globalization,F,International Economics,Policy,Economic Impacts of Globalization: Policy
+F69,F6,Economic Impacts of Globalization,F,International Economics,Other,Economic Impacts of Globalization: Other
+G00,G0,,G,Financial Economics,General,General
+G01,G0,,G,Financial Economics,Financial Crises,Financial Crises
+G10,G1,General Financial Markets,G,Financial Economics,General,General Financial Markets: General
+G11,G1,General Financial Markets,G,Financial Economics,Portfolio Choice; Investment Decisions,General Financial Markets: Portfolio Choice; Investment Decisions
+G12,G1,General Financial Markets,G,Financial Economics,Asset Pricing; Trading Volume; Bond Interest Rates,General Financial Markets: Asset Pricing; Trading Volume; Bond Interest Rates
+G13,G1,General Financial Markets,G,Financial Economics,Contingent Pricing; Futures Pricing,General Financial Markets: Contingent Pricing; Futures Pricing
+G14,G1,General Financial Markets,G,Financial Economics,Information and Market Efficiency; Event Studies; Insider Trading,General Financial Markets: Information and Market Efficiency; Event Studies; Insider Trading
+G15,G1,General Financial Markets,G,Financial Economics,International Financial Markets,General Financial Markets: International Financial Markets
+G17,G1,General Financial Markets,G,Financial Economics,Financial Forecasting and Simulation,General Financial Markets: Financial Forecasting and Simulation
+G18,G1,General Financial Markets,G,Financial Economics,Government Policy and Regulation,General Financial Markets: Government Policy and Regulation
+G19,G1,General Financial Markets,G,Financial Economics,Other,General Financial Markets: Other
+G20,G2,Financial Institutions and Services,G,Financial Economics,General,Financial Institutions and Services: General
+G21,G2,Financial Institutions and Services,G,Financial Economics,Banks; Depository Institutions; Micro Finance Institutions; Mortgages,Financial Institutions and Services: Banks; Depository Institutions; Micro Finance Institutions; Mortgages
+G22,G2,Financial Institutions and Services,G,Financial Economics,Insurance; Insurance Companies; Actuarial Studies,Financial Institutions and Services: Insurance; Insurance Companies; Actuarial Studies
+G23,G2,Financial Institutions and Services,G,Financial Economics,Non-bank Financial Institutions; Financial Instruments; Institutional Investors,Financial Institutions and Services: Non-bank Financial Institutions; Financial Instruments; Institutional Investors
+G24,G2,Financial Institutions and Services,G,Financial Economics,Investment Banking; Venture Capital; Brokerage; Ratings and Ratings Agencies,Financial Institutions and Services: Investment Banking; Venture Capital; Brokerage; Ratings and Ratings Agencies
+G28,G2,Financial Institutions and Services,G,Financial Economics,Government Policy and Regulation,Financial Institutions and Services: Government Policy and Regulation
+G29,G2,Financial Institutions and Services,G,Financial Economics,Other,Financial Institutions and Services: Other
+G30,G3,Corporate Finance and Governance,G,Financial Economics,General,Corporate Finance and Governance: General
+G31,G3,Corporate Finance and Governance,G,Financial Economics,Capital Budgeting; Fixed Investment and Inventory Studies; Capacity,Corporate Finance and Governance: Capital Budgeting; Fixed Investment and Inventory Studies; Capacity
+G32,G3,Corporate Finance and Governance,G,Financial Economics,Financing Policy; Financial Risk and Risk Management; Capital and Ownership Structure; Value of Firms; Goodwill,Corporate Finance and Governance: Financing Policy; Financial Risk and Risk Management; Capital and Ownership Structure; Value of Firms; Goodwill
+G33,G3,Corporate Finance and Governance,G,Financial Economics,Bankruptcy; Liquidation,Corporate Finance and Governance: Bankruptcy; Liquidation
+G34,G3,Corporate Finance and Governance,G,Financial Economics,Mergers; Acquisitions; Restructuring; Corporate Governance,Corporate Finance and Governance: Mergers; Acquisitions; Restructuring; Corporate Governance
+G35,G3,Corporate Finance and Governance,G,Financial Economics,Payout Policy,Corporate Finance and Governance: Payout Policy
+G38,G3,Corporate Finance and Governance,G,Financial Economics,Government Policy and Regulation,Corporate Finance and Governance: Government Policy and Regulation
+G39,G3,Corporate Finance and Governance,G,Financial Economics,Other,Corporate Finance and Governance: Other
+G40,G4,Behavioral Finance,G,Financial Economics,General,Behavioral Finance: General
+G41,G4,Behavioral Finance,G,Financial Economics,"Role and Effects of Psychological, Emotional, Social, and Cognitive Factors on Decision Making in Financial Markets","Behavioral Finance: Role and Effects of Psychological, Emotional, Social, and Cognitive Factors on Decision Making in Financial Markets"
+G50,G5,Household Finance,G,Financial Economics,General,Household Finance: General
+G51,G5,Household Finance,G,Financial Economics,"Household Saving, Borrowing, Debt, and Wealth","Household Finance: Household Saving, Borrowing, Debt, and Wealth"
+G52,G5,Household Finance,G,Financial Economics,Insurance,Household Finance: Insurance
+G53,G5,Household Finance,G,Financial Economics,Financial Literacy,Household Finance: Financial Literacy
+G59,G5,Household Finance,G,Financial Economics,Other,Household Finance: Other
+H00,H0,,H,Public Economics,General,General
+H10,H1,Structure and Scope of Government,H,Public Economics,General,Structure and Scope of Government: General
+H11,H1,Structure and Scope of Government,H,Public Economics,"Structure, Scope, and Performance of Government","Structure and Scope of Government: Structure, Scope, and Performance of Government"
+H12,H1,Structure and Scope of Government,H,Public Economics,Crisis Management,Structure and Scope of Government: Crisis Management
+H13,H1,Structure and Scope of Government,H,Public Economics,Economics of Eminent Domain; Expropriation; Nationalization,Structure and Scope of Government: Economics of Eminent Domain; Expropriation; Nationalization
+H19,H1,Structure and Scope of Government,H,Public Economics,Other,Structure and Scope of Government: Other
+H20,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,General,"Taxation, Subsidies, and Revenue: General"
+H21,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,Efficiency; Optimal Taxation,"Taxation, Subsidies, and Revenue: Efficiency; Optimal Taxation"
+H22,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,Incidence,"Taxation, Subsidies, and Revenue: Incidence"
+H23,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,Externalities; Redistributive Effects; Environmental Taxes and Subsidies,"Taxation, Subsidies, and Revenue: Externalities; Redistributive Effects; Environmental Taxes and Subsidies"
+H24,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,Personal Income and Other Nonbusiness Taxes and Subsidies,"Taxation, Subsidies, and Revenue: Personal Income and Other Nonbusiness Taxes and Subsidies"
+H25,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,Business Taxes and Subsidies,"Taxation, Subsidies, and Revenue: Business Taxes and Subsidies"
+H26,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,Tax Evasion and Avoidance,"Taxation, Subsidies, and Revenue: Tax Evasion and Avoidance"
+H27,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,Other Sources of Revenue,"Taxation, Subsidies, and Revenue: Other Sources of Revenue"
+H29,H2,"Taxation, Subsidies, and Revenue",H,Public Economics,Other,"Taxation, Subsidies, and Revenue: Other"
+H30,H3,Fiscal Policies and Behavior of Economic Agents,H,Public Economics,General,Fiscal Policies and Behavior of Economic Agents: General
+H31,H3,Fiscal Policies and Behavior of Economic Agents,H,Public Economics,Household,Fiscal Policies and Behavior of Economic Agents: Household
+H32,H3,Fiscal Policies and Behavior of Economic Agents,H,Public Economics,Firm,Fiscal Policies and Behavior of Economic Agents: Firm
+H39,H3,Fiscal Policies and Behavior of Economic Agents,H,Public Economics,Other,Fiscal Policies and Behavior of Economic Agents: Other
+H40,H4,Publicly Provided Goods,H,Public Economics,General,Publicly Provided Goods: General
+H41,H4,Publicly Provided Goods,H,Public Economics,Public Goods,Publicly Provided Goods: Public Goods
+H42,H4,Publicly Provided Goods,H,Public Economics,Publicly Provided Private Goods,Publicly Provided Goods: Publicly Provided Private Goods
+H43,H4,Publicly Provided Goods,H,Public Economics,Project Evaluation; Social Discount Rate,Publicly Provided Goods: Project Evaluation; Social Discount Rate
+H44,H4,Publicly Provided Goods,H,Public Economics,Publicly Provided Goods: Mixed Markets,Publicly Provided Goods: Publicly Provided Goods: Mixed Markets
+H49,H4,Publicly Provided Goods,H,Public Economics,Other,Publicly Provided Goods: Other
+H50,H5,National Government Expenditures and Related Policies,H,Public Economics,General,National Government Expenditures and Related Policies: General
+H51,H5,National Government Expenditures and Related Policies,H,Public Economics,Government Expenditures and Health,National Government Expenditures and Related Policies: Government Expenditures and Health
+H52,H5,National Government Expenditures and Related Policies,H,Public Economics,Government Expenditures and Education,National Government Expenditures and Related Policies: Government Expenditures and Education
+H53,H5,National Government Expenditures and Related Policies,H,Public Economics,Government Expenditures and Welfare Programs,National Government Expenditures and Related Policies: Government Expenditures and Welfare Programs
+H54,H5,National Government Expenditures and Related Policies,H,Public Economics,Infrastructures; Other Public Investment and Capital Stock,National Government Expenditures and Related Policies: Infrastructures; Other Public Investment and Capital Stock
+H55,H5,National Government Expenditures and Related Policies,H,Public Economics,Social Security and Public Pensions,National Government Expenditures and Related Policies: Social Security and Public Pensions
+H56,H5,National Government Expenditures and Related Policies,H,Public Economics,National Security and War,National Government Expenditures and Related Policies: National Security and War
+H57,H5,National Government Expenditures and Related Policies,H,Public Economics,Procurement,National Government Expenditures and Related Policies: Procurement
+H59,H5,National Government Expenditures and Related Policies,H,Public Economics,Other,National Government Expenditures and Related Policies: Other
+H60,H6,"National Budget, Deficit, and Debt",H,Public Economics,General,"National Budget, Deficit, and Debt: General"
+H61,H6,"National Budget, Deficit, and Debt",H,Public Economics,Budget; Budget Systems,"National Budget, Deficit, and Debt: Budget; Budget Systems"
+H62,H6,"National Budget, Deficit, and Debt",H,Public Economics,Deficit; Surplus,"National Budget, Deficit, and Debt: Deficit; Surplus"
+H63,H6,"National Budget, Deficit, and Debt",H,Public Economics,Debt; Debt Management; Sovereign Debt,"National Budget, Deficit, and Debt: Debt; Debt Management; Sovereign Debt"
+H68,H6,"National Budget, Deficit, and Debt",H,Public Economics,"Forecasts of Budgets, Deficits, and Debt","National Budget, Deficit, and Debt: Forecasts of Budgets, Deficits, and Debt"
+H69,H6,"National Budget, Deficit, and Debt",H,Public Economics,Other,"National Budget, Deficit, and Debt: Other"
+H70,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,General,State and Local Government; Intergovernmental Relations: General
+H71,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,"State and Local Taxation, Subsidies, and Revenue","State and Local Government; Intergovernmental Relations: State and Local Taxation, Subsidies, and Revenue"
+H72,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,State and Local Budget and Expenditures,State and Local Government; Intergovernmental Relations: State and Local Budget and Expenditures
+H73,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,Interjurisdictional Differentials and Their Effects,State and Local Government; Intergovernmental Relations: Interjurisdictional Differentials and Their Effects
+H74,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,State and Local Borrowing,State and Local Government; Intergovernmental Relations: State and Local Borrowing
+H75,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,State and Local Government: Health; Education; Welfare; Public Pensions,State and Local Government; Intergovernmental Relations: State and Local Government: Health; Education; Welfare; Public Pensions
+H76,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,State and Local Government: Other Expenditure Categories,State and Local Government; Intergovernmental Relations: State and Local Government: Other Expenditure Categories
+H77,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,Intergovernmental Relations; Federalism; Secession,State and Local Government; Intergovernmental Relations: Intergovernmental Relations; Federalism; Secession
+H79,H7,State and Local Government; Intergovernmental Relations,H,Public Economics,Other,State and Local Government; Intergovernmental Relations: Other
+H80,H8,Miscellaneous Issues,H,Public Economics,General,Miscellaneous Issues: General
+H81,H8,Miscellaneous Issues,H,Public Economics,Governmental Loans; Loan Guarantees; Credits; Grants; Bailouts,Miscellaneous Issues: Governmental Loans; Loan Guarantees; Credits; Grants; Bailouts
+H82,H8,Miscellaneous Issues,H,Public Economics,Governmental Property,Miscellaneous Issues: Governmental Property
+H83,H8,Miscellaneous Issues,H,Public Economics,Public Administration; Public Sector Accounting and Audits,Miscellaneous Issues: Public Administration; Public Sector Accounting and Audits
+H84,H8,Miscellaneous Issues,H,Public Economics,Disaster Aid,Miscellaneous Issues: Disaster Aid
+H87,H8,Miscellaneous Issues,H,Public Economics,International Fiscal Issues; International Public Goods,Miscellaneous Issues: International Fiscal Issues; International Public Goods
+H89,H8,Miscellaneous Issues,H,Public Economics,Other,Miscellaneous Issues: Other
+I00,I0,,I,"Health, Education, and Welfare",General,General
+I10,I1,Health,I,"Health, Education, and Welfare",General,Health: General
+I11,I1,Health,I,"Health, Education, and Welfare",Analysis of Health Care Markets,Health: Analysis of Health Care Markets
+I12,I1,Health,I,"Health, Education, and Welfare",Health Behavior,Health: Health Behavior
+I13,I1,Health,I,"Health, Education, and Welfare","Health Insurance, Public and Private","Health: Health Insurance, Public and Private"
+I14,I1,Health,I,"Health, Education, and Welfare",Health and Inequality,Health: Health and Inequality
+I15,I1,Health,I,"Health, Education, and Welfare",Health and Economic Development,Health: Health and Economic Development
+I18,I1,Health,I,"Health, Education, and Welfare",Government Policy; Regulation; Public Health,Health: Government Policy; Regulation; Public Health
+I19,I1,Health,I,"Health, Education, and Welfare",Other,Health: Other
+I20,I2,Education and Research Institutions,I,"Health, Education, and Welfare",General,Education and Research Institutions: General
+I21,I2,Education and Research Institutions,I,"Health, Education, and Welfare",Analysis of Education,Education and Research Institutions: Analysis of Education
+I22,I2,Education and Research Institutions,I,"Health, Education, and Welfare",Educational Finance; Financial Aid,Education and Research Institutions: Educational Finance; Financial Aid
+I23,I2,Education and Research Institutions,I,"Health, Education, and Welfare",Higher Education; Research Institutions,Education and Research Institutions: Higher Education; Research Institutions
+I24,I2,Education and Research Institutions,I,"Health, Education, and Welfare",Education and Inequality,Education and Research Institutions: Education and Inequality
+I25,I2,Education and Research Institutions,I,"Health, Education, and Welfare",Education and Economic Development,Education and Research Institutions: Education and Economic Development
+I26,I2,Education and Research Institutions,I,"Health, Education, and Welfare",Returns to Education,Education and Research Institutions: Returns to Education
+I28,I2,Education and Research Institutions,I,"Health, Education, and Welfare",Government Policy,Education and Research Institutions: Government Policy
+I29,I2,Education and Research Institutions,I,"Health, Education, and Welfare",Other,Education and Research Institutions: Other
+I30,I3,"Welfare, Well-Being, and Poverty",I,"Health, Education, and Welfare",General,"Welfare, Well-Being, and Poverty: General"
+I31,I3,"Welfare, Well-Being, and Poverty",I,"Health, Education, and Welfare","General Welfare, Well-Being","Welfare, Well-Being, and Poverty: General Welfare, Well-Being"
+I32,I3,"Welfare, Well-Being, and Poverty",I,"Health, Education, and Welfare",Measurement and Analysis of Poverty,"Welfare, Well-Being, and Poverty: Measurement and Analysis of Poverty"
+I38,I3,"Welfare, Well-Being, and Poverty",I,"Health, Education, and Welfare",Government Policy; Provision and Effects of Welfare Programs,"Welfare, Well-Being, and Poverty: Government Policy; Provision and Effects of Welfare Programs"
+I39,I3,"Welfare, Well-Being, and Poverty",I,"Health, Education, and Welfare",Other,"Welfare, Well-Being, and Poverty: Other"
+J00,J0,,J,Labor and Demographic Economics,General,General
+J01,J0,,J,Labor and Demographic Economics,Labor Economics: General,Labor Economics: General
+J08,J0,,J,Labor and Demographic Economics,Labor Economics Policies,Labor Economics Policies
+J10,J1,Demographic Economics,J,Labor and Demographic Economics,General,Demographic Economics: General
+J11,J1,Demographic Economics,J,Labor and Demographic Economics,"Demographic Trends, Macroeconomic Effects, and Forecasts","Demographic Economics: Demographic Trends, Macroeconomic Effects, and Forecasts"
+J12,J1,Demographic Economics,J,Labor and Demographic Economics,Marriage; Marital Dissolution; Family Structure; Domestic Abuse,Demographic Economics: Marriage; Marital Dissolution; Family Structure; Domestic Abuse
+J13,J1,Demographic Economics,J,Labor and Demographic Economics,Fertility; Family Planning; Child Care; Children; Youth,Demographic Economics: Fertility; Family Planning; Child Care; Children; Youth
+J14,J1,Demographic Economics,J,Labor and Demographic Economics,Economics of the Elderly; Economics of Disability; Non-Labor Market Discrimination,Demographic Economics: Economics of the Elderly; Economics of Disability; Non-Labor Market Discrimination
+J15,J1,Demographic Economics,J,Labor and Demographic Economics,"Economics of Minorities, Races, Indigenous Peoples, and Immigrants; Non-labor Discrimination","Demographic Economics: Economics of Minorities, Races, Indigenous Peoples, and Immigrants; Non-labor Discrimination"
+J16,J1,Demographic Economics,J,Labor and Demographic Economics,Economics of Gender; Non-labor Discrimination,Demographic Economics: Economics of Gender; Non-labor Discrimination
+J17,J1,Demographic Economics,J,Labor and Demographic Economics,Value of Life; Forgone Income,Demographic Economics: Value of Life; Forgone Income
+J18,J1,Demographic Economics,J,Labor and Demographic Economics,Public Policy,Demographic Economics: Public Policy
+J19,J1,Demographic Economics,J,Labor and Demographic Economics,Other,Demographic Economics: Other
+J20,J2,Demand and Supply of Labor,J,Labor and Demographic Economics,General,Demand and Supply of Labor: General
+J21,J2,Demand and Supply of Labor,J,Labor and Demographic Economics,"Labor Force and Employment, Size, and Structure","Demand and Supply of Labor: Labor Force and Employment, Size, and Structure"
+J22,J2,Demand and Supply of Labor,J,Labor and Demographic Economics,Time Allocation and Labor Supply,Demand and Supply of Labor: Time Allocation and Labor Supply
+J23,J2,Demand and Supply of Labor,J,Labor and Demographic Economics,Labor Demand,Demand and Supply of Labor: Labor Demand
+J24,J2,Demand and Supply of Labor,J,Labor and Demographic Economics,Human Capital; Skills; Occupational Choice; Labor Productivity,Demand and Supply of Labor: Human Capital; Skills; Occupational Choice; Labor Productivity
+J26,J2,Demand and Supply of Labor,J,Labor and Demographic Economics,Retirement; Retirement Policies,Demand and Supply of Labor: Retirement; Retirement Policies
+J28,J2,Demand and Supply of Labor,J,Labor and Demographic Economics,Safety; Job Satisfaction; Related Public Policy,Demand and Supply of Labor: Safety; Job Satisfaction; Related Public Policy
+J29,J2,Demand and Supply of Labor,J,Labor and Demographic Economics,Other,Demand and Supply of Labor: Other
+J30,J3,"Wages, Compensation, and Labor Costs",J,Labor and Demographic Economics,General,"Wages, Compensation, and Labor Costs: General"
+J31,J3,"Wages, Compensation, and Labor Costs",J,Labor and Demographic Economics,Wage Level and Structure; Wage Differentials,"Wages, Compensation, and Labor Costs: Wage Level and Structure; Wage Differentials"
+J32,J3,"Wages, Compensation, and Labor Costs",J,Labor and Demographic Economics,Nonwage Labor Costs and Benefits; Retirement Plans; Private Pensions,"Wages, Compensation, and Labor Costs: Nonwage Labor Costs and Benefits; Retirement Plans; Private Pensions"
+J33,J3,"Wages, Compensation, and Labor Costs",J,Labor and Demographic Economics,Compensation Packages; Payment Methods,"Wages, Compensation, and Labor Costs: Compensation Packages; Payment Methods"
+J38,J3,"Wages, Compensation, and Labor Costs",J,Labor and Demographic Economics,Public Policy,"Wages, Compensation, and Labor Costs: Public Policy"
+J39,J3,"Wages, Compensation, and Labor Costs",J,Labor and Demographic Economics,Other,"Wages, Compensation, and Labor Costs: Other"
+J40,J4,Particular Labor Markets,J,Labor and Demographic Economics,General,Particular Labor Markets: General
+J41,J4,Particular Labor Markets,J,Labor and Demographic Economics,Labor Contracts,Particular Labor Markets: Labor Contracts
+J42,J4,Particular Labor Markets,J,Labor and Demographic Economics,Monopsony; Segmented Labor Markets,Particular Labor Markets: Monopsony; Segmented Labor Markets
+J43,J4,Particular Labor Markets,J,Labor and Demographic Economics,Agricultural Labor Markets,Particular Labor Markets: Agricultural Labor Markets
+J44,J4,Particular Labor Markets,J,Labor and Demographic Economics,Professional Labor Markets; Occupational Licensing,Particular Labor Markets: Professional Labor Markets; Occupational Licensing
+J45,J4,Particular Labor Markets,J,Labor and Demographic Economics,Public Sector Labor Markets,Particular Labor Markets: Public Sector Labor Markets
+J46,J4,Particular Labor Markets,J,Labor and Demographic Economics,Informal Labor Markets,Particular Labor Markets: Informal Labor Markets
+J47,J4,Particular Labor Markets,J,Labor and Demographic Economics,Coercive Labor Markets,Particular Labor Markets: Coercive Labor Markets
+J48,J4,Particular Labor Markets,J,Labor and Demographic Economics,Public Policy,Particular Labor Markets: Public Policy
+J49,J4,Particular Labor Markets,J,Labor and Demographic Economics,Other,Particular Labor Markets: Other
+J50,J5,"Labor–Management Relations, Trade Unions, and Collective Bargaining",J,Labor and Demographic Economics,General,"Labor–Management Relations, Trade Unions, and Collective Bargaining: General"
+J51,J5,"Labor–Management Relations, Trade Unions, and Collective Bargaining",J,Labor and Demographic Economics,"Trade Unions: Objectives, Structure, and Effects","Labor–Management Relations, Trade Unions, and Collective Bargaining: Trade Unions: Objectives, Structure, and Effects"
+J52,J5,"Labor–Management Relations, Trade Unions, and Collective Bargaining",J,Labor and Demographic Economics,"Dispute Resolution: Strikes, Arbitration, and Mediation; Collective Bargaining","Labor–Management Relations, Trade Unions, and Collective Bargaining: Dispute Resolution: Strikes, Arbitration, and Mediation; Collective Bargaining"
+J53,J5,"Labor–Management Relations, Trade Unions, and Collective Bargaining",J,Labor and Demographic Economics,Labor–Management Relations; Industrial Jurisprudence,"Labor–Management Relations, Trade Unions, and Collective Bargaining: Labor–Management Relations; Industrial Jurisprudence"
+J54,J5,"Labor–Management Relations, Trade Unions, and Collective Bargaining",J,Labor and Demographic Economics,Producer Cooperatives; Labor Managed Firms; Employee Ownership,"Labor–Management Relations, Trade Unions, and Collective Bargaining: Producer Cooperatives; Labor Managed Firms; Employee Ownership"
+J58,J5,"Labor–Management Relations, Trade Unions, and Collective Bargaining",J,Labor and Demographic Economics,Public Policy,"Labor–Management Relations, Trade Unions, and Collective Bargaining: Public Policy"
+J59,J5,"Labor–Management Relations, Trade Unions, and Collective Bargaining",J,Labor and Demographic Economics,Other,"Labor–Management Relations, Trade Unions, and Collective Bargaining: Other"
+J60,J6,"Mobility, Unemployment, Vacancies, and Immigrant Workers",J,Labor and Demographic Economics,General,"Mobility, Unemployment, Vacancies, and Immigrant Workers: General"
+J61,J6,"Mobility, Unemployment, Vacancies, and Immigrant Workers",J,Labor and Demographic Economics,Geographic Labor Mobility; Immigrant Workers,"Mobility, Unemployment, Vacancies, and Immigrant Workers: Geographic Labor Mobility; Immigrant Workers"
+J62,J6,"Mobility, Unemployment, Vacancies, and Immigrant Workers",J,Labor and Demographic Economics,"Job, Occupational, and Intergenerational Mobility","Mobility, Unemployment, Vacancies, and Immigrant Workers: Job, Occupational, and Intergenerational Mobility"
+J63,J6,"Mobility, Unemployment, Vacancies, and Immigrant Workers",J,Labor and Demographic Economics,Turnover; Vacancies; Layoffs,"Mobility, Unemployment, Vacancies, and Immigrant Workers: Turnover; Vacancies; Layoffs"
+J64,J6,"Mobility, Unemployment, Vacancies, and Immigrant Workers",J,Labor and Demographic Economics,"Unemployment: Models, Duration, Incidence, and Job Search","Mobility, Unemployment, Vacancies, and Immigrant Workers: Unemployment: Models, Duration, Incidence, and Job Search"
+J65,J6,"Mobility, Unemployment, Vacancies, and Immigrant Workers",J,Labor and Demographic Economics,Unemployment Insurance; Severance Pay; Plant Closings,"Mobility, Unemployment, Vacancies, and Immigrant Workers: Unemployment Insurance; Severance Pay; Plant Closings"
+J68,J6,"Mobility, Unemployment, Vacancies, and Immigrant Workers",J,Labor and Demographic Economics,Public Policy,"Mobility, Unemployment, Vacancies, and Immigrant Workers: Public Policy"
+J69,J6,"Mobility, Unemployment, Vacancies, and Immigrant Workers",J,Labor and Demographic Economics,Other,"Mobility, Unemployment, Vacancies, and Immigrant Workers: Other"
+J70,J7,Labor Discrimination,J,Labor and Demographic Economics,General,Labor Discrimination: General
+J71,J7,Labor Discrimination,J,Labor and Demographic Economics,Discrimination,Labor Discrimination: Discrimination
+J78,J7,Labor Discrimination,J,Labor and Demographic Economics,Public Policy,Labor Discrimination: Public Policy
+J79,J7,Labor Discrimination,J,Labor and Demographic Economics,Other,Labor Discrimination: Other
+J80,J8,Labor Standards: National and International,J,Labor and Demographic Economics,General,Labor Standards: National and International: General
+J81,J8,Labor Standards: National and International,J,Labor and Demographic Economics,Working Conditions,Labor Standards: National and International: Working Conditions
+J82,J8,Labor Standards: National and International,J,Labor and Demographic Economics,Labor Force Composition,Labor Standards: National and International: Labor Force Composition
+J83,J8,Labor Standards: National and International,J,Labor and Demographic Economics,Workers' Rights,Labor Standards: National and International: Workers' Rights
+J88,J8,Labor Standards: National and International,J,Labor and Demographic Economics,Public Policy,Labor Standards: National and International: Public Policy
+J89,J8,Labor Standards: National and International,J,Labor and Demographic Economics,Other,Labor Standards: National and International: Other
+K00,K0,,K,Law and Economics,General,General
+K10,K1,Basic Areas of Law,K,Law and Economics,General,Basic Areas of Law: General
+K11,K1,Basic Areas of Law,K,Law and Economics,Property Law,Basic Areas of Law: Property Law
+K12,K1,Basic Areas of Law,K,Law and Economics,Contract Law,Basic Areas of Law: Contract Law
+K13,K1,Basic Areas of Law,K,Law and Economics,Tort Law and Product Liability; Forensic Economics,Basic Areas of Law: Tort Law and Product Liability; Forensic Economics
+K14,K1,Basic Areas of Law,K,Law and Economics,Criminal Law,Basic Areas of Law: Criminal Law
+K15,K1,Basic Areas of Law,K,Law and Economics,Civil Law; Common Law,Basic Areas of Law: Civil Law; Common Law
+K16,K1,Basic Areas of Law,K,Law and Economics,Election Law,Basic Areas of Law: Election Law
+K19,K1,Basic Areas of Law,K,Law and Economics,Other,Basic Areas of Law: Other
+K20,K2,Regulation and Business Law,K,Law and Economics,General,Regulation and Business Law: General
+K21,K2,Regulation and Business Law,K,Law and Economics,Antitrust Law,Regulation and Business Law: Antitrust Law
+K22,K2,Regulation and Business Law,K,Law and Economics,Business and Securities Law,Regulation and Business Law: Business and Securities Law
+K23,K2,Regulation and Business Law,K,Law and Economics,Regulated Industries and Administrative Law,Regulation and Business Law: Regulated Industries and Administrative Law
+K24,K2,Regulation and Business Law,K,Law and Economics,Cyber Law,Regulation and Business Law: Cyber Law
+K25,K2,Regulation and Business Law,K,Law and Economics,Real Estate Law,Regulation and Business Law: Real Estate Law
+K29,K2,Regulation and Business Law,K,Law and Economics,Other,Regulation and Business Law: Other
+K30,K3,Other Substantive Areas of Law,K,Law and Economics,General,Other Substantive Areas of Law: General
+K31,K3,Other Substantive Areas of Law,K,Law and Economics,Labor Law,Other Substantive Areas of Law: Labor Law
+K32,K3,Other Substantive Areas of Law,K,Law and Economics,"Energy, Environmental, Health, and Safety Law","Other Substantive Areas of Law: Energy, Environmental, Health, and Safety Law"
+K33,K3,Other Substantive Areas of Law,K,Law and Economics,International Law,Other Substantive Areas of Law: International Law
+K34,K3,Other Substantive Areas of Law,K,Law and Economics,Tax Law,Other Substantive Areas of Law: Tax Law
+K35,K3,Other Substantive Areas of Law,K,Law and Economics,Personal Bankruptcy Law,Other Substantive Areas of Law: Personal Bankruptcy Law
+K36,K3,Other Substantive Areas of Law,K,Law and Economics,Family and Personal Law,Other Substantive Areas of Law: Family and Personal Law
+K37,K3,Other Substantive Areas of Law,K,Law and Economics,Immigration Law,Other Substantive Areas of Law: Immigration Law
+K38,K3,Other Substantive Areas of Law,K,Law and Economics,Human Rights Law; Gender Law; Animal Rights Law,Other Substantive Areas of Law: Human Rights Law; Gender Law; Animal Rights Law
+K39,K3,Other Substantive Areas of Law,K,Law and Economics,Other,Other Substantive Areas of Law: Other
+K40,K4,"Legal Procedure, the Legal System, and Illegal Behavior",K,Law and Economics,General,"Legal Procedure, the Legal System, and Illegal Behavior: General"
+K41,K4,"Legal Procedure, the Legal System, and Illegal Behavior",K,Law and Economics,Litigation Process,"Legal Procedure, the Legal System, and Illegal Behavior: Litigation Process"
+K42,K4,"Legal Procedure, the Legal System, and Illegal Behavior",K,Law and Economics,Illegal Behavior and the Enforcement of Law,"Legal Procedure, the Legal System, and Illegal Behavior: Illegal Behavior and the Enforcement of Law"
+K49,K4,"Legal Procedure, the Legal System, and Illegal Behavior",K,Law and Economics,Other,"Legal Procedure, the Legal System, and Illegal Behavior: Other"
+L00,L0,,L,Industrial Organization,General,General
+L10,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,General,"Market Structure, Firm Strategy, and Market Performance: General"
+L11,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,"Production, Pricing, and Market Structure; Size Distribution of Firms","Market Structure, Firm Strategy, and Market Performance: Production, Pricing, and Market Structure; Size Distribution of Firms"
+L12,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,Monopoly; Monopolization Strategies,"Market Structure, Firm Strategy, and Market Performance: Monopoly; Monopolization Strategies"
+L13,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,Oligopoly and Other Imperfect Markets,"Market Structure, Firm Strategy, and Market Performance: Oligopoly and Other Imperfect Markets"
+L14,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,Transactional Relationships; Contracts and Reputation; Networks,"Market Structure, Firm Strategy, and Market Performance: Transactional Relationships; Contracts and Reputation; Networks"
+L15,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,Information and Product Quality; Standardization and Compatibility,"Market Structure, Firm Strategy, and Market Performance: Information and Product Quality; Standardization and Compatibility"
+L16,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,Industrial Organization and Macroeconomics: Industrial Structure and Structural Change; Industrial Price Indices,"Market Structure, Firm Strategy, and Market Performance: Industrial Organization and Macroeconomics: Industrial Structure and Structural Change; Industrial Price Indices"
+L17,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,Open Source Products and Markets,"Market Structure, Firm Strategy, and Market Performance: Open Source Products and Markets"
+L19,L1,"Market Structure, Firm Strategy, and Market Performance",L,Industrial Organization,Other,"Market Structure, Firm Strategy, and Market Performance: Other"
+L20,L2,"Firm Objectives, Organization, and Behavior",L,Industrial Organization,General,"Firm Objectives, Organization, and Behavior: General"
+L21,L2,"Firm Objectives, Organization, and Behavior",L,Industrial Organization,Business Objectives of the Firm,"Firm Objectives, Organization, and Behavior: Business Objectives of the Firm"
+L22,L2,"Firm Objectives, Organization, and Behavior",L,Industrial Organization,Firm Organization and Market Structure,"Firm Objectives, Organization, and Behavior: Firm Organization and Market Structure"
+L23,L2,"Firm Objectives, Organization, and Behavior",L,Industrial Organization,Organization of Production,"Firm Objectives, Organization, and Behavior: Organization of Production"
+L24,L2,"Firm Objectives, Organization, and Behavior",L,Industrial Organization,Contracting Out; Joint Ventures; Technology Licensing,"Firm Objectives, Organization, and Behavior: Contracting Out; Joint Ventures; Technology Licensing"
+L25,L2,"Firm Objectives, Organization, and Behavior",L,Industrial Organization,"Firm Performance: Size, Diversification, and Scope","Firm Objectives, Organization, and Behavior: Firm Performance: Size, Diversification, and Scope"
+L26,L2,"Firm Objectives, Organization, and Behavior",L,Industrial Organization,Entrepreneurship,"Firm Objectives, Organization, and Behavior: Entrepreneurship"
+L29,L2,"Firm Objectives, Organization, and Behavior",L,Industrial Organization,Other,"Firm Objectives, Organization, and Behavior: Other"
+L30,L3,Nonprofit Organizations and Public Enterprise,L,Industrial Organization,General,Nonprofit Organizations and Public Enterprise: General
+L31,L3,Nonprofit Organizations and Public Enterprise,L,Industrial Organization,Nonprofit Institutions; NGOs; Social Entrepreneurship,Nonprofit Organizations and Public Enterprise: Nonprofit Institutions; NGOs; Social Entrepreneurship
+L32,L3,Nonprofit Organizations and Public Enterprise,L,Industrial Organization,Public Enterprises; Public-Private Enterprises,Nonprofit Organizations and Public Enterprise: Public Enterprises; Public-Private Enterprises
+L33,L3,Nonprofit Organizations and Public Enterprise,L,Industrial Organization,Comparison of Public and Private Enterprises and Nonprofit Institutions; Privatization; Contracting Out,Nonprofit Organizations and Public Enterprise: Comparison of Public and Private Enterprises and Nonprofit Institutions; Privatization; Contracting Out
+L38,L3,Nonprofit Organizations and Public Enterprise,L,Industrial Organization,Public Policy,Nonprofit Organizations and Public Enterprise: Public Policy
+L39,L3,Nonprofit Organizations and Public Enterprise,L,Industrial Organization,Other,Nonprofit Organizations and Public Enterprise: Other
+L40,L4,Antitrust Issues and Policies,L,Industrial Organization,General,Antitrust Issues and Policies: General
+L41,L4,Antitrust Issues and Policies,L,Industrial Organization,Monopolization; Horizontal Anticompetitive Practices,Antitrust Issues and Policies: Monopolization; Horizontal Anticompetitive Practices
+L42,L4,Antitrust Issues and Policies,L,Industrial Organization,Vertical Restraints; Resale Price Maintenance; Quantity Discounts,Antitrust Issues and Policies: Vertical Restraints; Resale Price Maintenance; Quantity Discounts
+L43,L4,Antitrust Issues and Policies,L,Industrial Organization,Legal Monopolies and Regulation or Deregulation,Antitrust Issues and Policies: Legal Monopolies and Regulation or Deregulation
+L44,L4,Antitrust Issues and Policies,L,Industrial Organization,"Antitrust Policy and Public Enterprises, Nonprofit Institutions, and Professional Organizations","Antitrust Issues and Policies: Antitrust Policy and Public Enterprises, Nonprofit Institutions, and Professional Organizations"
+L49,L4,Antitrust Issues and Policies,L,Industrial Organization,Other,Antitrust Issues and Policies: Other
+L50,L5,Regulation and Industrial Policy,L,Industrial Organization,General,Regulation and Industrial Policy: General
+L51,L5,Regulation and Industrial Policy,L,Industrial Organization,Economics of Regulation,Regulation and Industrial Policy: Economics of Regulation
+L52,L5,Regulation and Industrial Policy,L,Industrial Organization,Industrial Policy; Sectoral Planning Methods,Regulation and Industrial Policy: Industrial Policy; Sectoral Planning Methods
+L53,L5,Regulation and Industrial Policy,L,Industrial Organization,Enterprise Policy,Regulation and Industrial Policy: Enterprise Policy
+L59,L5,Regulation and Industrial Policy,L,Industrial Organization,Other,Regulation and Industrial Policy: Other
+L60,L6,Industry Studies: Manufacturing,L,Industrial Organization,General,Industry Studies: Manufacturing: General
+L61,L6,Industry Studies: Manufacturing,L,Industrial Organization,Metals and Metal Products; Cement; Glass; Ceramics,Industry Studies: Manufacturing: Metals and Metal Products; Cement; Glass; Ceramics
+L62,L6,Industry Studies: Manufacturing,L,Industrial Organization,Automobiles; Other Transportation Equipment; Related Parts and Equipment,Industry Studies: Manufacturing: Automobiles; Other Transportation Equipment; Related Parts and Equipment
+L63,L6,Industry Studies: Manufacturing,L,Industrial Organization,Microelectronics; Computers; Communications Equipment,Industry Studies: Manufacturing: Microelectronics; Computers; Communications Equipment
+L64,L6,Industry Studies: Manufacturing,L,Industrial Organization,Other Machinery; Business Equipment; Armaments,Industry Studies: Manufacturing: Other Machinery; Business Equipment; Armaments
+L65,L6,Industry Studies: Manufacturing,L,Industrial Organization,Chemicals; Rubber; Drugs; Biotechnology; Plastics,Industry Studies: Manufacturing: Chemicals; Rubber; Drugs; Biotechnology; Plastics
+L66,L6,Industry Studies: Manufacturing,L,Industrial Organization,Food; Beverages; Cosmetics; Tobacco; Wine and Spirits,Industry Studies: Manufacturing: Food; Beverages; Cosmetics; Tobacco; Wine and Spirits
+L67,L6,Industry Studies: Manufacturing,L,Industrial Organization,"Other Consumer Nondurables: Clothing, Textiles, Shoes, and Leather Goods; Household Goods; Sports Equipment","Industry Studies: Manufacturing: Other Consumer Nondurables: Clothing, Textiles, Shoes, and Leather Goods; Household Goods; Sports Equipment"
+L68,L6,Industry Studies: Manufacturing,L,Industrial Organization,Appliances; Furniture; Other Consumer Durables,Industry Studies: Manufacturing: Appliances; Furniture; Other Consumer Durables
+L69,L6,Industry Studies: Manufacturing,L,Industrial Organization,Other,Industry Studies: Manufacturing: Other
+L70,L7,Industry Studies: Primary Products and Construction,L,Industrial Organization,General,Industry Studies: Primary Products and Construction: General
+L71,L7,Industry Studies: Primary Products and Construction,L,Industrial Organization,"Mining, Extraction, and Refining: Hydrocarbon Fuels","Industry Studies: Primary Products and Construction: Mining, Extraction, and Refining: Hydrocarbon Fuels"
+L72,L7,Industry Studies: Primary Products and Construction,L,Industrial Organization,"Mining, Extraction, and Refining: Other Nonrenewable Resources","Industry Studies: Primary Products and Construction: Mining, Extraction, and Refining: Other Nonrenewable Resources"
+L73,L7,Industry Studies: Primary Products and Construction,L,Industrial Organization,Forest Products,Industry Studies: Primary Products and Construction: Forest Products
+L74,L7,Industry Studies: Primary Products and Construction,L,Industrial Organization,Construction,Industry Studies: Primary Products and Construction: Construction
+L78,L7,Industry Studies: Primary Products and Construction,L,Industrial Organization,Government Policy,Industry Studies: Primary Products and Construction: Government Policy
+L79,L7,Industry Studies: Primary Products and Construction,L,Industrial Organization,Other,Industry Studies: Primary Products and Construction: Other
+L80,L8,Industry Studies: Services,L,Industrial Organization,General,Industry Studies: Services: General
+L81,L8,Industry Studies: Services,L,Industrial Organization,Retail and Wholesale Trade; e-Commerce,Industry Studies: Services: Retail and Wholesale Trade; e-Commerce
+L82,L8,Industry Studies: Services,L,Industrial Organization,Entertainment; Media,Industry Studies: Services: Entertainment; Media
+L83,L8,Industry Studies: Services,L,Industrial Organization,Sports; Gambling; Restaurants; Recreation; Tourism,Industry Studies: Services: Sports; Gambling; Restaurants; Recreation; Tourism
+L84,L8,Industry Studies: Services,L,Industrial Organization,"Personal, Professional, and Business Services","Industry Studies: Services: Personal, Professional, and Business Services"
+L85,L8,Industry Studies: Services,L,Industrial Organization,Real Estate Services,Industry Studies: Services: Real Estate Services
+L86,L8,Industry Studies: Services,L,Industrial Organization,Information and Internet Services; Computer Software,Industry Studies: Services: Information and Internet Services; Computer Software
+L87,L8,Industry Studies: Services,L,Industrial Organization,Postal and Delivery Services,Industry Studies: Services: Postal and Delivery Services
+L88,L8,Industry Studies: Services,L,Industrial Organization,Government Policy,Industry Studies: Services: Government Policy
+L89,L8,Industry Studies: Services,L,Industrial Organization,Other,Industry Studies: Services: Other
+L90,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,General,Industry Studies: Transportation and Utilities: General
+L91,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Transportation: General,Industry Studies: Transportation and Utilities: Transportation: General
+L92,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Railroads and Other Surface Transportation,Industry Studies: Transportation and Utilities: Railroads and Other Surface Transportation
+L93,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Air Transportation,Industry Studies: Transportation and Utilities: Air Transportation
+L94,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Electric Utilities,Industry Studies: Transportation and Utilities: Electric Utilities
+L95,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Gas Utilities; Pipelines; Water Utilities,Industry Studies: Transportation and Utilities: Gas Utilities; Pipelines; Water Utilities
+L96,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Telecommunications,Industry Studies: Transportation and Utilities: Telecommunications
+L97,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Utilities: General,Industry Studies: Transportation and Utilities: Utilities: General
+L98,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Government Policy,Industry Studies: Transportation and Utilities: Government Policy
+L99,L9,Industry Studies: Transportation and Utilities,L,Industrial Organization,Other,Industry Studies: Transportation and Utilities: Other
+M00,M0,,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,General,General
+M10,M1,Business Administration,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,General,Business Administration: General
+M11,M1,Business Administration,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Production Management,Business Administration: Production Management
+M12,M1,Business Administration,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Personnel Management; Executives; Executive Compensation,Business Administration: Personnel Management; Executives; Executive Compensation
+M13,M1,Business Administration,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,New Firms; Startups,Business Administration: New Firms; Startups
+M14,M1,Business Administration,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Corporate Culture; Diversity; Social Responsibility,Business Administration: Corporate Culture; Diversity; Social Responsibility
+M15,M1,Business Administration,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,IT Management,Business Administration: IT Management
+M16,M1,Business Administration,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,International Business Administration,Business Administration: International Business Administration
+M19,M1,Business Administration,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Other,Business Administration: Other
+M20,M2,Business Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,General,Business Economics: General
+M21,M2,Business Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Business Economics,Business Economics: Business Economics
+M29,M2,Business Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Other,Business Economics: Other
+M30,M3,Marketing and Advertising,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,General,Marketing and Advertising: General
+M31,M3,Marketing and Advertising,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Marketing,Marketing and Advertising: Marketing
+M37,M3,Marketing and Advertising,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Advertising,Marketing and Advertising: Advertising
+M38,M3,Marketing and Advertising,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Government Policy and Regulation,Marketing and Advertising: Government Policy and Regulation
+M39,M3,Marketing and Advertising,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Other,Marketing and Advertising: Other
+M40,M4,Accounting and Auditing,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,General,Accounting and Auditing: General
+M41,M4,Accounting and Auditing,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Accounting,Accounting and Auditing: Accounting
+M42,M4,Accounting and Auditing,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Auditing,Accounting and Auditing: Auditing
+M48,M4,Accounting and Auditing,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Government Policy and Regulation,Accounting and Auditing: Government Policy and Regulation
+M49,M4,Accounting and Auditing,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Other,Accounting and Auditing: Other
+M50,M5,Personnel Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,General,Personnel Economics: General
+M51,M5,Personnel Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Firm Employment Decisions; Promotions,Personnel Economics: Firm Employment Decisions; Promotions
+M52,M5,Personnel Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Compensation and Compensation Methods and Their Effects,Personnel Economics: Compensation and Compensation Methods and Their Effects
+M53,M5,Personnel Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Training,Personnel Economics: Training
+M54,M5,Personnel Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Labor Management,Personnel Economics: Labor Management
+M55,M5,Personnel Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Labor Contracting Devices,Personnel Economics: Labor Contracting Devices
+M59,M5,Personnel Economics,M,Business Administration and Business Economics; Marketing; Accounting; Personnel Economics,Other,Personnel Economics: Other
+N00,N0,,N,Economic History,General,General
+N01,N0,,N,Economic History,Development of the Discipline: Historiographical; Sources and Methods,Development of the Discipline: Historiographical; Sources and Methods
+N10,N1,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations,N,Economic History,"General, International, or Comparative","Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations: General, International, or Comparative"
+N11,N1,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations,N,Economic History,U.S.; Canada: Pre-1913,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations: U.S.; Canada: Pre-1913
+N12,N1,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations,N,Economic History,U.S.; Canada: 1913–,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations: U.S.; Canada: 1913–
+N13,N1,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations,N,Economic History,Europe: Pre-1913,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations: Europe: Pre-1913
+N14,N1,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations,N,Economic History,Europe: 1913–,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations: Europe: 1913–
+N15,N1,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations,N,Economic History,Asia including Middle East,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations: Asia including Middle East
+N16,N1,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations,N,Economic History,Latin America; Caribbean,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations: Latin America; Caribbean
+N17,N1,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations,N,Economic History,Africa; Oceania,Macroeconomics and Monetary Economics; Industrial Structure; Growth; Fluctuations: Africa; Oceania
+N20,N2,Financial Markets and Institutions,N,Economic History,"General, International, or Comparative","Financial Markets and Institutions: General, International, or Comparative"
+N21,N2,Financial Markets and Institutions,N,Economic History,U.S.; Canada: Pre-1913,Financial Markets and Institutions: U.S.; Canada: Pre-1913
+N22,N2,Financial Markets and Institutions,N,Economic History,U.S.; Canada: 1913–,Financial Markets and Institutions: U.S.; Canada: 1913–
+N23,N2,Financial Markets and Institutions,N,Economic History,Europe: Pre-1913,Financial Markets and Institutions: Europe: Pre-1913
+N24,N2,Financial Markets and Institutions,N,Economic History,Europe: 1913–,Financial Markets and Institutions: Europe: 1913–
+N25,N2,Financial Markets and Institutions,N,Economic History,Asia including Middle East,Financial Markets and Institutions: Asia including Middle East
+N26,N2,Financial Markets and Institutions,N,Economic History,Latin America; Caribbean,Financial Markets and Institutions: Latin America; Caribbean
+N27,N2,Financial Markets and Institutions,N,Economic History,Africa; Oceania,Financial Markets and Institutions: Africa; Oceania
+N30,N3,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy",N,Economic History,"General, International, or Comparative","Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy: General, International, or Comparative"
+N31,N3,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy",N,Economic History,U.S.; Canada: Pre-1913,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy: U.S.; Canada: Pre-1913"
+N32,N3,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy",N,Economic History,U.S.; Canada: 1913-,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy: U.S.; Canada: 1913-"
+N33,N3,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy",N,Economic History,Europe: Pre-1913,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy: Europe: Pre-1913"
+N34,N3,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy",N,Economic History,Europe: 1913-,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy: Europe: 1913-"
+N35,N3,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy",N,Economic History,Asia including Middle East,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy: Asia including Middle East"
+N36,N3,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy",N,Economic History,Latin America; Caribbean,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy: Latin America; Caribbean"
+N37,N3,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy",N,Economic History,Africa; Oceania,"Labor and Consumers, Demography, Education, Health, Welfare, Income, Wealth, Religion, and Philanthropy: Africa; Oceania"
+N40,N4,"Government, War, Law, International Relations, and Regulation",N,Economic History,"General, International, or Comparative","Government, War, Law, International Relations, and Regulation: General, International, or Comparative"
+N41,N4,"Government, War, Law, International Relations, and Regulation",N,Economic History,U.S.; Canada: Pre-1913,"Government, War, Law, International Relations, and Regulation: U.S.; Canada: Pre-1913"
+N42,N4,"Government, War, Law, International Relations, and Regulation",N,Economic History,U.S.; Canada: 1913–,"Government, War, Law, International Relations, and Regulation: U.S.; Canada: 1913–"
+N43,N4,"Government, War, Law, International Relations, and Regulation",N,Economic History,Europe: Pre-1913,"Government, War, Law, International Relations, and Regulation: Europe: Pre-1913"
+N44,N4,"Government, War, Law, International Relations, and Regulation",N,Economic History,Europe: 1913–,"Government, War, Law, International Relations, and Regulation: Europe: 1913–"
+N45,N4,"Government, War, Law, International Relations, and Regulation",N,Economic History,Asia including Middle East,"Government, War, Law, International Relations, and Regulation: Asia including Middle East"
+N46,N4,"Government, War, Law, International Relations, and Regulation",N,Economic History,Latin America; Caribbean,"Government, War, Law, International Relations, and Regulation: Latin America; Caribbean"
+N47,N4,"Government, War, Law, International Relations, and Regulation",N,Economic History,Africa; Oceania,"Government, War, Law, International Relations, and Regulation: Africa; Oceania"
+N50,N5,"Agriculture, Natural Resources, Environment, and Extractive Industries",N,Economic History,"General, International, or Comparative","Agriculture, Natural Resources, Environment, and Extractive Industries: General, International, or Comparative"
+N51,N5,"Agriculture, Natural Resources, Environment, and Extractive Industries",N,Economic History,U.S.; Canada: Pre-1913,"Agriculture, Natural Resources, Environment, and Extractive Industries: U.S.; Canada: Pre-1913"
+N52,N5,"Agriculture, Natural Resources, Environment, and Extractive Industries",N,Economic History,U.S.; Canada: 1913–,"Agriculture, Natural Resources, Environment, and Extractive Industries: U.S.; Canada: 1913–"
+N53,N5,"Agriculture, Natural Resources, Environment, and Extractive Industries",N,Economic History,Europe: Pre-1913,"Agriculture, Natural Resources, Environment, and Extractive Industries: Europe: Pre-1913"
+N54,N5,"Agriculture, Natural Resources, Environment, and Extractive Industries",N,Economic History,Europe: 1913–,"Agriculture, Natural Resources, Environment, and Extractive Industries: Europe: 1913–"
+N55,N5,"Agriculture, Natural Resources, Environment, and Extractive Industries",N,Economic History,Asia including Middle East,"Agriculture, Natural Resources, Environment, and Extractive Industries: Asia including Middle East"
+N56,N5,"Agriculture, Natural Resources, Environment, and Extractive Industries",N,Economic History,Latin America; Caribbean,"Agriculture, Natural Resources, Environment, and Extractive Industries: Latin America; Caribbean"
+N57,N5,"Agriculture, Natural Resources, Environment, and Extractive Industries",N,Economic History,Africa; Oceania,"Agriculture, Natural Resources, Environment, and Extractive Industries: Africa; Oceania"
+N60,N6,Manufacturing and Construction,N,Economic History,"General, International, or Comparative","Manufacturing and Construction: General, International, or Comparative"
+N61,N6,Manufacturing and Construction,N,Economic History,U.S.; Canada: Pre-1913,Manufacturing and Construction: U.S.; Canada: Pre-1913
+N62,N6,Manufacturing and Construction,N,Economic History,U.S.; Canada: 1913–,Manufacturing and Construction: U.S.; Canada: 1913–
+N63,N6,Manufacturing and Construction,N,Economic History,Europe: Pre-1913,Manufacturing and Construction: Europe: Pre-1913
+N64,N6,Manufacturing and Construction,N,Economic History,Europe: 1913–,Manufacturing and Construction: Europe: 1913–
+N65,N6,Manufacturing and Construction,N,Economic History,Asia including Middle East,Manufacturing and Construction: Asia including Middle East
+N66,N6,Manufacturing and Construction,N,Economic History,Latin America; Caribbean,Manufacturing and Construction: Latin America; Caribbean
+N67,N6,Manufacturing and Construction,N,Economic History,Africa; Oceania,Manufacturing and Construction: Africa; Oceania
+N70,N7,"Transport, Trade, Energy, Technology, and Other Services",N,Economic History,"General, International, or Comparative","Transport, Trade, Energy, Technology, and Other Services: General, International, or Comparative"
+N71,N7,"Transport, Trade, Energy, Technology, and Other Services",N,Economic History,U.S.; Canada: Pre-1913,"Transport, Trade, Energy, Technology, and Other Services: U.S.; Canada: Pre-1913"
+N72,N7,"Transport, Trade, Energy, Technology, and Other Services",N,Economic History,U.S.; Canada: 1913–,"Transport, Trade, Energy, Technology, and Other Services: U.S.; Canada: 1913–"
+N73,N7,"Transport, Trade, Energy, Technology, and Other Services",N,Economic History,Europe: Pre-1913,"Transport, Trade, Energy, Technology, and Other Services: Europe: Pre-1913"
+N74,N7,"Transport, Trade, Energy, Technology, and Other Services",N,Economic History,Europe: 1913–,"Transport, Trade, Energy, Technology, and Other Services: Europe: 1913–"
+N75,N7,"Transport, Trade, Energy, Technology, and Other Services",N,Economic History,Asia including Middle East,"Transport, Trade, Energy, Technology, and Other Services: Asia including Middle East"
+N76,N7,"Transport, Trade, Energy, Technology, and Other Services",N,Economic History,Latin America; Caribbean,"Transport, Trade, Energy, Technology, and Other Services: Latin America; Caribbean"
+N77,N7,"Transport, Trade, Energy, Technology, and Other Services",N,Economic History,Africa; Oceania,"Transport, Trade, Energy, Technology, and Other Services: Africa; Oceania"
+N80,N8,Micro-Business History,N,Economic History,"General, International, or Comparative","Micro-Business History: General, International, or Comparative"
+N81,N8,Micro-Business History,N,Economic History,U.S.; Canada: Pre-1913,Micro-Business History: U.S.; Canada: Pre-1913
+N82,N8,Micro-Business History,N,Economic History,U.S.; Canada: 1913–,Micro-Business History: U.S.; Canada: 1913–
+N83,N8,Micro-Business History,N,Economic History,Europe: Pre-1913,Micro-Business History: Europe: Pre-1913
+N84,N8,Micro-Business History,N,Economic History,Europe: 1913–,Micro-Business History: Europe: 1913–
+N85,N8,Micro-Business History,N,Economic History,Asia including Middle East,Micro-Business History: Asia including Middle East
+N86,N8,Micro-Business History,N,Economic History,Latin America; Caribbean,Micro-Business History: Latin America; Caribbean
+N87,N8,Micro-Business History,N,Economic History,Africa; Oceania,Micro-Business History: Africa; Oceania
+N90,N9,Regional and Urban History,N,Economic History,"General, International, or Comparative","Regional and Urban History: General, International, or Comparative"
+N91,N9,Regional and Urban History,N,Economic History,U.S.; Canada: Pre-1913,Regional and Urban History: U.S.; Canada: Pre-1913
+N92,N9,Regional and Urban History,N,Economic History,U.S.; Canada: 1913–,Regional and Urban History: U.S.; Canada: 1913–
+N93,N9,Regional and Urban History,N,Economic History,Europe: Pre-1913,Regional and Urban History: Europe: Pre-1913
+N94,N9,Regional and Urban History,N,Economic History,Europe: 1913–,Regional and Urban History: Europe: 1913–
+N95,N9,Regional and Urban History,N,Economic History,Asia including Middle East,Regional and Urban History: Asia including Middle East
+N96,N9,Regional and Urban History,N,Economic History,Latin America; Caribbean,Regional and Urban History: Latin America; Caribbean
+N97,N9,Regional and Urban History,N,Economic History,Africa; Oceania,Regional and Urban History: Africa; Oceania
+O10,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",General,Economic Development: General
+O11,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",Macroeconomic Analyses of Economic Development,Economic Development: Macroeconomic Analyses of Economic Development
+O12,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",Microeconomic Analyses of Economic Development,Economic Development: Microeconomic Analyses of Economic Development
+O13,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",Agriculture; Natural Resources; Energy; Environment; Other Primary Products,Economic Development: Agriculture; Natural Resources; Energy; Environment; Other Primary Products
+O14,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",Industrialization; Manufacturing and Service Industries; Choice of Technology,Economic Development: Industrialization; Manufacturing and Service Industries; Choice of Technology
+O15,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",Human Resources; Human Development; Income Distribution; Migration,Economic Development: Human Resources; Human Development; Income Distribution; Migration
+O16,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",Financial Markets; Saving and Capital Investment; Corporate Finance and Governance,Economic Development: Financial Markets; Saving and Capital Investment; Corporate Finance and Governance
+O17,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",Formal and Informal Sectors; Shadow Economy; Institutional Arrangements,Economic Development: Formal and Informal Sectors; Shadow Economy; Institutional Arrangements
+O18,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth","Urban, Rural, Regional, and Transportation Analysis; Housing; Infrastructure","Economic Development: Urban, Rural, Regional, and Transportation Analysis; Housing; Infrastructure"
+O19,O1,Economic Development,O,"Economic Development, Innovation, Technological Change, and Growth",International Linkages to Development; Role of International Organizations,Economic Development: International Linkages to Development; Role of International Organizations
+O20,O2,Development Planning and Policy,O,"Economic Development, Innovation, Technological Change, and Growth",General,Development Planning and Policy: General
+O21,O2,Development Planning and Policy,O,"Economic Development, Innovation, Technological Change, and Growth",Planning Models; Planning Policy,Development Planning and Policy: Planning Models; Planning Policy
+O22,O2,Development Planning and Policy,O,"Economic Development, Innovation, Technological Change, and Growth",Project Analysis,Development Planning and Policy: Project Analysis
+O23,O2,Development Planning and Policy,O,"Economic Development, Innovation, Technological Change, and Growth",Fiscal and Monetary Policy in Development,Development Planning and Policy: Fiscal and Monetary Policy in Development
+O24,O2,Development Planning and Policy,O,"Economic Development, Innovation, Technological Change, and Growth",Trade Policy; Factor Movement Policy; Foreign Exchange Policy,Development Planning and Policy: Trade Policy; Factor Movement Policy; Foreign Exchange Policy
+O25,O2,Development Planning and Policy,O,"Economic Development, Innovation, Technological Change, and Growth",Industrial Policy,Development Planning and Policy: Industrial Policy
+O29,O2,Development Planning and Policy,O,"Economic Development, Innovation, Technological Change, and Growth",Other,Development Planning and Policy: Other
+O30,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",General,Innovation; Research and Development; Technological Change; Intellectual Property Rights: General
+O31,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",Innovation and Invention: Processes and Incentives,Innovation; Research and Development; Technological Change; Intellectual Property Rights: Innovation and Invention: Processes and Incentives
+O32,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",Management of Technological Innovation and R&D,Innovation; Research and Development; Technological Change; Intellectual Property Rights: Management of Technological Innovation and R&D
+O33,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",Technological Change: Choices and Consequences; Diffusion Processes,Innovation; Research and Development; Technological Change; Intellectual Property Rights: Technological Change: Choices and Consequences; Diffusion Processes
+O34,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",Intellectual Property and Intellectual Capital,Innovation; Research and Development; Technological Change; Intellectual Property Rights: Intellectual Property and Intellectual Capital
+O35,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",Social Innovation,Innovation; Research and Development; Technological Change; Intellectual Property Rights: Social Innovation
+O36,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",Open Innovation,Innovation; Research and Development; Technological Change; Intellectual Property Rights: Open Innovation
+O38,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",Government Policy,Innovation; Research and Development; Technological Change; Intellectual Property Rights: Government Policy
+O39,O3,Innovation; Research and Development; Technological Change; Intellectual Property Rights,O,"Economic Development, Innovation, Technological Change, and Growth",Other,Innovation; Research and Development; Technological Change; Intellectual Property Rights: Other
+O40,O4,Economic Growth and Aggregate Productivity,O,"Economic Development, Innovation, Technological Change, and Growth",General,Economic Growth and Aggregate Productivity: General
+O41,O4,Economic Growth and Aggregate Productivity,O,"Economic Development, Innovation, Technological Change, and Growth","One, Two, and Multisector Growth Models","Economic Growth and Aggregate Productivity: One, Two, and Multisector Growth Models"
+O42,O4,Economic Growth and Aggregate Productivity,O,"Economic Development, Innovation, Technological Change, and Growth",Monetary Growth Models,Economic Growth and Aggregate Productivity: Monetary Growth Models
+O43,O4,Economic Growth and Aggregate Productivity,O,"Economic Development, Innovation, Technological Change, and Growth",Institutions and Growth,Economic Growth and Aggregate Productivity: Institutions and Growth
+O44,O4,Economic Growth and Aggregate Productivity,O,"Economic Development, Innovation, Technological Change, and Growth",Environment and Growth,Economic Growth and Aggregate Productivity: Environment and Growth
+O47,O4,Economic Growth and Aggregate Productivity,O,"Economic Development, Innovation, Technological Change, and Growth",Empirical Studies of Economic Growth; Aggregate Productivity; Cross-Country Output Convergence,Economic Growth and Aggregate Productivity: Empirical Studies of Economic Growth; Aggregate Productivity; Cross-Country Output Convergence
+O49,O4,Economic Growth and Aggregate Productivity,O,"Economic Development, Innovation, Technological Change, and Growth",Other,Economic Growth and Aggregate Productivity: Other
+O50,O5,Economywide Country Studies,O,"Economic Development, Innovation, Technological Change, and Growth",General,Economywide Country Studies: General
+O51,O5,Economywide Country Studies,O,"Economic Development, Innovation, Technological Change, and Growth",U.S.; Canada,Economywide Country Studies: U.S.; Canada
+O52,O5,Economywide Country Studies,O,"Economic Development, Innovation, Technological Change, and Growth",Europe,Economywide Country Studies: Europe
+O53,O5,Economywide Country Studies,O,"Economic Development, Innovation, Technological Change, and Growth",Asia including Middle East,Economywide Country Studies: Asia including Middle East
+O54,O5,Economywide Country Studies,O,"Economic Development, Innovation, Technological Change, and Growth",Latin America; Caribbean,Economywide Country Studies: Latin America; Caribbean
+O55,O5,Economywide Country Studies,O,"Economic Development, Innovation, Technological Change, and Growth",Africa,Economywide Country Studies: Africa
+O56,O5,Economywide Country Studies,O,"Economic Development, Innovation, Technological Change, and Growth",Oceania,Economywide Country Studies: Oceania
+O57,O5,Economywide Country Studies,O,"Economic Development, Innovation, Technological Change, and Growth",Comparative Studies of Countries,Economywide Country Studies: Comparative Studies of Countries
+P00,P0,,P,Political Economy and Comparative Economic Systems,General,General
+P10,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,General,Capitalist Economies: General
+P11,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,"Planning, Coordination, and Reform","Capitalist Economies: Planning, Coordination, and Reform"
+P12,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,Capitalist Enterprises,Capitalist Economies: Capitalist Enterprises
+P13,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,Cooperative Enterprises,Capitalist Economies: Cooperative Enterprises
+P14,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,Property Rights,Capitalist Economies: Property Rights
+P16,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,Capitalist Institutions; Welfare State,Capitalist Economies: Capitalist Institutions; Welfare State
+P17,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,Performance and Prospects,Capitalist Economies: Performance and Prospects
+P18,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,Energy; Environment,Capitalist Economies: Energy; Environment
+P19,P1,Capitalist Economies,P,Political Economy and Comparative Economic Systems,Other,Capitalist Economies: Other
+P20,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,General,Socialist and Transition Economies: General
+P21,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,"Planning, Coordination, and Reform","Socialist and Transition Economies: Planning, Coordination, and Reform"
+P22,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,Prices,Socialist and Transition Economies: Prices
+P23,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,Factor and Product Markets; Industry Studies; Population,Socialist and Transition Economies: Factor and Product Markets; Industry Studies; Population
+P24,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,"National Income, Product, and Expenditure; Money; Inflation","Socialist and Transition Economies: National Income, Product, and Expenditure; Money; Inflation"
+P25,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,"Urban, Rural, and Regional Economics","Socialist and Transition Economies: Urban, Rural, and Regional Economics"
+P26,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,Property Rights,Socialist and Transition Economies: Property Rights
+P27,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,Performance and Prospects,Socialist and Transition Economies: Performance and Prospects
+P28,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,Natural Resources; Energy; Environment,Socialist and Transition Economies: Natural Resources; Energy; Environment
+P29,P2,Socialist and Transition Economies,P,Political Economy and Comparative Economic Systems,Other,Socialist and Transition Economies: Other
+P30,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,General,Socialist Institutions and Their Transitions: General
+P31,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,Socialist Enterprises and Their Transitions,Socialist Institutions and Their Transitions: Socialist Enterprises and Their Transitions
+P32,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,Collectives; Communes; Agriculture,Socialist Institutions and Their Transitions: Collectives; Communes; Agriculture
+P33,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,"International Trade, Finance, Investment, Relations, and Aid","Socialist Institutions and Their Transitions: International Trade, Finance, Investment, Relations, and Aid"
+P34,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,Financial Economics,Socialist Institutions and Their Transitions: Financial Economics
+P35,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,Public Economics,Socialist Institutions and Their Transitions: Public Economics
+P36,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,"Consumer Economics; Health; Education and Training; Welfare, Income, Wealth, and Poverty","Socialist Institutions and Their Transitions: Consumer Economics; Health; Education and Training; Welfare, Income, Wealth, and Poverty"
+P37,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,Legal Institutions; Illegal Behavior,Socialist Institutions and Their Transitions: Legal Institutions; Illegal Behavior
+P39,P3,Socialist Institutions and Their Transitions,P,Political Economy and Comparative Economic Systems,Other,Socialist Institutions and Their Transitions: Other
+P40,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,General,Other Economic Systems: General
+P41,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,"Planning, Coordination, and Reform","Other Economic Systems: Planning, Coordination, and Reform"
+P42,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,Productive Enterprises; Factor and Product Markets; Prices; Population,Other Economic Systems: Productive Enterprises; Factor and Product Markets; Prices; Population
+P43,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,Public Economics; Financial Economics,Other Economic Systems: Public Economics; Financial Economics
+P44,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,"National Income, Product, and Expenditure; Money; Inflation","Other Economic Systems: National Income, Product, and Expenditure; Money; Inflation"
+P45,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,"International Trade, Finance, Investment, and Aid","Other Economic Systems: International Trade, Finance, Investment, and Aid"
+P46,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,"Consumer Economics; Health; Education and Training; Welfare, Income, Wealth, and Poverty","Other Economic Systems: Consumer Economics; Health; Education and Training; Welfare, Income, Wealth, and Poverty"
+P47,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,Performance and Prospects,Other Economic Systems: Performance and Prospects
+P48,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,Legal Institutions; Property Rights; Natural Resources; Energy; Environment; Regional Studies,Other Economic Systems: Legal Institutions; Property Rights; Natural Resources; Energy; Environment; Regional Studies
+P49,P4,Other Economic Systems,P,Political Economy and Comparative Economic Systems,Other,Other Economic Systems: Other
+P50,P5,Comparative Economic Systems,P,Political Economy and Comparative Economic Systems,General,Comparative Economic Systems: General
+P51,P5,Comparative Economic Systems,P,Political Economy and Comparative Economic Systems,Comparative Analysis of Economic Systems,Comparative Economic Systems: Comparative Analysis of Economic Systems
+P52,P5,Comparative Economic Systems,P,Political Economy and Comparative Economic Systems,Comparative Studies of Particular Economies,Comparative Economic Systems: Comparative Studies of Particular Economies
+P59,P5,Comparative Economic Systems,P,Political Economy and Comparative Economic Systems,Other,Comparative Economic Systems: Other
+Q00,Q0,,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,General,General
+Q01,Q0,,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Sustainable Development,Sustainable Development
+Q02,Q0,,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Commodity Markets,Commodity Markets
+Q10,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,General,Agriculture: General
+Q11,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Aggregate Supply and Demand Analysis; Prices,Agriculture: Aggregate Supply and Demand Analysis; Prices
+Q12,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,"Micro Analysis of Farm Firms, Farm Households, and Farm Input Markets","Agriculture: Micro Analysis of Farm Firms, Farm Households, and Farm Input Markets"
+Q13,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Agricultural Markets and Marketing; Cooperatives; Agribusiness,Agriculture: Agricultural Markets and Marketing; Cooperatives; Agribusiness
+Q14,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Agricultural Finance,Agriculture: Agricultural Finance
+Q15,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Land Ownership and Tenure; Land Reform; Land Use; Irrigation; Agriculture and Environment,Agriculture: Land Ownership and Tenure; Land Reform; Land Use; Irrigation; Agriculture and Environment
+Q16,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,R&D; Agricultural Technology; Biofuels; Agricultural Extension Services,Agriculture: R&D; Agricultural Technology; Biofuels; Agricultural Extension Services
+Q17,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Agriculture in International Trade,Agriculture: Agriculture in International Trade
+Q18,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Agricultural Policy; Food Policy; Animal Welfare Policy,Agriculture: Agricultural Policy; Food Policy; Animal Welfare Policy
+Q19,Q1,Agriculture,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Other,Agriculture: Other
+Q20,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,General,Renewable Resources and Conservation: General
+Q21,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Demand and Supply; Prices,Renewable Resources and Conservation: Demand and Supply; Prices
+Q22,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Fishery; Aquaculture,Renewable Resources and Conservation: Fishery; Aquaculture
+Q23,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Forestry,Renewable Resources and Conservation: Forestry
+Q24,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Land,Renewable Resources and Conservation: Land
+Q25,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Water,Renewable Resources and Conservation: Water
+Q26,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Recreational Aspects of Natural Resources,Renewable Resources and Conservation: Recreational Aspects of Natural Resources
+Q27,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Issues in International Trade,Renewable Resources and Conservation: Issues in International Trade
+Q28,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Government Policy,Renewable Resources and Conservation: Government Policy
+Q29,Q2,Renewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Other,Renewable Resources and Conservation: Other
+Q30,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,General,Nonrenewable Resources and Conservation: General
+Q31,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Demand and Supply; Prices,Nonrenewable Resources and Conservation: Demand and Supply; Prices
+Q32,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Exhaustible Resources and Economic Development,Nonrenewable Resources and Conservation: Exhaustible Resources and Economic Development
+Q33,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Resource Booms,Nonrenewable Resources and Conservation: Resource Booms
+Q34,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Natural Resources and Domestic and International Conflicts,Nonrenewable Resources and Conservation: Natural Resources and Domestic and International Conflicts
+Q35,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Hydrocarbon Resources,Nonrenewable Resources and Conservation: Hydrocarbon Resources
+Q37,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Issues in International Trade,Nonrenewable Resources and Conservation: Issues in International Trade
+Q38,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Government Policy,Nonrenewable Resources and Conservation: Government Policy
+Q39,Q3,Nonrenewable Resources and Conservation,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Other,Nonrenewable Resources and Conservation: Other
+Q40,Q4,Energy,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,General,Energy: General
+Q41,Q4,Energy,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Demand and Supply; Prices,Energy: Demand and Supply; Prices
+Q42,Q4,Energy,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Alternative Energy Sources,Energy: Alternative Energy Sources
+Q43,Q4,Energy,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Energy and the Macroeconomy,Energy: Energy and the Macroeconomy
+Q47,Q4,Energy,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Energy Forecasting,Energy: Energy Forecasting
+Q48,Q4,Energy,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Government Policy,Energy: Government Policy
+Q49,Q4,Energy,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Other,Energy: Other
+Q50,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,General,Environmental Economics: General
+Q51,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Valuation of Environmental Effects,Environmental Economics: Valuation of Environmental Effects
+Q52,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Pollution Control Adoption and Costs; Distributional Effects; Employment Effects,Environmental Economics: Pollution Control Adoption and Costs; Distributional Effects; Employment Effects
+Q53,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Air Pollution; Water Pollution; Noise; Hazardous Waste; Solid Waste; Recycling,Environmental Economics: Air Pollution; Water Pollution; Noise; Hazardous Waste; Solid Waste; Recycling
+Q54,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Climate; Natural Disasters and Their Management; Global Warming,Environmental Economics: Climate; Natural Disasters and Their Management; Global Warming
+Q55,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Technological Innovation,Environmental Economics: Technological Innovation
+Q56,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Environment and Development; Environment and Trade; Sustainability; Environmental Accounts and Accounting; Environmental Equity; Population Growth,Environmental Economics: Environment and Development; Environment and Trade; Sustainability; Environmental Accounts and Accounting; Environmental Equity; Population Growth
+Q57,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Ecological Economics: Ecosystem Services; Biodiversity Conservation; Bioeconomics; Industrial Ecology,Environmental Economics: Ecological Economics: Ecosystem Services; Biodiversity Conservation; Bioeconomics; Industrial Ecology
+Q58,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Government Policy,Environmental Economics: Government Policy
+Q59,Q5,Environmental Economics,Q,Agricultural and Natural Resource Economics; Environmental and Ecological Economics,Other,Environmental Economics: Other
+R00,R0,,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",General,General
+R10,R1,General Regional Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",General,General Regional Economics: General
+R11,R1,General Regional Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics","Regional Economic Activity: Growth, Development, Environmental Issues, and Changes","General Regional Economics: Regional Economic Activity: Growth, Development, Environmental Issues, and Changes"
+R12,R1,General Regional Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Size and Spatial Distributions of Regional Economic Activity,General Regional Economics: Size and Spatial Distributions of Regional Economic Activity
+R13,R1,General Regional Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",General Equilibrium and Welfare Economic Analysis of Regional Economies,General Regional Economics: General Equilibrium and Welfare Economic Analysis of Regional Economies
+R14,R1,General Regional Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Land Use Patterns,General Regional Economics: Land Use Patterns
+R15,R1,General Regional Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Econometric and Input–Output Models; Other Models,General Regional Economics: Econometric and Input–Output Models; Other Models
+R19,R1,General Regional Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Other,General Regional Economics: Other
+R20,R2,Household Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",General,Household Analysis: General
+R21,R2,Household Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Housing Demand,Household Analysis: Housing Demand
+R22,R2,Household Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Other Demand,Household Analysis: Other Demand
+R23,R2,Household Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Regional Migration; Regional Labor Markets; Population; Neighborhood Characteristics,Household Analysis: Regional Migration; Regional Labor Markets; Population; Neighborhood Characteristics
+R28,R2,Household Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Government Policy,Household Analysis: Government Policy
+R29,R2,Household Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Other,Household Analysis: Other
+R30,R3,"Real Estate Markets, Spatial Production Analysis, and Firm Location",R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",General,"Real Estate Markets, Spatial Production Analysis, and Firm Location: General"
+R31,R3,"Real Estate Markets, Spatial Production Analysis, and Firm Location",R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Housing Supply and Markets,"Real Estate Markets, Spatial Production Analysis, and Firm Location: Housing Supply and Markets"
+R32,R3,"Real Estate Markets, Spatial Production Analysis, and Firm Location",R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Other Spatial Production and Pricing Analysis,"Real Estate Markets, Spatial Production Analysis, and Firm Location: Other Spatial Production and Pricing Analysis"
+R33,R3,"Real Estate Markets, Spatial Production Analysis, and Firm Location",R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Nonagricultural and Nonresidential Real Estate Markets,"Real Estate Markets, Spatial Production Analysis, and Firm Location: Nonagricultural and Nonresidential Real Estate Markets"
+R38,R3,"Real Estate Markets, Spatial Production Analysis, and Firm Location",R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Government Policy,"Real Estate Markets, Spatial Production Analysis, and Firm Location: Government Policy"
+R39,R3,"Real Estate Markets, Spatial Production Analysis, and Firm Location",R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Other,"Real Estate Markets, Spatial Production Analysis, and Firm Location: Other"
+R40,R4,Transportation Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",General,Transportation Economics: General
+R41,R4,Transportation Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics","Transportation: Demand, Supply, and Congestion; Travel Time; Safety and Accidents; Transportation Noise","Transportation Economics: Transportation: Demand, Supply, and Congestion; Travel Time; Safety and Accidents; Transportation Noise"
+R42,R4,Transportation Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Government and Private Investment Analysis; Road Maintenance; Transportation Planning,Transportation Economics: Government and Private Investment Analysis; Road Maintenance; Transportation Planning
+R48,R4,Transportation Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Government Pricing and Policy,Transportation Economics: Government Pricing and Policy
+R49,R4,Transportation Economics,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Other,Transportation Economics: Other
+R50,R5,Regional Government Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",General,Regional Government Analysis: General
+R51,R5,Regional Government Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Finance in Urban and Rural Economies,Regional Government Analysis: Finance in Urban and Rural Economies
+R52,R5,Regional Government Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Land Use and Other Regulations,Regional Government Analysis: Land Use and Other Regulations
+R53,R5,Regional Government Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Public Facility Location Analysis; Public Investment and Capital Stock,Regional Government Analysis: Public Facility Location Analysis; Public Investment and Capital Stock
+R58,R5,Regional Government Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Regional Development Planning and Policy,Regional Government Analysis: Regional Development Planning and Policy
+R59,R5,Regional Government Analysis,R,"Urban, Rural, Regional, Real Estate, and Transportation Economics",Other,Regional Government Analysis: Other
+Y10,Y1,Data: Tables and Charts,Y,Miscellaneous Categories,Data: Tables and Charts,Data: Tables and Charts: Data: Tables and Charts
+Y20,Y2,Introductory Material,Y,Miscellaneous Categories,Introductory Material,Introductory Material: Introductory Material
+Y30,Y3,Book Reviews (unclassified),Y,Miscellaneous Categories,Book Reviews (unclassified),Book Reviews (unclassified): Book Reviews (unclassified)
+Y40,Y4,Dissertations (unclassified),Y,Miscellaneous Categories,Dissertations (unclassified),Dissertations (unclassified): Dissertations (unclassified)
+Y50,Y5,Further Reading (unclassified),Y,Miscellaneous Categories,Further Reading (unclassified),Further Reading (unclassified): Further Reading (unclassified)
+Y60,Y6,Excerpts,Y,Miscellaneous Categories,Excerpts,Excerpts: Excerpts
+Y70,Y7,No Author General Discussions,Y,Miscellaneous Categories,No Author General Discussions,No Author General Discussions: No Author General Discussions
+Y80,Y8,Related Disciplines,Y,Miscellaneous Categories,Related Disciplines,Related Disciplines: Related Disciplines
+Y90,Y9,Other,Y,Miscellaneous Categories,Other,Other: Other
+Y91,Y9,Other,Y,Miscellaneous Categories,Pictures and Maps,Other: Pictures and Maps
+Y92,Y9,Other,Y,Miscellaneous Categories,"Novels, Self-Help Books, etc.","Other: Novels, Self-Help Books, etc."
+Z00,Z0,,Z,Other Special Topics,General,General
+Z10,Z1,Cultural Economics; Economic Sociology; Economic Anthropology,Z,Other Special Topics,General,Cultural Economics; Economic Sociology; Economic Anthropology: General
+Z11,Z1,Cultural Economics; Economic Sociology; Economic Anthropology,Z,Other Special Topics,Economics of the Arts and Literature,Cultural Economics; Economic Sociology; Economic Anthropology: Economics of the Arts and Literature
+Z12,Z1,Cultural Economics; Economic Sociology; Economic Anthropology,Z,Other Special Topics,Religion,Cultural Economics; Economic Sociology; Economic Anthropology: Religion
+Z13,Z1,Cultural Economics; Economic Sociology; Economic Anthropology,Z,Other Special Topics,Economic Sociology; Economic Anthropology; Language; Social and Economic Stratification,Cultural Economics; Economic Sociology; Economic Anthropology: Economic Sociology; Economic Anthropology; Language; Social and Economic Stratification
+Z18,Z1,Cultural Economics; Economic Sociology; Economic Anthropology,Z,Other Special Topics,Public Policy,Cultural Economics; Economic Sociology; Economic Anthropology: Public Policy
+Z19,Z1,Cultural Economics; Economic Sociology; Economic Anthropology,Z,Other Special Topics,Other,Cultural Economics; Economic Sociology; Economic Anthropology: Other
+Z20,Z2,Sports Economics,Z,Other Special Topics,General,Sports Economics: General
+Z21,Z2,Sports Economics,Z,Other Special Topics,Industry Studies,Sports Economics: Industry Studies
+Z22,Z2,Sports Economics,Z,Other Special Topics,Labor Issues,Sports Economics: Labor Issues
+Z23,Z2,Sports Economics,Z,Other Special Topics,Finance,Sports Economics: Finance
+Z28,Z2,Sports Economics,Z,Other Special Topics,Policy,Sports Economics: Policy
+Z29,Z2,Sports Economics,Z,Other Special Topics,Other,Sports Economics: Other
+Z30,Z3,Tourism Economics,Z,Other Special Topics,General,Tourism Economics: General
+Z31,Z3,Tourism Economics,Z,Other Special Topics,Industry Studies,Tourism Economics: Industry Studies
+Z32,Z3,Tourism Economics,Z,Other Special Topics,Tourism and Development,Tourism Economics: Tourism and Development
+Z33,Z3,Tourism Economics,Z,Other Special Topics,Marketing and Finance,Tourism Economics: Marketing and Finance
+Z38,Z3,Tourism Economics,Z,Other Special Topics,Policy,Tourism Economics: Policy
+Z39,Z3,Tourism Economics,Z,Other Special Topics,Other,Tourism Economics: Other

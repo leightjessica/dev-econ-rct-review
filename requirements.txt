@@ -1,0 +1,6 @@
+# Stage 3 LLM classification dependencies.
+# Stages 0, 1, 1b, 1c, 2, and 4 use Python standard library only.
+anthropic>=0.40.0
+
+# Stage 5 figures.
+matplotlib>=3.7.0

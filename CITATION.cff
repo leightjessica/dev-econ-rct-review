@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+title: "Development RCTs in Top Economics Journals, 2021-2025: Code and Dataset"
+message: "If you use this dataset or code, please cite as below."
+type: dataset
+authors:
+  - family-names: Leight
+    given-names: Jessica
+    affiliation: International Food Policy Research Institute (IFPRI), CGIAR
+    email: J.Leight@cgiar.org
+abstract: >-
+  Replicable pipeline and dataset identifying randomized controlled trials in
+  development economics published in twelve leading economics journals over
+  2021-2025. Combines OpenAlex metadata, Crossref and Semantic Scholar
+  abstract backfills, EconLit JEL codes, World Bank country classifications,
+  and Anthropic Claude LLM classification. Released alongside source code,
+  documentation, and replication instructions.
+keywords:
+  - development economics
+  - randomized controlled trials
+  - bibliometrics
+  - economics journals
+  - JEL classification
+license: MIT
+license-url: "LICENSE"
+version: "1.0.0"
+date-released: 2026-05-07
+references:
+  - type: software
+    title: OpenAlex
+    repository-code: "https://api.openalex.org/"
+    notes: "Article metadata for 2021-2025 publications in the twelve in-scope journals."
+  - type: software
+    title: Crossref REST API
+    repository-code: "https://api.crossref.org/"
+    notes: "Abstract backfill where OpenAlex coverage is sparse."
+  - type: software
+    title: Semantic Scholar Graph API
+    repository-code: "https://api.semanticscholar.org/graph/v1/"
+    notes: "Abstract backfill via batch endpoint."
+  - type: dataset
+    title: AEA JEL Classification
+    url: "https://www.aeaweb.org/econlit/jelCodes.php?view=jel"
+    notes: "Authoritative descriptor-to-code mapping for JEL classifications."
+  - type: dataset
+    title: World Bank Country Classification by Income Level
+    url: "https://api.worldbank.org/v2/country?format=json"
+    notes: "Low-, lower-middle-, and upper-middle-income country list."
+  - type: software
+    title: EconLit (via EBSCOhost)
+    notes: "Licensed bibliographic database accessed via institutional library; JEL codes and abstracts."

@@ -1,0 +1,45 @@
+# --- Licensed data (not redistributable) ---
+# EBSCO/EconLit raw exports are licensed and cannot be checked into a public
+# repository. Replicators must obtain their own exports per the procedure in
+# docs/econlit_export_instructions.md.
+data/EconLit/
+
+# --- Generated logs (regenerate on rerun; not necessary for replication) ---
+data/*.log
+
+# --- Large intermediate artifacts (regeneratable from Stage 1 + Stage 2) ---
+# Keep them out of git to keep the repo light; replicators rerun Stages 1-4.
+data/raw_openalex_2021_2025.csv
+data/raw_with_abstracts_2021_2025.csv
+data/dev_filtered.csv
+data/dev_classified.csv
+data/rct_classified.csv
+
+# --- The two final products are kept under version control ---
+# (do NOT add data/final_dataset.csv or data/summary_journal_year.csv to ignore)
+
+# --- Lookup tables (small; kept under version control for replication) ---
+# (do NOT ignore data/jel_lookup.csv or data/lmic_countries.csv)
+
+# --- Python artifacts ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Secrets ---
+.env
+.env.*
+*.pem
+*.key

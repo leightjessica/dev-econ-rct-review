@@ -1,0 +1,147 @@
+iso3,name_canonical,income_group,alt_names,match_terms
+AFG,Afghanistan,LIC,,Afghanistan
+AGO,Angola,LMC,,Angola
+ALB,Albania,UMC,,Albania
+ARG,Argentina,UMC,,Argentina
+ARM,Armenia,UMC,,Armenia
+AZE,Azerbaijan,UMC,,Azerbaijan
+BDI,Burundi,LIC,,Burundi
+BEN,Benin,LMC,,Benin
+BFA,Burkina Faso,LIC,,Burkina Faso
+BGD,Bangladesh,LMC,,Bangladesh
+BIH,Bosnia and Herzegovina,UMC,Bosnia,Bosnia and Herzegovina;Bosnia
+BLR,Belarus,UMC,,Belarus
+BLZ,Belize,UMC,,Belize
+BOL,Bolivia,LMC,Bolivia,Bolivia
+BRA,Brazil,UMC,,Brazil
+BTN,Bhutan,LMC,,Bhutan
+BWA,Botswana,UMC,,Botswana
+CAF,Central African Republic,LIC,,Central African Republic
+CHN,China,UMC,,China
+CIV,Cote d'Ivoire,LMC,Cote d'Ivoire;Ivory Coast,Cote d'Ivoire;Ivory Coast
+CMR,Cameroon,LMC,,Cameroon
+COD,"Congo, Dem. Rep.",LIC,Democratic Republic of the Congo;DR Congo;DRC,"Congo, Dem. Rep.;Democratic Republic of the Congo;DR Congo;DRC"
+COG,"Congo, Rep.",LMC,Republic of the Congo;Congo-Brazzaville,"Congo, Rep.;Republic of the Congo;Congo-Brazzaville"
+COL,Colombia,UMC,,Colombia
+COM,Comoros,LMC,,Comoros
+CPV,Cabo Verde,UMC,Cape Verde,Cabo Verde;Cape Verde
+CUB,Cuba,UMC,,Cuba
+DJI,Djibouti,LMC,,Djibouti
+DMA,Dominica,UMC,,Dominica
+DOM,Dominican Republic,UMC,,Dominican Republic
+DZA,Algeria,UMC,,Algeria
+ECU,Ecuador,UMC,,Ecuador
+EGY,"Egypt, Arab Rep.",LMC,Egypt,"Egypt, Arab Rep.;Egypt"
+ERI,Eritrea,LIC,,Eritrea
+FJI,Fiji,UMC,,Fiji
+FSM,"Micronesia, Fed. Sts.",LMC,Federated States of Micronesia,"Micronesia, Fed. Sts.;Federated States of Micronesia"
+GAB,Gabon,UMC,,Gabon
+GEO,Georgia,UMC,,Georgia
+GHA,Ghana,LMC,,Ghana
+GIN,Guinea,LMC,,Guinea
+GMB,"Gambia, The",LIC,Gambia;the Gambia,"Gambia, The;Gambia;the Gambia"
+GNB,Guinea-Bissau,LIC,,Guinea-Bissau
+GNQ,Equatorial Guinea,UMC,,Equatorial Guinea
+GRD,Grenada,UMC,,Grenada
+GTM,Guatemala,UMC,,Guatemala
+HND,Honduras,LMC,,Honduras
+HTI,Haiti,LMC,,Haiti
+IDN,Indonesia,UMC,,Indonesia
+IND,India,LMC,,India
+IRN,"Iran, Islamic Rep.",UMC,Iran,"Iran, Islamic Rep.;Iran"
+IRQ,Iraq,UMC,,Iraq
+JAM,Jamaica,UMC,,Jamaica
+JOR,Jordan,LMC,,Jordan
+KAZ,Kazakhstan,UMC,,Kazakhstan
+KEN,Kenya,LMC,,Kenya
+KGZ,Kyrgyz Republic,LMC,Kyrgyz Republic;Kyrgyzstan,Kyrgyz Republic;Kyrgyzstan
+KHM,Cambodia,LMC,,Cambodia
+KIR,Kiribati,LMC,,Kiribati
+LAO,Lao PDR,LMC,Laos,Lao PDR;Laos
+LBN,Lebanon,LMC,,Lebanon
+LBR,Liberia,LIC,,Liberia
+LBY,Libya,UMC,,Libya
+LCA,St. Lucia,UMC,St. Lucia;Saint Lucia,St. Lucia;Saint Lucia
+LKA,Sri Lanka,LMC,,Sri Lanka
+LSO,Lesotho,LMC,,Lesotho
+MAR,Morocco,LMC,,Morocco
+MDA,Moldova,UMC,Moldova,Moldova
+MDG,Madagascar,LIC,,Madagascar
+MDV,Maldives,UMC,,Maldives
+MEX,Mexico,UMC,,Mexico
+MHL,Marshall Islands,UMC,Marshall Islands,Marshall Islands
+MKD,North Macedonia,UMC,North Macedonia;Macedonia,North Macedonia;Macedonia
+MLI,Mali,LIC,,Mali
+MMR,Myanmar,LMC,Burma,Myanmar;Burma
+MNE,Montenegro,UMC,,Montenegro
+MNG,Mongolia,UMC,,Mongolia
+MOZ,Mozambique,LIC,,Mozambique
+MRT,Mauritania,LMC,,Mauritania
+MUS,Mauritius,UMC,,Mauritius
+MWI,Malawi,LIC,,Malawi
+MYS,Malaysia,UMC,,Malaysia
+NAM,Namibia,LMC,,Namibia
+NER,Niger,LIC,,Niger
+NGA,Nigeria,LMC,,Nigeria
+NIC,Nicaragua,LMC,,Nicaragua
+NPL,Nepal,LMC,,Nepal
+PAK,Pakistan,LMC,,Pakistan
+PER,Peru,UMC,,Peru
+PHL,Philippines,LMC,,Philippines
+PNG,Papua New Guinea,LMC,,Papua New Guinea
+PRK,"Korea, Dem. People's Rep.",LIC,North Korea;DPRK,"Korea, Dem. People's Rep.;North Korea;DPRK"
+PRY,Paraguay,UMC,,Paraguay
+PSE,West Bank and Gaza,LMC,West Bank;Gaza;Palestine;Palestinian Territories,West Bank and Gaza;West Bank;Gaza;Palestine;Palestinian Territories
+REGION,Global South,REGION,,Global South
+REGION,LMIC,REGION,,LMIC
+REGION,LMICs,REGION,,LMICs
+REGION,Sub Saharan Africa,REGION,,Sub Saharan Africa
+REGION,Sub-Saharan Africa,REGION,,Sub-Saharan Africa
+REGION,developing countries,REGION,,developing countries
+REGION,developing country,REGION,,developing country
+REGION,developing economies,REGION,,developing economies
+REGION,developing economy,REGION,,developing economy
+REGION,emerging economies,REGION,,emerging economies
+REGION,emerging market economies,REGION,,emerging market economies
+REGION,emerging markets,REGION,,emerging markets
+REGION,low and middle income countries,REGION,,low and middle income countries
+REGION,low- and middle-income countries,REGION,,low- and middle-income countries
+REGION,low-income countries,REGION,,low-income countries
+REGION,low-income country,REGION,,low-income country
+REGION,the Global South,REGION,,the Global South
+RWA,Rwanda,LIC,,Rwanda
+SDN,Sudan,LIC,,Sudan
+SEN,Senegal,LMC,,Senegal
+SLB,Solomon Islands,LMC,Solomon Islands,Solomon Islands
+SLE,Sierra Leone,LIC,,Sierra Leone
+SLV,El Salvador,UMC,,El Salvador
+SOM,"Somalia, Fed. Rep.",LIC,,"Somalia, Fed. Rep."
+SRB,Serbia,UMC,,Serbia
+SSD,South Sudan,LIC,,South Sudan
+STP,Sao Tome and Principe,LMC,Sao Tome and Principe;Sao Tome,Sao Tome and Principe;Sao Tome
+SUR,Suriname,UMC,,Suriname
+SWZ,Eswatini,LMC,,Eswatini
+SYR,Syrian Arab Republic,LIC,Syria,Syrian Arab Republic;Syria
+TCD,Chad,LIC,,Chad
+TGO,Togo,LIC,,Togo
+THA,Thailand,UMC,,Thailand
+TJK,Tajikistan,LMC,,Tajikistan
+TKM,Turkmenistan,UMC,,Turkmenistan
+TLS,Timor-Leste,LMC,East Timor,Timor-Leste;East Timor
+TON,Tonga,UMC,,Tonga
+TUN,Tunisia,LMC,,Tunisia
+TUR,Turkiye,UMC,Turkey,Turkiye;Turkey
+TUV,Tuvalu,UMC,,Tuvalu
+TZA,Tanzania,LMC,Tanzania,Tanzania
+UGA,Uganda,LIC,,Uganda
+UKR,Ukraine,UMC,,Ukraine
+UZB,Uzbekistan,LMC,,Uzbekistan
+VCT,St. Vincent and the Grenadines,UMC,St. Vincent;Saint Vincent,St. Vincent and the Grenadines;St. Vincent;Saint Vincent
+VNM,Viet Nam,LMC,Viet Nam,Viet Nam
+VUT,Vanuatu,LMC,,Vanuatu
+WSM,Samoa,UMC,,Samoa
+XKX,Kosovo,UMC,,Kosovo
+YEM,"Yemen, Rep.",LIC,Yemen,"Yemen, Rep.;Yemen"
+ZAF,South Africa,UMC,,South Africa
+ZMB,Zambia,LMC,,Zambia
+ZWE,Zimbabwe,LMC,,Zimbabwe

@@ -1,6 +1,6 @@
 # Project memo: Identifying development RCTs in top economics journals, 2021-2025
 
-**Last updated:** 2026-05-06
+**Last updated:** 2026-05-07
 **Owner:** Jessica Leight (J.Leight@cgiar.org)
 **Project root:** `~/IFPRI Dropbox/Jessica Leight/dev-econ-rct-review/`
 
@@ -37,7 +37,7 @@ Publication years 2021 through 2025 inclusive (using the OpenAlex `publication_y
 
 The following decisions were made at project inception and are recorded here so future re-runs are interpretable.
 
-- **Development scope.** Any JEL code beginning with **O** counts a paper as development. This is broader than O1 (Economic Development) alone and conventionally bounds the field. Borderline cases — for example, a paper with no JEL O codes but content suggestive of a developing-country setting — are escalated to LLM classification of the abstract for a yes/no judgment.
+- **Development scope.** A paper is classified as development if any of the following holds (rules evaluated in order; first match wins): (i) the journal is JDE; (ii) at least one JEL code is in **O1 (Economic Development) or O2 (Development Planning and Policy)**; (iii) the article's title or abstract mentions a low-, lower-middle-, or upper-middle-income country (per the World Bank classification) or a developing-region term such as "Sub-Saharan Africa" or "developing countries". Rule (ii) was tightened from an earlier draft that also accepted O3 (Innovation), O4 (Growth), and O5 (Country Studies) codes; spot-checking revealed that O3/O4 codes routinely appear on innovation and growth papers based in high-income countries (e.g., AER's "Market Power and Innovation in the Intangible Economy" using French and US data), and that O5 codes were always co-assigned with O1/O2 in our sample, so adding them would not have changed the result. Rule (iii) was added because the Stage 1 abstract pull plus the JEL-code merge missed papers that name a developing country directly in the abstract but were never indexed in EconLit (e.g., empirical papers in RESTAT and EJ where EconLit's DOI population is sparse). Borderline cases — papers that satisfy none of the three rules but might still be development — are escalated to LLM classification of the abstract (Stage 3a) for a yes/no/uncertain judgment.
 - **RCT scope.** We classify a paper as an RCT if it reports the results of a real-world randomized intervention. This includes individual-randomized RCTs, cluster RCTs, encouragement designs, RCTs of one component within a larger program, and long-run follow-ups of prior RCTs (the latter flagged as a distinct subtype). Lab-in-the-field experiments are excluded **unless** they involve a real-world manipulation of incentives, information, or services that participants experience outside the experimental setting.
 - **Output format.** Single CSV (UTF-8). Optionally also a Stata `.dta` if requested.
 - **Execution environment.** Local, on Jessica's Windows machine. Python 3.14.x. Stage 1 uses standard library only; later stages introduce a small set of pinned dependencies (`requirements.txt`).
@@ -45,7 +45,15 @@ The following decisions were made at project inception and are recorded here so 
 
 ## 4. Workflow
 
-The pipeline has four stages. Each stage produces a standalone CSV; each subsequent stage takes the previous stage's CSV as its only input. This makes any stage independently re-runnable and any intermediate state inspectable.
+The pipeline has six stages (numbered 0, 0b, 1, 2, 3a, 3b, 4, 5). Each stage produces a standalone CSV; each subsequent stage takes the previous stage's CSV as its only input. This makes any stage independently re-runnable and any intermediate state inspectable.
+
+### Stage 0 — Bootstrap: JEL descriptor → code lookup
+
+`scripts/00_build_jel_lookup.py` fetches the AEA's authoritative JEL classification (https://www.aeaweb.org/econlit/jelCodes.php?view=jel) and writes `data/jel_lookup.csv` with one row per leaf code (856 in total) and both bare and prefixed descriptor forms. Stage 2 uses this lookup to map EconLit's descriptor strings (e.g., "Microeconomic Analyses of Economic Development") back to JEL codes (e.g., "O12").
+
+### Stage 0b — Bootstrap: LMIC country list
+
+`scripts/00b_build_lmic_countries.py` fetches the World Bank's country classification by income level via the WB API and writes `data/lmic_countries.csv` with one row per country in LIC, LMIC, or UMIC plus a curated set of region terms ("Sub-Saharan Africa", "developing countries", etc.) and common name variants ("Russia" alongside "Russian Federation"; "Cote d'Ivoire" alongside "Côte d'Ivoire"; etc.). Stage 2 uses this list to apply the country-mention rule of the development filter.
 
 ### Stage 1 — Metadata acquisition (multi-source)
 
@@ -63,15 +71,21 @@ Stage 1 is implemented as a chain of three scripts. Each successive script attem
 
 The `abstract_source` column takes values `openalex`, `crossref`, `semantic_scholar`, `econlit`, `manual`, or one of the `none_*` flags indicating why no abstract is available.
 
-### Stage 0 — Bootstrap: JEL descriptor → code lookup
-
-`scripts/00_build_jel_lookup.py` fetches the AEA's authoritative JEL classification (https://www.aeaweb.org/econlit/jelCodes.php?view=jel) and writes `data/jel_lookup.csv` with one row per leaf code (856 in total) and both bare and prefixed descriptor forms. Stage 2 uses this lookup to map EconLit's descriptor strings to JEL codes.
-
 ### Stage 2 — Development-topic filtering
 
-`scripts/02_dev_filter.py` reads all CSVs from `data/EconLit/`, restricts to the twelve in-scope journals (matched by ISSN, not by title — see EconLit export doc for why this matters), parses each row's `subjects` field by splitting on " ; ", and resolves descriptors to JEL codes via the lookup. Three indexes are built — by DOI, by `(journal, volume, issue, first_page)`, and by `(journal, normalized_title)` — to handle the fact that EconLit DOI population is uneven across publishers (100% for AEA journals; 1-30% for UChicago, Wiley, MIT). The merge tries DOI first, then bibliographic tuple, then title.
+`scripts/02_dev_filter.py` reads all CSVs from `data/EconLit/`, restricts to the twelve in-scope journals (matched by ISSN, not by title — see EconLit export doc for why this matters), parses each row's `subjects` field by splitting on " ; ", and resolves descriptors to JEL codes via the Stage-0 lookup. Three indexes are built for the EconLit→OpenAlex merge — by DOI, by `(journal, volume, issue, first_page)`, and by `(journal, normalized_title)` — to handle the fact that EconLit DOI population is uneven across publishers (100% for AEA journals; 1-30% for UChicago, Wiley, MIT). The merge tries DOI first, then bibliographic tuple, then title; this raises end-to-end EconLit-to-OpenAlex match coverage from 43% (DOI alone) to 84% in our 2026-05-07 run.
 
-The development filter is applied as: JDE → TRUE; any JEL O code → TRUE; JEL codes present, none in O → FALSE; no JEL codes → BORDERLINE. The `dev_filter_source` column records the rule that fired. Stage 2 also backfills any abstracts still missing after the Stage 1 chain from EconLit's abstract field (Stage 1d, deferred from Stage 1).
+In parallel with the EconLit merge, Stage 2 builds a single case-insensitive word-boundary regex over the LIC/LMIC/UMIC country names and region terms loaded from `data/lmic_countries.csv` (Stage 0b) and scans each row's title and abstract for any country mention. The matched term and its source field (`title` vs `abstract`) are recorded in `country_match` and `country_match_in` columns.
+
+The development filter is then applied as a five-rule decision tree, evaluated in order, with the `dev_filter_source` column recording which rule fired:
+
+1. The journal is **JDE** → `is_development = TRUE`, `dev_filter_source = jde_inclusion_rule`
+2. The article carries at least one JEL code beginning with **O1 or O2** → TRUE, `jel_o1_o2_code`
+3. The title or abstract mentions an LMIC country or developing-region term → TRUE, `country_match`
+4. EconLit returned JEL codes, none in O1 or O2, and no country mention → FALSE, `jel_no_dev`
+5. No EconLit JEL codes available and no country mention → BORDERLINE, `no_signal` (or `econlit_no_jel` if the row was matched to EconLit but its `subjects` field was empty)
+
+The `jel_codes_o_only` diagnostic column preserves the broader O-family code set (O1-O5) for audit purposes; the binding filter uses `jel_codes_o12_only`. Stage 2 also backfills any abstracts still missing after the Stage 1 chain from EconLit's abstract field (this is Stage 1d, deferred to Stage 2 because the EBSCO export is the authoritative source for both JEL codes and abstracts).
 
 Output: `data/dev_filtered.csv`.
 
@@ -91,29 +105,58 @@ A second pass that fetches article introductions for "uncertain" rows is scaffol
 
 `scripts/04_assemble.py` reads the latest available output (rct_classified > dev_classified > dev_filtered, in priority order), filters to `is_development == 'TRUE'` AND `type == 'article'`, and writes `data/final_dataset.csv` with the columns documented in `docs/codebook.md`. A second output, `data/summary_journal_year.csv`, is a wide table of counts per journal-year (development total, RCT yes / no / uncertain). A SHA-256 of each output is logged for reproducibility verification.
 
+### Stage 5 — Figures
+
+`scripts/05_make_charts.py` reads `data/final_dataset.csv` and writes five publication-quality figures to `data/figures/`, each as PNG (300 dpi raster) and PDF (vector for inclusion in LaTeX manuscripts):
+
+1. `fig1_rct_share_by_journal` — horizontal bar of RCT share per journal, with absolute counts annotated
+2. `fig2_rct_share_by_year` — line chart of overall RCT share by publication year
+3. `fig3_rct_share_by_year_journal` — small multiples by journal × year
+4. `fig4_rct_subtype_distribution` — bar chart of the six RCT subtypes (individual, cluster, encouragement, sub-component, follow-up, field experiment)
+5. `fig5_dev_papers_by_year_stacked` — stacked bars of development articles per year, split by RCT yes / not RCT / unclassified-no-abstract
+
+Stage 5 has one external dependency (`matplotlib`); all other stages are stdlib-only or use `anthropic`.
+
 ## 5. File structure
 
 ```
 dev-econ-rct-review/
-├── PROJECT_MEMO.md               (this file)
-├── README.md                     (quick how-to-run for collaborators)
-├── requirements.txt              (pinned dependencies for Stages 2-4)
+├── README.md                              quick-start
+├── REPLICATION.md                         AEA-format replication-package documentation
+├── PROJECT_MEMO.md                        this file
+├── LICENSE                                MIT (code) + data-licensing notes
+├── CITATION.cff                           machine-readable citation metadata
+├── requirements.txt                       pinned dependencies (anthropic, matplotlib)
+├── .gitignore                             excludes licensed EconLit raw exports
 ├── scripts/
-│   ├── 01_openalex_pull.py
-│   ├── 02_dev_filter.py          (forthcoming)
-│   ├── 03_rct_classify.py        (forthcoming)
-│   └── 04_assemble.py            (forthcoming)
+│   ├── 00_build_jel_lookup.py             Stage 0 bootstrap
+│   ├── 00b_build_lmic_countries.py        Stage 0b bootstrap
+│   ├── 01_openalex_pull.py                Stage 1a
+│   ├── 01b_crossref_abstract_backfill.py  Stage 1b
+│   ├── 01c_semantic_scholar_backfill.py   Stage 1c
+│   ├── 02_dev_filter.py                   Stage 2
+│   ├── 03a_dev_borderline_classify.py     Stage 3a (LLM)
+│   ├── 03b_rct_classify.py                Stage 3b (LLM)
+│   ├── 04_assemble.py                     Stage 4
+│   └── 05_make_charts.py                  Stage 5
 ├── data/
-│   ├── raw_openalex_2021_2025.csv    (Stage 1 output)
-│   ├── econlit_jel_codes.csv         (Stage 2 input, from EBSCO export)
-│   ├── dev_filtered.csv              (Stage 2 output)
-│   ├── rct_classified.csv            (Stage 3 output)
-│   ├── final_dataset.csv             (Stage 4 output)
-│   └── *.log                         (per-stage run logs)
+│   ├── jel_lookup.csv                     Stage 0 output (committed)
+│   ├── lmic_countries.csv                 Stage 0b output (committed)
+│   ├── EconLit/*.csv                      Stage 2 inputs (NOT committed; licensed)
+│   ├── raw_openalex_2021_2025.csv         Stage 1a output (not committed; regeneratable)
+│   ├── raw_with_abstracts_2021_2025.csv   Stages 1b+1c output (not committed; regeneratable)
+│   ├── dev_filtered.csv                   Stage 2 output (not committed; regeneratable)
+│   ├── dev_classified.csv                 Stage 3a output (not committed; regeneratable)
+│   ├── rct_classified.csv                 Stage 3b output (not committed; regeneratable)
+│   ├── final_dataset.csv                  Stage 4 output (committed)
+│   ├── summary_journal_year.csv           Stage 4 output (committed)
+│   ├── figures/fig*.{png,pdf}             Stage 5 output (committed)
+│   └── *.log                              per-stage run logs (not committed)
 └── docs/
-    ├── codebook.md
-    ├── econlit_export_instructions.md
-    └── llm_prompts.md                (full prompt text for Stages 2-3, for transparency)
+    ├── codebook.md                        column dictionary for final_dataset.csv
+    ├── data_attribution.md                per-source licensing + citation language
+    ├── econlit_export_instructions.md     manual EBSCO export procedure
+    └── llm_prompts.md                     verbatim Stage 3a/3b prompts
 ```
 
 ## 6. Replicability and sharing
@@ -185,7 +228,8 @@ The pattern is consistent with publisher licensing: the three large publishers (
 
 ## 8. Known limitations
 
-- OpenAlex abstract coverage is incomplete for some recent journal issues; expect a small share of rows to require Crossref or manual backfill.
-- EconLit JEL code coverage lags publication by several months; the most recent issues (late 2025) may not yet have JEL codes assigned. Borderline LLM classification handles these cases.
-- LLM classification of RCT status is highly accurate from abstracts when the design is clearly described, but some abstracts use ambiguous language (e.g., "we randomize the order of survey questions" — not an RCT in our sense). The two-pass design and explicit subtype taxonomy are intended to catch these.
-- The "any O code" development filter is broad; it will include some macro-development and growth-theory papers that are not what most readers would call empirical development. A stricter filter (e.g., O1 only, or restriction to a subset of country-classification fields) can be applied after Stage 4 by post-hoc subsetting.
+- OpenAlex abstract coverage is incomplete for some recent journal issues; the Stage 1b-1d backfill chain reduces the gap to roughly 6% of articles, with the residual concentrated in ECMA, JPE, and JDE (publishers that restrict abstracts to indexing services).
+- EconLit JEL code coverage lags publication by several months; the most recent issues (late 2025) may not yet have JEL codes assigned. The country-mention rule (Stage 2 step iii) and the borderline LLM classifier (Stage 3a) together catch these cases.
+- LLM classification of RCT status is highly accurate from abstracts when the design is clearly described, but some abstracts use ambiguous language (e.g., "we randomize the order of survey questions" — not an RCT in our sense). The subtype taxonomy and the explicit "field_experiment" vs "n/a" distinction are intended to surface these. Six rows in our 2026-05-07 run were classified `uncertain` and are flagged for manual review.
+- The country-mention rule uses bare country names with `\b` word-boundary matching. It catches "China" in "China's growth" but NOT "Chinese" in "Chinese economy" (the adjective form). It also does not include the bare term "Africa" (which our regex specifically excludes to avoid false positives from "African Americans" — though `\b` would in fact preclude that match; this conservative choice could be revisited in a v2 release). A handful of papers (~6 in our sample) were caught only by Stage 3a's LLM classifier, not by the structural country rule, because they used adjective forms or referred to "Africa" without a country name.
+- The development scope is conservative on the JEL side (O1 + O2 only). A v2 could explore including specific O5 country-study codes (O53 Asia, O54 Latin America, O55 Africa) as additional inclusion signals, though in our 2026-05-07 sample no paper carried an O5 code without also carrying an O1 or O2 code, so this would have made no difference.

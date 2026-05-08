@@ -110,11 +110,12 @@ Full replication-package documentation is in `REPLICATION.md`, which follows the
 
 ### Recommended sharing path
 
-For public release alongside a publication:
+This project is shared via a public GitHub repository at https://github.com/leightjessica/dev-econ-rct-review. Anyone with the link can clone it and reproduce the dataset following the instructions above.
 
-1. **Push to GitHub.** Initialize a repository, push the working tree (the `.gitignore` excludes the licensed EconLit raw exports automatically). Use a private repository while a paper is under review; flip to public on publication.
-2. **Mint a DOI through Zenodo.** Enable the GitHub-Zenodo integration (one-click in Zenodo's GitHub settings); each tagged release on GitHub then automatically receives a permanent DOI suitable for citing in the paper. The `CITATION.cff` file is automatically rendered as a "Cite this repository" button on the GitHub landing page.
-3. **(Optional) AEA Data and Code Repository.** If the paper is submitted to an AEA journal, the AEA Data Editor will request deposit at `openicpsr.org`. The `REPLICATION.md` is structured to satisfy their template. Adapt minor details (e.g., final DOI) at submission time.
+A few optional steps for stronger archival or formal-publication contexts:
+
+- **Zenodo DOI.** If a permanent DOI is needed (e.g., for inclusion in a published paper's bibliography), enable the GitHub-Zenodo integration; each tagged release on GitHub then receives a permanent DOI. The `CITATION.cff` file in the repository auto-renders as a "Cite this repository" button on the GitHub landing page regardless of whether a DOI is minted.
+- **AEA Data and Code Repository.** Submission to an AEA journal triggers a deposit requirement at `openicpsr.org`. The `REPLICATION.md` here is structured to satisfy that template.
 
 ### Cost to a replicator
 

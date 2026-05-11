@@ -24,6 +24,9 @@ This project assembles a replicable dataset of all randomized controlled trials 
 | 3b    | `03b_rct_classify.py` | Stage 3a output | `data/rct_classified.csv` | ~75 min | `anthropic` |
 | 4     | `04_assemble.py` | Stage 3b output | `data/final_dataset.csv`, `data/summary_journal_year.csv` | <1 min | stdlib |
 | 5     | `05_make_charts.py` | Stage 4 output | `data/figures/*.{png,pdf}` | <1 min | `matplotlib` |
+| 6a    | `06a_country_extract.py` | Stage 4 output + `data/lmic_countries.csv` | `data/country_classified.csv` | ~25 min | `anthropic` |
+| 6b    | `06b_poverty_pull.py` | (World Bank PIP + Indicators APIs) | `data/poverty_2021.csv` | 1-3 min | stdlib |
+| 6c    | `06c_country_analysis.py` | Stages 6a + 6b outputs | `data/country_summary.csv`, `data/figures/fig{6,7,8}_*.{png,pdf}` | <1 min | `matplotlib` |
 
 ### Setup
 
@@ -64,9 +67,14 @@ python 04_assemble.py
 
 # Stage 5: figures
 python 05_make_charts.py
+
+# Stage 6: country-representation analysis (optional add-on)
+python 06a_country_extract.py   # uses Anthropic API; resumable
+python 06b_poverty_pull.py      # World Bank PIP + Indicators APIs; stdlib only
+python 06c_country_analysis.py  # summary CSV + figures
 ```
 
-The scripts in Stages 1, 2, and 4 are **idempotent** — rerunning produces the same output. Stages 3a and 3b are **resumable** — rerunning skips already-classified rows.
+The scripts in Stages 1, 2, 4, and 6b are **idempotent** — rerunning produces the same output. Stages 3a, 3b, and 6a are **resumable** — rerunning skips already-classified rows.
 
 ### Optional: model override
 
@@ -87,7 +95,7 @@ dev-econ-rct-review/
 ├── CITATION.cff               Machine-readable citation metadata
 ├── requirements.txt           Pinned Python dependencies
 ├── .gitignore                 Excludes licensed EconLit raw exports
-├── scripts/                   All pipeline scripts (Stages 0, 0b, 1a-c, 2, 3a-b, 4, 5)
+├── scripts/                   All pipeline scripts (Stages 0, 0b, 1a-c, 2, 3a-b, 4, 5, 6a-c)
 ├── data/                      Inputs and outputs (CSV); figures in data/figures/
 └── docs/
     ├── codebook.md                       Column dictionary for final_dataset.csv

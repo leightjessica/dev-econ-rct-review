@@ -14,9 +14,11 @@ data/raw_with_abstracts_2021_2025.csv
 data/dev_filtered.csv
 data/dev_classified.csv
 data/rct_classified.csv
+data/country_classified.csv
 
-# --- The two final products are kept under version control ---
-# (do NOT add data/final_dataset.csv or data/summary_journal_year.csv to ignore)
+# --- The final products are kept under version control ---
+# (do NOT add data/final_dataset.csv, data/summary_journal_year.csv, or
+# data/country_summary.csv to ignore)
 
 # --- Lookup tables (small; kept under version control for replication) ---
 # (do NOT ignore data/jel_lookup.csv or data/lmic_countries.csv)
@@ -43,3 +45,6 @@ desktop.ini
 .env.*
 *.pem
 *.key
+
+# --- Claude Code working directory (not relevant to replication) ---
+.claude/

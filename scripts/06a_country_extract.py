@@ -51,7 +51,7 @@ except ImportError:
 
 MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5")
 PROMPT_VERSION = "country-extract-v1"
-MAX_TOKENS = 512
+MAX_TOKENS = 1024
 SAVE_EVERY = 50
 CROSS_COUNTRY_THRESHOLD = 5
 
@@ -61,6 +61,7 @@ IN_CSV = os.path.join(PROJECT_DIR, "data", "final_dataset.csv")
 LMIC_CSV = os.path.join(PROJECT_DIR, "data", "lmic_countries.csv")
 OUT_CSV = os.path.join(PROJECT_DIR, "data", "country_classified.csv")
 LOG_TXT = os.path.join(PROJECT_DIR, "data", "06a_country_extract.log")
+DEBUG_TXT = os.path.join(PROJECT_DIR, "data", "06a_country_extract_failures.log")
 
 NEW_FIELDS = [
     "country_study_setting",
@@ -137,15 +138,68 @@ Respond with ONLY a single JSON object in this exact format and nothing else:
 }}"""
 
 
+def _find_balanced_json_objects(text):
+    """Return all top-level balanced `{...}` substrings in `text`.
+
+    A depth-tracking scan that ignores braces inside JSON string literals
+    (including escaped quotes). Used to recover the model's final answer
+    when it emits an initial JSON, then prose like "Wait, let me
+    reconsider", then a corrected JSON.
+    """
+    out = []
+    depth = 0
+    start = None
+    in_string = False
+    escape = False
+    for i, ch in enumerate(text):
+        if escape:
+            escape = False
+            continue
+        if in_string:
+            if ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_string = False
+            continue
+        if ch == '"':
+            in_string = True
+        elif ch == "{":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif ch == "}":
+            if depth > 0:
+                depth -= 1
+                if depth == 0 and start is not None:
+                    out.append(text[start:i + 1])
+                    start = None
+    return out
+
+
 def parse_json_response(text):
+    """Tolerant JSON extractor.
+
+    Handles three observed response patterns:
+      1. Bare JSON object.
+      2. JSON wrapped in a ```json ... ``` code fence, optionally preceded
+         or followed by short prose.
+      3. Self-correction: an initial JSON, then "Wait, let me reconsider..."
+         prose, then a revised JSON. In this case the revised (last) JSON
+         is the model's final answer and the one we want.
+
+    Strategy: locate all balanced top-level `{...}` blocks and json.loads()
+    the LAST one. If no balanced blocks parse, fall back to the raw text
+    so the caller sees a real JSONDecodeError.
+    """
     t = text.strip()
-    if t.startswith("```"):
-        t = t.split("\n", 1)[1] if "\n" in t else t[3:]
-        if t.endswith("```"):
-            t = t[:-3]
-        t = t.strip()
-        if t.startswith("json"):
-            t = t[4:].strip()
+    blocks = _find_balanced_json_objects(t)
+    # Try blocks in reverse so we prefer the model's corrected final answer.
+    for block in reversed(blocks):
+        try:
+            return json.loads(block)
+        except json.JSONDecodeError:
+            continue
+    # Final fallback: try the raw text (will raise if malformed).
     return json.loads(t)
 
 
@@ -236,7 +290,12 @@ def main():
             n_err += 1
             continue
         if result is None:
-            log(f"  [{k}] could not parse JSON for idx {i}: {raw[:200]!r}")
+            log(f"  [{k}] could not parse JSON for idx {i}: {raw[:200]!r}  "
+                f"(full body written to {os.path.basename(DEBUG_TXT)})")
+            with open(DEBUG_TXT, "a", encoding="utf-8") as df:
+                df.write(f"=== idx={i}  k={k}  ts={datetime.now(timezone.utc).isoformat()} ===\n")
+                df.write(raw)
+                df.write("\n\n")
             n_err += 1
             continue
 

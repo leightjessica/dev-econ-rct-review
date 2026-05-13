@@ -8,6 +8,11 @@ Writes: data/country_summary.csv
         data/figures/fig6_top_countries_bar.{png,pdf}
         data/figures/fig7_papers_vs_poverty_scatter.{png,pdf}
         data/figures/fig8_papers_vs_population_scatter.{png,pdf}
+        data/figures/fig9_top_papers_per_capita.{png,pdf}
+        data/figures/fig10_top_papers_per_poor.{png,pdf}
+        data/figures/fig11_bottom_papers_per_capita.{png,pdf}
+        data/figures/fig12_bottom_papers_per_poor.{png,pdf}
+        data/figures/fig13_top_rct_countries_bar.{png,pdf}
 
 Methodology
 -----------
@@ -29,9 +34,22 @@ Methodology
    - rep_ratio_pop      share_of_papers / share_of_pop  (1 = proportional)
 
 4. Figures:
-   - fig6: horizontal bar of top 20 by papers_fractional
-   - fig7: scatter of papers_fractional (y) vs poor_population_2021_mn (x, log)
-   - fig8: scatter of papers_fractional (y) vs total_population_2021 (x, log)
+   - fig6:  horizontal bar of top 20 by papers_fractional
+   - fig7:  scatter of papers_fractional (y) vs poor_population_2021_mn (x, log)
+   - fig8:  scatter of papers_fractional (y) vs total_population_2021 (x, log)
+   - fig9:  horizontal bar of top 10 by papers per million people (per-capita
+            intensity of research; restricted to countries with at least
+            MIN_PAPERS_FOR_RATE fractional papers)
+   - fig10: horizontal bar of top 10 by papers per million poor people
+            (same restriction)
+   - fig11: horizontal bar of the 10 MOST underrepresented LMICs by papers
+            per million people, restricted to countries with at least
+            MIN_POP_FOR_UNDERREP_MN million inhabitants (to avoid ranking
+            being dominated by small island states with zero research)
+   - fig12: same idea for papers per million poor, restricted to countries
+            with at least MIN_POOR_FOR_UNDERREP_MN million people in poverty
+   - fig13: parallel to fig6 but restricted to the RCT subsample
+            (rct_classification == 'yes')
    In both scatters, a dashed reference line marks the slope corresponding
    to proportional representation (total_papers / total_X). Selected
    over- and under-represented countries are labeled.
@@ -62,7 +80,16 @@ FIG_DIR = os.path.join(PROJECT_DIR, "data", "figures")
 LOG_TXT = os.path.join(PROJECT_DIR, "data", "06c_country_analysis.log")
 
 TOP_N_BAR = 20
+TOP_N_RATE_BAR = 10  # countries to show in the per-capita / per-poor bar charts
 LABEL_N_SCATTER = 15  # number of points to label in scatter plots
+MIN_PAPERS_FOR_RATE = 1.0  # minimum fractional papers a country must have
+                           # before it is eligible for the TOP rate-based
+                           # rankings; avoids ranking countries dominated by
+                           # population scale rather than research interest
+MIN_POP_FOR_UNDERREP_MN = 10.0    # minimum population (in millions) to enter
+                                  # the BOTTOM-rate-per-capita ranking
+MIN_POOR_FOR_UNDERREP_MN = 1.0    # minimum poor population (in millions) to
+                                  # enter the BOTTOM-rate-per-poor ranking
 
 
 def log(msg):
@@ -82,7 +109,7 @@ def save(fig, name):
     log(f"  wrote {name}.png + {name}.pdf")
 
 
-def load_papers():
+def load_papers(rct_only=False):
     """Return papers as a list of (paper_index, [iso3,...]).
 
     Only retains rows that qualify for the country tally:
@@ -91,11 +118,12 @@ def load_papers():
       - country_is_cross_country != TRUE
       - country_non_lmic_only != TRUE
       - country_iso3_list non-empty
+      - (if rct_only) rct_classification == 'yes'
     """
     kept = []
     n_total = n_dev = 0
     n_skip_no_class = n_skip_cross = n_skip_no_country = 0
-    n_skip_non_lmic = n_skip_empty = 0
+    n_skip_non_lmic = n_skip_empty = n_skip_not_rct = 0
     setting_counts = defaultdict(int)
     with open(IN_PAPERS, encoding="utf-8") as f:
         for i, r in enumerate(csv.DictReader(f)):
@@ -121,14 +149,20 @@ def load_papers():
             if not iso_list:
                 n_skip_empty += 1
                 continue
+            if rct_only and (r.get("rct_classification") or "").strip().lower() != "yes":
+                n_skip_not_rct += 1
+                continue
             kept.append((i, iso_list))
-    log(f"Loaded {n_total} rows; {n_dev} development papers")
-    log("Study-setting distribution among dev papers:")
-    for k in sorted(setting_counts, key=lambda x: -setting_counts[x]):
-        log(f"    {k:25s} {setting_counts[k]}")
+    tag = " (RCT subsample)" if rct_only else ""
+    log(f"Loaded {n_total} rows; {n_dev} development papers{tag}")
+    if not rct_only:
+        log("Study-setting distribution among dev papers:")
+        for k in sorted(setting_counts, key=lambda x: -setting_counts[x]):
+            log(f"    {k:25s} {setting_counts[k]}")
+    extra = f"  not_rct={n_skip_not_rct}" if rct_only else ""
     log(f"Skipped: no_classification={n_skip_no_class}  cross_country={n_skip_cross}  "
-        f"no_country={n_skip_no_country}  non_lmic_only={n_skip_non_lmic}  empty_iso3={n_skip_empty}")
-    log(f"Retained for country tally: {len(kept)} papers")
+        f"no_country={n_skip_no_country}  non_lmic_only={n_skip_non_lmic}  empty_iso3={n_skip_empty}{extra}")
+    log(f"Retained for country tally{tag}: {len(kept)} papers")
     return kept
 
 
@@ -218,27 +252,59 @@ def write_summary(rows):
     log(f"Wrote {len(rows)} rows -> {OUT_SUMMARY}")
 
 
-def fig6_top_countries_bar(rows):
-    top = sorted(rows, key=lambda r: -float(r["papers_fractional"]))[:TOP_N_BAR]
-    labels = [r["name_canonical"] or r["iso3"] for r in top]
-    frac = [float(r["papers_fractional"]) for r in top]
-    raw = [int(r["papers_raw"]) for r in top]
+def _top_countries_bar(entries, name_lookup, total_papers, name, title, color="#3a7ca5"):
+    """Shared helper for top-N fractional-paper bar charts.
+
+    entries: iterable of (iso3, papers_raw, papers_fractional) tuples.
+    name_lookup: iso3 -> canonical country name (falls back to iso3).
+    total_papers: total fractional papers in the parent universe (used to
+                  annotate share-of-total alongside the raw count).
+    """
+    top = sorted(entries, key=lambda e: -e[2])[:TOP_N_BAR]
+    labels = [name_lookup.get(iso) or iso for iso, _, _ in top]
+    frac = [f for _, _, f in top]
+    raw = [n for _, n, _ in top]
 
     fig, ax = plt.subplots(figsize=(9, 8))
     y_pos = list(range(len(labels)))
-    bars = ax.barh(y_pos, frac, color="#3a7ca5", edgecolor="black", linewidth=0.5)
+    bars = ax.barh(y_pos, frac, color=color, edgecolor="black", linewidth=0.5)
     ax.set_yticks(y_pos)
     ax.set_yticklabels(labels, fontsize=10)
     ax.invert_yaxis()
     ax.set_xlabel("Fractional paper count (1/n weighting for multi-country studies)")
-    ax.set_title(f"Top {TOP_N_BAR} LMICs by representation in development articles, 2021-2025")
-    ax.set_xlim(0, max(frac) * 1.2)
+    ax.set_title(title)
+    ax.set_xlim(0, max(frac) * 1.25)
     ax.grid(axis="x", alpha=0.3)
     ax.set_axisbelow(True)
     for b, f, n in zip(bars, frac, raw):
+        share = (f / total_papers * 100) if total_papers else 0
         ax.text(b.get_width() + max(frac) * 0.01, b.get_y() + b.get_height() / 2,
-                f"{f:.1f}  (raw n={n})", va="center", ha="left", fontsize=8)
-    save(fig, "fig6_top_countries_bar")
+                f"{f:.1f}  (raw n={n}, {share:.1f}%)",
+                va="center", ha="left", fontsize=8)
+    save(fig, name)
+
+
+def fig6_top_countries_bar(rows, total_papers):
+    entries = [(r["iso3"], int(r["papers_raw"]), float(r["papers_fractional"]))
+               for r in rows]
+    name_lookup = {r["iso3"]: r["name_canonical"] for r in rows}
+    _top_countries_bar(
+        entries, name_lookup, total_papers,
+        name="fig6_top_countries_bar",
+        title=f"Top {TOP_N_BAR} LMICs by representation in development articles, 2021-2025",
+    )
+
+
+def fig13_top_rct_countries_bar(rct_tally, rows, total_rct_papers):
+    """Parallel to fig6, restricted to papers classified as RCT == 'yes'."""
+    entries = [(iso, t["papers_raw"], t["papers_fractional"])
+               for iso, t in rct_tally.items()]
+    name_lookup = {r["iso3"]: r["name_canonical"] for r in rows}
+    _top_countries_bar(
+        entries, name_lookup, total_rct_papers,
+        name="fig13_top_rct_countries_bar",
+        title=f"Top {TOP_N_BAR} LMICs by representation in RCT articles, 2021-2025",
+    )
 
 
 def _scatter(rows, x_key, x_label, x_unit_note, name, total_papers, total_x):
@@ -320,6 +386,167 @@ def fig8_papers_vs_population(rows, total_papers, total_pop):
              total_papers, total_pop_mn)
 
 
+def _rate_bar(rows, denom_key, denom_to_millions, x_label, title, name):
+    """Generic horizontal-bar helper for the rate-based rankings.
+
+    rows: list of country dicts from build_summary().
+    denom_key: column name in `rows` that holds the denominator (e.g.
+        'total_population_2021' or 'poor_population_2021_mn').
+    denom_to_millions: divisor that converts the denominator to millions
+        (1e6 for raw population, 1.0 for the already-in-millions poor count).
+    """
+    candidates = []
+    for r in rows:
+        denom = r.get(denom_key) or ""
+        papers = float(r["papers_fractional"])
+        if not denom or papers < MIN_PAPERS_FOR_RATE:
+            continue
+        denom_mn = float(denom) / denom_to_millions
+        if denom_mn <= 0:
+            continue
+        rate = papers / denom_mn   # papers per million (of pop or poor)
+        candidates.append((r["iso3"], r["name_canonical"] or r["iso3"],
+                           rate, papers, denom_mn))
+
+    if not candidates:
+        log(f"  no eligible countries for {name}; skipping")
+        return
+
+    top = sorted(candidates, key=lambda c: -c[2])[:TOP_N_RATE_BAR]
+    labels = [c[1] for c in top]
+    rates = [c[2] for c in top]
+    papers = [c[3] for c in top]
+    denoms = [c[4] for c in top]
+
+    fig, ax = plt.subplots(figsize=(9, 6))
+    y_pos = list(range(len(labels)))
+    bars = ax.barh(y_pos, rates, color="#3a7ca5", edgecolor="black", linewidth=0.5)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(labels, fontsize=10)
+    ax.invert_yaxis()
+    ax.set_xlabel(x_label)
+    ax.set_title(title)
+    ax.set_xlim(0, max(rates) * 1.30)
+    ax.grid(axis="x", alpha=0.3)
+    ax.set_axisbelow(True)
+    for b, rate, p, d in zip(bars, rates, papers, denoms):
+        ax.text(b.get_width() + max(rates) * 0.01,
+                b.get_y() + b.get_height() / 2,
+                f"{rate:.3g}  ({p:.1f} papers / {d:.2f}M)",
+                va="center", ha="left", fontsize=8)
+    save(fig, name)
+
+
+def fig9_top_papers_per_capita(rows):
+    _rate_bar(
+        rows,
+        denom_key="total_population_2021",
+        denom_to_millions=1e6,
+        x_label="Papers per million people",
+        title=(f"Top {TOP_N_RATE_BAR} LMICs by papers per capita "
+               f"(min {MIN_PAPERS_FOR_RATE:g} fractional papers)"),
+        name="fig9_top_papers_per_capita",
+    )
+
+
+def fig10_top_papers_per_poor(rows):
+    _rate_bar(
+        rows,
+        denom_key="poor_population_2021_mn",
+        denom_to_millions=1.0,
+        x_label="Papers per million poor people ($2.15/day, 2017 PPP)",
+        title=(f"Top {TOP_N_RATE_BAR} LMICs by papers per poor person "
+               f"(min {MIN_PAPERS_FOR_RATE:g} fractional papers)"),
+        name="fig10_top_papers_per_poor",
+    )
+
+
+def _underrep_bar(rows, denom_key, denom_to_millions, min_denom_millions,
+                  x_label, title, name):
+    """Bottom-of-distribution horizontal-bar helper.
+
+    Restricts the universe to countries whose denominator (population in
+    millions, or poor population in millions) is at least
+    `min_denom_millions`, then ranks ascending by the papers-per-million
+    rate. Ties at rate = 0 are broken by descending denominator, so the
+    most populous (or most poor-burdened) country with zero research
+    surfaces first.
+    """
+    candidates = []
+    for r in rows:
+        denom = r.get(denom_key) or ""
+        if not denom:
+            continue
+        denom_mn = float(denom) / denom_to_millions
+        if denom_mn < min_denom_millions:
+            continue
+        papers = float(r["papers_fractional"])
+        rate = papers / denom_mn
+        candidates.append((r["iso3"], r["name_canonical"] or r["iso3"],
+                           rate, papers, denom_mn))
+
+    if not candidates:
+        log(f"  no eligible countries for {name}; skipping")
+        return
+
+    # Ascending rate; secondary key = descending denominator so the
+    # largest country at rate=0 ranks first.
+    bottom = sorted(candidates, key=lambda c: (c[2], -c[4]))[:TOP_N_RATE_BAR]
+    labels = [c[1] for c in bottom]
+    rates = [c[2] for c in bottom]
+    papers = [c[3] for c in bottom]
+    denoms = [c[4] for c in bottom]
+
+    fig, ax = plt.subplots(figsize=(9, 6))
+    y_pos = list(range(len(labels)))
+    # Use a red palette to visually distinguish underrepresentation from
+    # the top-N (blue) charts.
+    bars = ax.barh(y_pos, rates, color="#c1666b", edgecolor="black", linewidth=0.5)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(labels, fontsize=10)
+    ax.invert_yaxis()  # most underrepresented at the top of the plot
+    ax.set_xlabel(x_label)
+    ax.set_title(title)
+    max_rate = max(rates) if rates and max(rates) > 0 else 0.01
+    ax.set_xlim(0, max_rate * 1.35)
+    ax.grid(axis="x", alpha=0.3)
+    ax.set_axisbelow(True)
+    for b, rate, p, d in zip(bars, rates, papers, denoms):
+        ax.text(b.get_width() + max_rate * 0.01,
+                b.get_y() + b.get_height() / 2,
+                f"{rate:.3g}  ({p:.1f} papers / {d:.1f}M)",
+                va="center", ha="left", fontsize=8)
+    save(fig, name)
+
+
+def fig11_bottom_papers_per_capita(rows):
+    _underrep_bar(
+        rows,
+        denom_key="total_population_2021",
+        denom_to_millions=1e6,
+        min_denom_millions=MIN_POP_FOR_UNDERREP_MN,
+        x_label="Papers per million people",
+        title=(f"Most underrepresented LMICs by papers per capita\n"
+               f"(restricted to countries with at least "
+               f"{MIN_POP_FOR_UNDERREP_MN:g}M inhabitants)"),
+        name="fig11_bottom_papers_per_capita",
+    )
+
+
+def fig12_bottom_papers_per_poor(rows):
+    _underrep_bar(
+        rows,
+        denom_key="poor_population_2021_mn",
+        denom_to_millions=1.0,
+        min_denom_millions=MIN_POOR_FOR_UNDERREP_MN,
+        x_label="Papers per million poor people ($2.15/day, 2017 PPP)",
+        title=(f"Most underrepresented LMICs by papers per poor person\n"
+               f"(restricted to countries with at least "
+               f"{MIN_POOR_FOR_UNDERREP_MN:g}M people in poverty)"),
+        name="fig12_bottom_papers_per_poor",
+    )
+
+
 def main():
     open(LOG_TXT, "w").close()
     log("Stage 6c start")
@@ -338,9 +565,19 @@ def main():
     log(f"Total LMIC population, 2021: {total_pop:,.0f}")
     write_summary(rows)
 
-    fig6_top_countries_bar(rows)
+    fig6_top_countries_bar(rows, total_papers)
     fig7_papers_vs_poverty(rows, total_papers, total_poor)
     fig8_papers_vs_population(rows, total_papers, total_pop)
+    fig9_top_papers_per_capita(rows)
+    fig10_top_papers_per_poor(rows)
+    fig11_bottom_papers_per_capita(rows)
+    fig12_bottom_papers_per_poor(rows)
+
+    rct_papers = load_papers(rct_only=True)
+    rct_tally = compute_country_tallies(rct_papers)
+    total_rct_papers = sum(t["papers_fractional"] for t in rct_tally.values())
+    log(f"Total fractional papers tallied (RCT subsample): {total_rct_papers:.2f}")
+    fig13_top_rct_countries_bar(rct_tally, rows, total_rct_papers)
 
     log("Stage 6c complete.")
 

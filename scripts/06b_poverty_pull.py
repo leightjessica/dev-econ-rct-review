@@ -1,8 +1,10 @@
 """
-Stage 6b: Pull 2021 poverty headcount and total population per LMIC.
+Stage 6b: Pull poverty headcount and total population per LMIC for both
+2021 (current snapshot) and 2002 (baseline for the 2002 -> 2021 change).
 
 Reads:  data/lmic_countries.csv  (Stage 0b output)
-Writes: data/poverty_2021.csv
+Writes: data/poverty_2021.csv    (filename retained; now panel-shaped with
+                                  both 2002 and 2021 columns)
 
 Sources
 -------
@@ -12,23 +14,34 @@ Sources
    estimates where no survey was conducted that year). Some LMICs are not
    in the 2021 release; for those we fall back to the most recent available
    year (preferring national reporting level over urban/rural).
+   The 2002 baseline is pulled as a country=all,year=2002 lineup; no
+   per-country fallback is performed for 2002 (a country with no usable
+   2002 estimate is left missing in the change column rather than substituting
+   a year-of-convenience that would muddy the comparison).
 
-2. World Bank Indicators API for total population (SP.POP.TOTL) in 2021
+2. World Bank Indicators API for total population (SP.POP.TOTL) in both
+   2002 and 2021.
    https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL
 
 Output schema (data/poverty_2021.csv)
 -------------------------------------
-  iso3                       ISO-3166 alpha-3 country code
-  name_canonical             From lmic_countries.csv
-  income_group               LIC / LMC / UMC
-  headcount_pct_2021         Headcount ratio (in percent) at $2.15/day 2017 PPP
-  headcount_year_used        Reporting year of the headcount used (2021 if lineup, else fallback)
-  headcount_reporting_level  national / urban / rural
-  headcount_is_interpolated  TRUE if PIP marked the value as interpolated/extrapolated
-  headcount_is_stale         TRUE if headcount_year_used < 2021 - 5 (i.e., before 2016)
-  total_population_2021      From WB Indicators API
-  poor_population_2021_mn    headcount * pop / 1e6, in millions
-  poverty_data_missing       TRUE if no PIP data of any year is available
+  iso3                                  ISO-3166 alpha-3 country code
+  name_canonical                        From lmic_countries.csv
+  income_group                          LIC / LMC / UMC
+  headcount_pct_2021                    Headcount ratio (in percent) at $2.15/day 2017 PPP
+  headcount_year_used                   Reporting year of the 2021 headcount (2021 if lineup, else fallback)
+  headcount_reporting_level             national / urban / rural
+  headcount_is_interpolated             TRUE if PIP marked the 2021 value as interpolated/extrapolated
+  headcount_is_stale                    TRUE if headcount_year_used < 2021 - 5 (before 2016)
+  total_population_2021                 From WB Indicators API
+  poor_population_2021_mn               headcount * pop / 1e6, in millions
+  poverty_data_missing                  TRUE if no PIP data of any year is available
+  headcount_pct_2002                    Headcount ratio (in percent) at $2.15/day 2017 PPP, 2002 lineup
+  headcount_2002_is_interpolated        TRUE if PIP marked the 2002 value as interpolated
+  total_population_2002                 From WB Indicators API for date=2002
+  poor_population_2002_mn               2002 headcount * 2002 pop / 1e6, in millions
+  poverty_reduction_2002_to_2021_mn     poor_pop_2002 - poor_pop_2021 (positive = reduction)
+  poverty_change_data_missing           TRUE if either year is missing so the change cannot be computed
 
 Replicability: standard library only.
 """
@@ -45,10 +58,13 @@ from datetime import datetime, timezone
 EMAIL = "J.Leight@cgiar.org"
 
 PIP_2021_URL = "https://api.worldbank.org/pip/v1/pip?country=all&year=2021&povline=2.15&format=json"
+PIP_2002_URL = "https://api.worldbank.org/pip/v1/pip?country=all&year=2002&povline=2.15&format=json"
 PIP_PER_COUNTRY_URL = "https://api.worldbank.org/pip/v1/pip?country={iso3}&year=all&povline=2.15&format=json"
 WB_POP_URL = "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2021&format=json&per_page=400"
+WB_POP_URL_2002 = "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2002&format=json&per_page=400"
 
 REF_YEAR = 2021
+BASE_YEAR = 2002
 STALE_CUTOFF = 2016  # headcount surveys older than this flagged stale
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -223,7 +239,47 @@ def main():
     if missing_pop:
         log(f"  LMICs missing 2021 population data: {len(missing_pop)} -> {missing_pop}")
 
-    # --- 4. Assemble output -----------------------------------------------
+    # --- 4. Pull PIP 2002 lineup ------------------------------------------
+    # No per-country fallback here: a 2002 estimate for a country whose nearest
+    # survey is 1995 or 2010 would smear the change variable across uneven
+    # reference points. Better to mark such countries as missing for the change
+    # column and let the downstream scatter omit them.
+    log(f"Fetching {PIP_2002_URL}")
+    pip02 = fetch_json(PIP_2002_URL)
+    log(f"  PIP 2002 returned {len(pip02)} rows")
+    pip02_grouped = {}
+    for r in pip02:
+        iso3 = r.get("country_code")
+        if not iso3:
+            continue
+        pip02_grouped.setdefault(iso3, []).append(r)
+    pip_2002_by_iso = {}
+    for iso3, recs in pip02_grouped.items():
+        chosen = pick_best(recs)
+        if chosen is None:
+            continue
+        pip_2002_by_iso[iso3] = chosen
+    log(f"  Distinct ISO3 with 2002 PIP estimate: {len(pip_2002_by_iso)}")
+    log(f"  LMICs covered by PIP 2002: {sum(1 for c in pip_2002_by_iso if c in lmic)}")
+
+    # --- 5. Pull WB SP.POP.TOTL for 2002 ----------------------------------
+    log(f"Fetching {WB_POP_URL_2002}")
+    wb_pop_2002_resp = fetch_json(WB_POP_URL_2002)
+    if not isinstance(wb_pop_2002_resp, list) or len(wb_pop_2002_resp) < 2:
+        raise SystemExit("Unexpected WB Indicators API response shape (2002)")
+    pop_2002_records = wb_pop_2002_resp[1] or []
+    pop_2002_by_iso = {}
+    for r in pop_2002_records:
+        iso3 = r.get("countryiso3code")
+        val = r.get("value")
+        if iso3 and val is not None:
+            pop_2002_by_iso[iso3] = val
+    log(f"  2002 population records loaded for {len(pop_2002_by_iso)} ISO3 codes")
+    missing_pop_2002 = [iso3 for iso3 in lmic if iso3 not in pop_2002_by_iso]
+    if missing_pop_2002:
+        log(f"  LMICs missing 2002 population data: {len(missing_pop_2002)} -> {missing_pop_2002}")
+
+    # --- 6. Assemble output -----------------------------------------------
     out_rows = []
     for iso3 in sorted(lmic):
         info = lmic[iso3]
@@ -239,10 +295,17 @@ def main():
             "total_population_2021": "",
             "poor_population_2021_mn": "",
             "poverty_data_missing": "",
+            "headcount_pct_2002": "",
+            "headcount_2002_is_interpolated": "",
+            "total_population_2002": "",
+            "poor_population_2002_mn": "",
+            "poverty_reduction_2002_to_2021_mn": "",
+            "poverty_change_data_missing": "",
         }
         pop = pop_by_iso.get(iso3)
         if pop is not None:
             row["total_population_2021"] = f"{int(pop)}"
+        poor_pop_2021_mn = None
         if iso3 in poverty:
             rec, source = poverty[iso3]
             headcount = rec.get("headcount")
@@ -256,10 +319,35 @@ def main():
             row["headcount_is_interpolated"] = "TRUE" if interp else "FALSE"
             row["headcount_is_stale"] = "TRUE" if stale else "FALSE"
             if headcount is not None and pop is not None:
-                row["poor_population_2021_mn"] = f"{headcount * pop / 1e6:.4f}"
+                poor_pop_2021_mn = headcount * pop / 1e6
+                row["poor_population_2021_mn"] = f"{poor_pop_2021_mn:.4f}"
             row["poverty_data_missing"] = "FALSE"
         else:
             row["poverty_data_missing"] = "TRUE"
+
+        # 2002 baseline
+        pop_2002 = pop_2002_by_iso.get(iso3)
+        if pop_2002 is not None:
+            row["total_population_2002"] = f"{int(pop_2002)}"
+        poor_pop_2002_mn = None
+        rec_2002 = pip_2002_by_iso.get(iso3)
+        if rec_2002 is not None:
+            hc_2002 = rec_2002.get("headcount")
+            interp_2002 = bool(rec_2002.get("is_interpolated"))
+            if hc_2002 is not None:
+                row["headcount_pct_2002"] = f"{100.0 * hc_2002:.4f}"
+                row["headcount_2002_is_interpolated"] = "TRUE" if interp_2002 else "FALSE"
+                if pop_2002 is not None:
+                    poor_pop_2002_mn = hc_2002 * pop_2002 / 1e6
+                    row["poor_population_2002_mn"] = f"{poor_pop_2002_mn:.4f}"
+
+        if poor_pop_2002_mn is not None and poor_pop_2021_mn is not None:
+            reduction = poor_pop_2002_mn - poor_pop_2021_mn
+            row["poverty_reduction_2002_to_2021_mn"] = f"{reduction:.4f}"
+            row["poverty_change_data_missing"] = "FALSE"
+        else:
+            row["poverty_change_data_missing"] = "TRUE"
+
         out_rows.append(row)
 
     fields = list(out_rows[0].keys())
@@ -271,7 +359,9 @@ def main():
     n_missing = sum(1 for r in out_rows if r["poverty_data_missing"] == "TRUE")
     n_stale = sum(1 for r in out_rows if r["headcount_is_stale"] == "TRUE")
     n_interp = sum(1 for r in out_rows if r["headcount_is_interpolated"] == "TRUE")
-    log(f"Summary: {n_missing} missing poverty data; {n_stale} stale (<{STALE_CUTOFF}); {n_interp} interpolated 2021 lineup values")
+    n_chg_missing = sum(1 for r in out_rows if r["poverty_change_data_missing"] == "TRUE")
+    log(f"Summary: {n_missing} missing 2021 poverty data; {n_stale} stale (<{STALE_CUTOFF}); "
+        f"{n_interp} interpolated 2021 lineup values; {n_chg_missing} cannot compute 2002->2021 change")
     log("Stage 6b complete.")
 
 

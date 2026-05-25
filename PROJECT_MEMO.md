@@ -1,6 +1,6 @@
 # Project memo: Identifying development RCTs in top economics journals, 2021-2025
 
-**Last updated:** 2026-05-07
+**Last updated:** 2026-05-22
 **Owner:** Jessica Leight (J.Leight@cgiar.org)
 **Project root:** `~/IFPRI Dropbox/Jessica Leight/dev-econ-rct-review/`
 
@@ -101,6 +101,14 @@ The script is **resumable** — rerunning skips rows already classified — and 
 
 A second pass that fetches article introductions for "uncertain" rows is scaffolded but deferred to a later iteration; uncertain rows are flagged in the output for manual review.
 
+### Stage 3c — LLM classification by substantive topic
+
+`scripts/03c_topic_classify.py` reads `data/final_dataset.csv` and assigns each development paper a primary and (optional) secondary code from a 16-element topic taxonomy: `agriculture, health, education, labor, firms, finance, social_protection, gender, political_economy, conflict_crime, environment, trade_macro, migration, infrastructure, behavioral_info, other`. Unlike Stages 3a and 3b, which use the Anthropic Python SDK, Stage 3c shells out to headless `claude -p` (authenticating via the user's local subscription OAuth) and pins the model to `claude-haiku-4-5-20251001`; structured output is enforced via `--json-schema`. The script is resumable, parallelized at four workers, and checkpoints every 50 calls. Output: `data/topic_classified.csv` (one row per development paper, with `primary_topic`, `secondary_topic`, `topic_confidence`, `topic_justification`, `topic_llm_model`, `topic_prompt_version`).
+
+### Stage 3d — Blind-coding validation of Stage 3c
+
+`scripts/03d_topic_validate.py` runs in two modes. BUILD mode (default) draws a stratified random sample of N papers (default 50) from `topic_classified.csv` — stratified by LLM primary topic, two papers per code with the residual filled proportional to code size — and writes `data/topic_validation_blind.csv` with the paper's bibliographic metadata, title, abstract, and three blank human-coder columns (`primary_topic_human`, `secondary_topic_human`, `notes`); the LLM's classification is NOT present in the blind sheet, to avoid anchoring. A companion `data/topic_validation_codebook.md` is written as a one-page cheat sheet of the 16 codes. REPORT mode (`--report`) merges human and LLM codes after the sheet is filled in, computing primary and secondary agreement, per-code precision and recall, a confusion matrix, and a side-by-side disagreement listing. Output: `data/topic_validation_report.md`.
+
 ### Stage 4 — Output assembly and summary
 
 `scripts/04_assemble.py` reads the latest available output (rct_classified > dev_classified > dev_filtered, in priority order), filters to `is_development == 'TRUE'` AND `type == 'article'`, and writes `data/final_dataset.csv` with the columns documented in `docs/codebook.md`. A second output, `data/summary_journal_year.csv`, is a wide table of counts per journal-year (development total, RCT yes / no / uncertain). A SHA-256 of each output is logged for reproducibility verification.
@@ -171,9 +179,9 @@ We have followed several conventions to keep the project shareable.
 - **No raw PDF redistribution.** Where Stage 3 fetches article introductions, only the small text excerpts strictly needed for classification are stored (in the run log) and never the full article content.
 - **Versioning.** The project folder can be initialized as a git repository at any time; data files in `data/` are large and may be excluded via `.gitignore` if shared via GitHub. For Dropbox-based sharing, the entire folder is portable.
 
-## 7a. Final pipeline outturn (2026-05-07 run)
+## 7a. Final pipeline outturn (2026-05-07 run, manual exclusion 2026-05-22)
 
-The full pipeline produced **1,601 development-economics articles** across the twelve in-scope journals over 2021-2025, of which **417 (26.0%)** are classified as randomized controlled trials. Per-journal counts:
+The full pipeline produced **1,600 development-economics articles** across the twelve in-scope journals over 2021-2025, of which **417 (26.1%)** are classified as randomized controlled trials. One article (DOI `10.1093/restud/rdae020`, "Estimating Equilibrium in Health Insurance Exchanges: Price Competition and Subsidy Design under the ACA", RES 2024) was manually excluded on review as a US ACA paper carrying O15 and O16 JEL codes but no development content; see Section 8 on the JEL-misassignment limitation. Per-journal counts:
 
 | Journal      | Dev articles | RCTs | RCT rate |
 |--------------|-------------:|-----:|---------:|
@@ -184,12 +192,12 @@ The full pipeline produced **1,601 development-economics articles** across the t
 | ECMA         | 48  | 11  | 22.9% |
 | QJE          | 42  | 14  | 33.3% |
 | JPE          | 51  | 12  | 23.5% |
-| RES          | 68  | 13  | 19.1% |
+| RES          | 67  | 13  | 19.4% |
 | RESTAT       | 138 | 33  | 23.9% |
 | EJ           | 146 | 41  | 28.1% |
 | JEEA         | 59  | 18  | 30.5% |
 | JDE          | 764 | 173 | 22.6% |
-| **Total**    | **1,601** | **417** | **26.0%** |
+| **Total**    | **1,600** | **417** | **26.1%** |
 
 RCT subtype distribution (across the 417 yeses):
 
@@ -205,7 +213,7 @@ RCT subtype distribution (across the 417 yeses):
 Stage 3 LLM cost was approximately **$7.00** total ($1.50 for Stage 3a, $5.50 for Stage 3b). The system prompt was below Sonnet 4.5's 1,024-token caching threshold, so prompt caching did not activate; switching to a longer prompt (or to Haiku for the simpler Stage 3a task) would reduce the cost further on a re-run.
 
 Reproducibility checksums (recorded in `data/04_assemble.log`):
-- `data/final_dataset.csv` — 1,601 rows, single-row-per-article
+- `data/final_dataset.csv` — 1,600 rows, single-row-per-article
 - `data/summary_journal_year.csv` — 60 rows (12 journals × 5 years)
 
 ## 7b. Stage 1 outturn (as of 2026-05-06 run)
@@ -226,6 +234,19 @@ The three-stage Stage 1 chain produced 5,635 records across the twelve journals 
 
 The pattern is consistent with publisher licensing: the three large publishers (Elsevier/JDE, Wiley/ECMA, UChicago Press/JPE) restrict abstract distribution to indexing services. Stage 1d (EconLit backfill, performed during Stage 2 export) is expected to close most of the JDE gap; ECMA and JPE will likely require some manual residual.
 
+## 7c. Topic-classification validation (2026-05-22)
+
+We drew a 50-paper stratified random sample (seed 42; two papers per LLM primary code where available, with the residual filled proportional to code size) from `topic_classified.csv` and blind-coded 49 of the 50 against the 16-code taxonomy. The 50th, the ACA paper described in Section 7a, was retained for the manual exclusion rather than re-coded. After canonicalizing the human codes to match the LLM's underscored variants (`political economy → political_economy`, `social protection → social_protection`, `trade_ macro → trade_macro`, `behavioral → behavioral_info`, `credit → finance`, `educatiion → education`), headline agreement on primary topic was **65.3% (32/49)** and on exact-match secondary topic was **34.7% (17/49)**. The pre-normalization raw figure of 49.0% understated accuracy, with much of the apparent disagreement reflecting label drift in the human sheet rather than substantive mismatch.
+
+Per-code patterns from the 49-paper sample (precision / recall, primary topic):
+
+- High-precision, high-recall: `education` (100% / 80%), `health` (75% / 100%), `social_protection` (100% / 67%), `political_economy` (67% / 80%).
+- High precision but low recall: `gender` (100% / 40%). The LLM correctly tags gender-framed papers it identifies, but misses dowry, IPV, marriage-market, and women's-decision-making papers, routing them into `finance`, `behavioral_info`, or `conflict_crime`.
+- Low precision, high recall: `behavioral_info` (25% / 100%). The code is over-assigned, absorbing labor, gender, and finance papers in which information provision is the mechanism rather than the substantive outcome.
+- Substantive disagreement patterns from the 17 remaining mismatches: regulatory analyses of financial and macroeconomic policy routed to `political_economy` rather than `finance` or `trade_macro`; informal community-monitoring interventions (e.g., a Sierra Leone CDD aid evaluation; a Uganda livestock-monitoring program) classified as `political_economy` when the substantive outcome was infrastructure, social protection, or agriculture; and methodology papers (cell-phone-record commuting measurement) coded to the substantive domain of the data rather than `other`.
+
+We assess that the substantive disagreements are concentrated in a small number of taxonomic ambiguities and are amenable to a targeted prompt revision; see Section 9.
+
 ## 8. Known limitations
 
 - OpenAlex abstract coverage is incomplete for some recent journal issues; the Stage 1b-1d backfill chain reduces the gap to roughly 6% of articles, with the residual concentrated in ECMA, JPE, and JDE (publishers that restrict abstracts to indexing services).
@@ -233,3 +254,20 @@ The pattern is consistent with publisher licensing: the three large publishers (
 - LLM classification of RCT status is highly accurate from abstracts when the design is clearly described, but some abstracts use ambiguous language (e.g., "we randomize the order of survey questions" — not an RCT in our sense). The subtype taxonomy and the explicit "field_experiment" vs "n/a" distinction are intended to surface these. Six rows in our 2026-05-07 run were classified `uncertain` and are flagged for manual review.
 - The country-mention rule uses bare country names with `\b` word-boundary matching. It catches "China" in "China's growth" but NOT "Chinese" in "Chinese economy" (the adjective form). It also does not include the bare term "Africa" (which our regex specifically excludes to avoid false positives from "African Americans" — though `\b` would in fact preclude that match; this conservative choice could be revisited in a v2 release). A handful of papers (~6 in our sample) were caught only by Stage 3a's LLM classifier, not by the structural country rule, because they used adjective forms or referred to "Africa" without a country name.
 - The development scope is conservative on the JEL side (O1 + O2 only). A v2 could explore including specific O5 country-study codes (O53 Asia, O54 Latin America, O55 Africa) as additional inclusion signals, though in our 2026-05-07 sample no paper carried an O5 code without also carrying an O1 or O2 code, so this would have made no difference.
+- The O1 + O2 inclusion rule is also vulnerable to JEL false positives — papers carrying O1- or O2-family codes that are not development by substantive content. The 2026-05-07 run produced one such case (DOI `10.1093/restud/rdae020`, "Estimating Equilibrium in Health Insurance Exchanges: Price Competition and Subsidy Design under the ACA", a US ACA paper carrying O15 and O16 codes), which was manually excluded on 2026-05-22 (Section 7a). The O15 (Human Resources; Income Distribution) and O16 (Financial Markets; Capital Investment) codes appear most prone to this misassignment because they map to substantive topics that are also studied extensively in high-income contexts. We assess that future re-runs should re-screen O1/O2-only inclusions (i.e., those without an LMIC country signal) for false positives, either via a brief LLM pass or a manual review of the residual list.
+
+## 9. Pending: prompt v2 refinements and re-run
+
+Stage 3c is scheduled for a re-run under a v2 prompt that incorporates four refinements identified from the Stage 3d validation (Section 7c). The mechanical steps for the re-run are: (i) edit the `USER_INSTRUCTION` block in `scripts/03c_topic_classify.py` (lines ~93-132) as specified below; (ii) bump `PROMPT_VERSION` from `topic-classify-v1` to `topic-classify-v2`; (iii) delete or rename `data/topic_classified.csv` so the resume-skip logic does not preserve v1 classifications; (iv) re-run `python scripts/03c_topic_classify.py` on all 1,600 papers; (v) re-run Stage 4 (`scripts/04_assemble.py`) is NOT required because `final_dataset.csv` does not carry the topic columns. After re-classification, a fresh held-out sample (target ~25-30 papers, different seed, stratified by the v2 LLM assignments) should be drawn for clean re-validation of the refined prompt, to avoid the train-on-the-validation-set issue with the existing 49-paper sample.
+
+The four refinements (with proposed edits to the `USER_INSTRUCTION` block):
+
+1. **Measurement papers route to `other`.** When the paper's headline contribution is improving the measurement of a phenomenon rather than estimating a treatment effect or a substantive relationship, the primary code is `other` regardless of the domain measured. Example from the validation set: "Measuring Commuting and Economic Activity inside Cities with Cell Phone Records" (RESTAT 2021) infers spatial income from cell-phone data; the contribution is methodological, so primary should be `other`, not `labor` or `infrastructure`. *Proposed edit:* append to DISAMBIGUATION — "Papers whose headline contribution is improving the measurement of a phenomenon (rather than estimating a treatment effect or a substantive relationship) => primary=other, regardless of the substantive domain of the measured object."
+
+2. **Expand `gender` triggers.** The `gender` code should fire whenever any of the following is the substantive focus (not merely a heterogeneity cut): dowry, marriage markets, intimate partner violence (IPV), women's empowerment, female genital mutilation (FGM), women's decision-making, or intra-household allocation when the gender lens is central. For IPV specifically, the secondary code should be `conflict_crime`. Validation-set examples currently misclassified: "Saving for dowry: Evidence from rural India" (JDE 2021, LLM=finance), "Culture and the Historical Fertility Transition" (RES 2022, LLM=behavioral_info), "Dynamic Impacts of Lockdown on Domestic Violence in Chile" (RESTAT 2024, LLM=conflict_crime). *Proposed edit:* replace the `gender` entry in CODE GUIDE with — "gender: women's empowerment, dowry, marriage markets, intimate partner violence (IPV), female genital mutilation (FGM), women's decision-making, intra-household allocation when the gender lens is central, GBV. Use as primary whenever any of these is the substantive focus, not merely a heterogeneity cut. For IPV specifically, secondary=conflict_crime."
+
+3. **`political_economy` requires formal governing actors as primary.** As primary, the code should be reserved for papers whose substantive focus is the behavior of elected or appointed officials operating within formal governing institutions — corruption among public officials, elections, state capacity, bureaucracy, or formal governance reforms. Informal-institution interventions (community monitoring, social accountability committees, village-level mobilization, community-driven development aid) should use the substantive outcome code (`infrastructure`, `education`, `agriculture`, `social_protection`, `health`) as primary, with `political_economy` available as secondary if institutional change is part of the intervention. Validation-set examples: "Community monitoring and social accountability in development projects: Experimental evidence from Uganda" (JDE 2025; livestock outcome, not political_economy primary); "Long-Run Effects of Aid: Forecasts and Evidence from Sierra Leone" (EJ 2023; CDD aid with infrastructure outcomes). *Proposed edit:* replace the `political_economy` entry in CODE GUIDE with — "political_economy: the behavior of elected or appointed officials within formal governing institutions — corruption among public officials, elections, state capacity, bureaucracy, formal governance reforms. Use as primary only when the focus is on formal political actors and institutions; informal community-monitoring or social-accountability interventions belong under their substantive outcome code, with political_economy as a secondary code at most."
+
+4. **Regulatory policy in finance/macro/trade stays in those buckets.** Analyses of regulatory policy concerning financial markets, macroeconomic policy, or trade policy should be classified as `finance`, `trade_macro`, or the appropriate substantive code as primary. `political_economy` is appropriate only when the paper's lens is explicitly on the decision-making of the political actors who set the regulation, not when the lens is on the regulation's economic effects. Validation-set example: "China's Model of Managing the Financial System" (RES 2021; finance/political_economy by the LLM, finance by the human coder). *Proposed edit:* append to DISAMBIGUATION — "Regulatory policy analyses concerning financial markets, macroeconomic policy, or trade policy => use the substantive code (finance, trade_macro) as primary; political_economy is appropriate only when the paper's lens is explicitly on the decision-making of the political actors who set the regulation, not on the regulation's economic effects."
+
+The proposed edits are mechanical and can be applied by a focused edit pass on `scripts/03c_topic_classify.py`. Once applied and the re-run is complete, the v2 results should be compared to the v1 results on the 49-paper sample (a sanity check that no code's recall regresses) before drawing the fresh held-out sample.

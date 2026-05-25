@@ -1,8 +1,10 @@
-# LLM prompts used in Stages 3a and 3b
+# LLM prompts used in Stages 3a, 3b, and 3c
 
-This document records the exact prompt text and API parameters used by the project's two LLM classification stages, for transparency and replicability. The prompts are also embedded in the source files (`scripts/03a_dev_borderline_classify.py` and `scripts/03b_rct_classify.py`); this document is the canonical human-readable reference and is what should be cited or reproduced in supplementary appendices.
+This document records the exact prompt text and API parameters used by the project's three LLM classification stages, for transparency and replicability. The prompts are also embedded in the source files (`scripts/03a_dev_borderline_classify.py`, `scripts/03b_rct_classify.py`, and `scripts/03c_topic_classify.py`); this document is the canonical human-readable reference and is what should be cited or reproduced in supplementary appendices.
 
-Each row classified by either stage records the model identifier and a project-internal prompt-version string (`dev_llm_prompt_version`, `rct_llm_prompt_version`) so that downstream users can verify which prompt produced any given classification.
+Each row classified by any stage records the model identifier and a project-internal prompt-version string (`dev_llm_prompt_version`, `rct_llm_prompt_version`, `topic_prompt_version`) so that downstream users can verify which prompt produced any given classification.
+
+Stages 3a and 3b call the Anthropic Python SDK and require an `ANTHROPIC_API_KEY`. Stage 3c does NOT use the API: it shells out to headless `claude -p`, which authenticates via the local Claude Code subscription, so no API key is required on the running machine.
 
 ## Common API parameters
 
@@ -128,6 +130,82 @@ Respond with ONLY a single JSON object in this exact format and nothing else:
 | `justification` | `rct_justification` |
 
 A paper is treated as an RCT in summary tables and figures only if `rct_classification == "yes"`. The `"uncertain"` and missing categories are reported separately and are flagged for manual review.
+
+## Stage 3c — Substantive-topic classification
+
+**Purpose.** For each row in `final_dataset.csv` (i.e., every published article that passed the development filter), assign one primary substantive-topic code (required) and one secondary code (optional) from a fixed 16-code taxonomy. The taxonomy was chosen to cover the substantive concentrations observed in development-economics RCT publishing while keeping the total number of buckets small enough to support per-code tabulation in a sample of ~1,600 papers.
+
+**Prompt version:** `topic-classify-v2`
+
+**Topic codes (16):** `agriculture`, `health`, `education`, `labor`, `firms`, `finance`, `social_protection`, `gender`, `political_economy`, `conflict_crime`, `environment`, `trade_macro`, `migration`, `infrastructure`, `behavioral_info`, `other`.
+
+**Execution method.** Unlike Stages 3a and 3b, Stage 3c does not call the Anthropic Python SDK. Instead it invokes the local `claude -p` CLI (headless Claude Code) as a subprocess for each paper, with `--model claude-haiku-4-5-20251001`, `--output-format json`, `--system-prompt <prompt>`, and `--tools ""`. Authentication is via the user's Claude Code subscription OAuth token in the system keychain; no `ANTHROPIC_API_KEY` is required. This decision reflects the project sponsor's preference to keep all Stage-3c LLM cost inside the existing subscription rather than incur incremental API billing on a per-call basis.
+
+**System prompt (verbatim):**
+
+```
+You are an automated topic classifier for development-economics papers. Follow the user's instructions exactly. Respond with only a single-line JSON object matching the requested schema. No prose, no markdown, no code fences.
+```
+
+**User-message template (verbatim):** The script sends the title and abstract followed by the schema-enforcement and code-guide instructions in the user turn. Empirical testing showed that headless `claude -p` ignores or under-weights instructions in `--system-prompt` (Claude Code's default helper system prompt cannot be fully replaced in OAuth mode), but follows instructions placed at the end of the user message reliably. The user-message body following the title and abstract is:
+
+```
+REQUIRED OUTPUT FORMAT
+Begin your response with the character { and end with }. Emit exactly one JSON object on a single line with these four keys and no others: primary_topic, secondary_topic, confidence, justification.
+
+primary_topic MUST be exactly one of (no other values, no capitalization changes):
+agriculture, health, education, labor, firms, finance, social_protection, gender, political_economy, conflict_crime, environment, trade_macro, migration, infrastructure, behavioral_info, other.
+
+secondary_topic MUST be one of the same 16 values, OR the empty string "" if no clear second topic.
+confidence MUST be one of: high, medium, low.
+justification: one short sentence naming the intervention or outcome that drove the choice.
+
+CODE GUIDE
+- agriculture: farming, livestock, agricultural extension, input subsidies, food security, crop markets
+- health: clinical/preventive health, nutrition, mental health, WASH measured as a health outcome
+- education: schooling, learning outcomes, teacher policies, ed-tech, formal skills training
+- labor: job search, employment, vocational training (workers), labor regulation, child labor
+- firms: SMEs, entrepreneurship, business training, capital grants, firm productivity, management
+- finance: MICRO-level financial topics — microfinance, savings, credit, insurance, mobile money, household financial inclusion, fintech adoption at the household or microenterprise level
+- social_protection: cash transfers (CCT/UCT), in-kind transfers, public works, safety nets, pensions. Use ONLY for actual welfare-program interventions — scholarships or financial aid bundled into a regular admissions process do NOT count
+- gender: women's empowerment, dowry, marriage markets, intimate partner violence (IPV), female genital mutilation (FGM), women's decision-making, intra-household allocation when the gender lens is central, GBV. Use as primary whenever any of these is the substantive focus, not merely a heterogeneity cut. For IPV specifically, secondary=conflict_crime.
+- political_economy: the behavior of elected or appointed officials within formal governing institutions — corruption among public officials, elections, state capacity, bureaucracy, formal governance reforms. Use as primary only when the focus is on formal political actors and institutions; informal community-monitoring or social-accountability interventions belong under their substantive outcome code, with political_economy as a secondary code at most.
+- conflict_crime: armed conflict, policing, crime, violence prevention, terrorism
+- environment: climate, pollution, energy use, deforestation, natural resources
+- trade_macro: international trade, exchange rates, sovereign and emerging-market corporate FX debt, carry trades, capital flows, macro policy, growth, industrial policy. Use for international/macro finance topics (NOT the micro-level finance code)
+- migration: internal/international migration, remittances, refugees
+- infrastructure: roads, electricity, water/sanitation as infrastructure, digital connectivity
+- behavioral_info: information provision, social norms change, beliefs, behavioral nudges, intra-household bargaining experiments, and other studies of economic decision-making mechanisms. Use only when this is the paper's substantive focus (not merely the delivery channel)
+- other: residual when none of the 15 substantive codes fits
+
+DISAMBIGUATION
+- Cash transfers => social_protection (NOT finance). Microcredit/savings/insurance/mobile money => finance.
+- CCT for school attendance: primary=education, secondary=social_protection. CCT for clinic visits: primary=health, secondary=social_protection.
+- Scholarships, financial aid, tuition-fee waivers bundled into a regular admissions or matching process => education only. Do NOT add social_protection unless the aid functions as a stand-alone cash-transfer welfare program.
+- Business training/capital to firms => firms. Worker training => labor.
+- WASH measured as a health outcome => health. WASH measured as infrastructure access => infrastructure.
+- Carry trades, FX risk, foreign-currency debt, sovereign debt, exchange rates, capital flows => trade_macro (NOT finance — finance is reserved for micro/household-level financial topics).
+- Intra-household bargaining experiments and lab-style tests of household decision-making => primary=behavioral_info, secondary=gender (only if the gender lens is central).
+- Lab-in-the-field experiments (artefactual field experiments, preference elicitation in field settings, behavioral games with real-world participants) => behavioral_info as either primary or secondary. If the headline outcome is itself a behavioral construct (preferences, beliefs, trust, risk attitudes), use primary=behavioral_info. If the lab-in-the-field design is a measurement tool for a substantive policy outcome (e.g., risk-aversion measurement in an agricultural-insurance RCT), use that substantive code as primary and behavioral_info as secondary.
+- Papers whose headline contribution is improving the measurement of a phenomenon (rather than estimating a treatment effect or a substantive relationship) => primary=other, regardless of the substantive domain of the measured object.
+- Regulatory policy analyses concerning financial markets, macroeconomic policy, or trade policy => use the substantive code (finance, trade_macro) as primary; political_economy is appropriate only when the paper's lens is explicitly on the decision-making of the political actors who set the regulation, not on the regulation's economic effects.
+- Tie-breaker: when two codes both fit, pick the one closer to the paper's headline outcome variable. When unsure about a secondary, leave it empty rather than guess.
+
+REMINDER: Output ONLY the JSON object. No code fences. No prose. No "subtopics" or "methods" or any other keys.
+```
+
+**Output schema.** A single JSON object with four fields:
+
+| Field | Type | Allowed values |
+|---|---|---|
+| `primary_topic` | string | One of the 16 topic codes |
+| `secondary_topic` | string | One of the 16 topic codes, or `""` (empty) |
+| `confidence` | string | `"high"`, `"medium"`, `"low"` |
+| `justification` | string | Free text, expected to be one short sentence |
+
+**Mapping to dataset columns.** Each LLM output field is recorded into a column of the same name on `data/topic_classified.csv`, plus `topic_llm_model` and `topic_prompt_version` for replicability.
+
+**Validation.** A stratified random sample of 50 LLM-classified rows (drawn proportional-to-frequency across primary codes, with a minimum of 2-3 per code) is blind-coded by the project lead and compared against the LLM output. The resulting agreement rate and confusion matrix are reported in `data/topic_validation_report.md`.
 
 ## Robustness and known limitations
 

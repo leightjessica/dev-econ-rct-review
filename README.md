@@ -26,7 +26,7 @@ This project assembles a replicable dataset of all randomized controlled trials 
 | 5     | `05_make_charts.py` | Stage 4 output | `data/figures/*.{png,pdf}` | <1 min | `matplotlib` |
 | 6a    | `06a_country_extract.py` | Stage 4 output + `data/lmic_countries.csv` | `data/country_classified.csv` | ~25 min | `anthropic` |
 | 6b    | `06b_poverty_pull.py` | (World Bank PIP + Indicators APIs) | `data/poverty_2021.csv` | 1-3 min | stdlib |
-| 6c    | `06c_country_analysis.py` | Stages 6a + 6b outputs | `data/country_summary.csv`, `data/figures/fig{6,7,8}_*.{png,pdf}` | <1 min | `matplotlib` |
+| 6c    | `06c_country_analysis.py` | Stages 6a + 6b outputs | `data/country_summary.csv`, `data/figures/fig{6,7,7b,7c,8..13}_*.{png,pdf}` (plus `fig6_top_countries_bar_jde.{png,pdf}` for the JDE-only top-countries bar) | <1 min | `matplotlib` |
 
 ### Setup
 

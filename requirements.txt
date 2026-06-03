@@ -4,3 +4,6 @@ anthropic>=0.40.0
 
 # Stage 5 figures.
 matplotlib>=3.7.0
+
+# Stage 8 name-based author-gender inference (offline dictionary; no API).
+gender-guesser>=0.4.0

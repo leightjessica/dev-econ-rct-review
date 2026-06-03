@@ -45,6 +45,11 @@ desktop.ini
 .env.*
 *.pem
 *.key
+# NamSor API key for Stage 8b (never commit; see 08b_namsor_undetermined.py)
+.namsor_key
+namsor_key
+namsor_key.txt
+secrets/
 
 # --- Claude Code working directory (not relevant to replication) ---
 .claude/

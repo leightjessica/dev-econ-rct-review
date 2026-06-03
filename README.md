@@ -10,6 +10,31 @@ This project assembles a replicable dataset of all randomized controlled trials 
 - Anthropic API key (for Stages 2-3 only); not required for Stage 1
 - EBSCOhost / EconLit access through an institutional library (for Stage 2 only)
 
+#### Python interpreter on the development machine (Windows)
+
+On the development machine the working Python is a per-user install, **not** the
+`python` / `py` aliases on the `PATH` (those are the Microsoft Store
+"App execution alias" stubs, which do not run and instead open the Store).
+Use the full interpreter path:
+
+```
+C:\Users\JLEIGHT\AppData\Local\Python\pythoncore-3.14-64\python.exe
+```
+
+```powershell
+# PowerShell: run a pipeline script with the correct interpreter
+& "C:\Users\JLEIGHT\AppData\Local\Python\pythoncore-3.14-64\python.exe" scripts\08_gender_classify.py
+
+# Optional: define a shorthand for the session
+$py = "C:\Users\JLEIGHT\AppData\Local\Python\pythoncore-3.14-64\python.exe"
+& $py --version    # -> Python 3.14.x
+```
+
+To confirm the interpreter location on any machine, query the registry:
+`(Get-ItemProperty 'HKCU:\SOFTWARE\Python\PythonCore\3.14\InstallPath').'(default)'`.
+The `python` shown in the generic `bash`/`zsh` commands below should be read as
+this interpreter on the development machine.
+
 ### Pipeline overview
 
 | Stage | Script | Inputs | Output | Runtime | Dependencies |
@@ -27,6 +52,10 @@ This project assembles a replicable dataset of all randomized controlled trials 
 | 6a    | `06a_country_extract.py` | Stage 4 output + `data/lmic_countries.csv` | `data/country_classified.csv` | ~25 min | `anthropic` |
 | 6b    | `06b_poverty_pull.py` | (World Bank PIP + Indicators APIs) | `data/poverty_2021.csv` | 1-3 min | stdlib |
 | 6c    | `06c_country_analysis.py` | Stages 6a + 6b outputs | `data/country_summary.csv`, `data/figures/fig{6,7,7b,7c,8..13}_*.{png,pdf}` (plus `fig6_top_countries_bar_jde.{png,pdf}` for the JDE-only top-countries bar) | <1 min | `matplotlib` |
+| 8a    | `08a_author_countries.py` | Stage 4 output (OpenAlex re-pull by ID) | `data/author_countries.csv` | 1-2 min | stdlib |
+| 8     | `08_gender_classify.py` | Stage 4 output (+ Stage 8a, optional) | `data/author_gender.csv`, `data/paper_gender_summary.csv` | <1 min | `gender-guesser` |
+| 8b    | `08b_namsor_undetermined.py` | Stage 8 output | `data/namsor_cache.csv`, `data/author_gender_namsor.csv`, `data/paper_gender_summary_namsor.csv` | 1-2 min | stdlib + NamSor API key |
+| 9     | `09_gender_charts.py` | Stage 8/8b output + `data/topic_classified.csv` | `data/figures/fig{17,18}_gender_*.{png,pdf}` | <1 min | `matplotlib` |
 
 ### Setup
 
@@ -72,9 +101,27 @@ python 05_make_charts.py
 python 06a_country_extract.py   # uses Anthropic API; resumable
 python 06b_poverty_pull.py      # World Bank PIP + Indicators APIs; stdlib only
 python 06c_country_analysis.py  # summary CSV + figures
+
+# Stage 8: name-based author-gender inference (optional add-on)
+python 08a_author_countries.py  # OpenAlex re-pull of author affiliation country; resumable
+python 08_gender_classify.py    # gender_guesser + country prior; offline, no API
+python 08b_namsor_undetermined.py  # OPTIONAL: resolve the residual via NamSor (needs key)
+python 09_gender_charts.py      # gender-composition figures (overall + by topic)
 ```
 
-The scripts in Stages 1, 2, 4, and 6b are **idempotent** — rerunning produces the same output. Stages 3a, 3b, and 6a are **resumable** — rerunning skips already-classified rows.
+Stage 8 uses the offline `gender_guesser` dictionary; the country prior from
+Stage 8a corrects a small number of region-ambiguous names (for example,
+Italian "Andrea") but does not reduce the undetermined share. Stage 8b is an
+optional add-on that sends only the still-undetermined names to the NamSor API,
+which resolves most romanized East-Asian and other non-European names. It
+requires a NamSor key (free tier suffices for this dataset, ~1,000 names),
+supplied via the `NAMSOR_API_KEY` environment variable or a gitignored file in
+the project root named `namsor_key.txt` (or `.namsor_key`). Results are cached
+to `data/namsor_cache.csv`, so the cache — not the key — is what a replicator
+needs. The acceptance threshold (`NAMSOR_MIN_PROB`, default 0.85 calibrated
+probability) is set at the top of the script.
+
+The scripts in Stages 1, 2, 4, 6b, and 8 are **idempotent** — rerunning produces the same output. Stages 3a, 3b, and 6a are **resumable** — rerunning skips already-classified rows.
 
 ### Optional: model override
 
@@ -95,7 +142,7 @@ dev-econ-rct-review/
 ├── CITATION.cff               Machine-readable citation metadata
 ├── requirements.txt           Pinned Python dependencies
 ├── .gitignore                 Excludes licensed EconLit raw exports
-├── scripts/                   All pipeline scripts (Stages 0, 0b, 1a-c, 2, 3a-b, 4, 5, 6a-c)
+├── scripts/                   All pipeline scripts (Stages 0, 0b, 1a-c, 2, 3a-b, 4, 5, 6a-c, 8, 8a-b, 9)
 ├── data/                      Inputs and outputs (CSV); figures in data/figures/
 └── docs/
     ├── codebook.md                       Column dictionary for final_dataset.csv
@@ -110,7 +157,7 @@ Full replication-package documentation is in `REPLICATION.md`, which follows the
 
 - **Code license:** MIT (`LICENSE`).
 - **Data license:** Derived data products under CC-BY-4.0; raw EconLit exports are licensed and excluded from version control. Per-source attribution in `docs/data_attribution.md`.
-- **Pinned dependencies:** `requirements.txt` (only `anthropic` and `matplotlib` are non-stdlib).
+- **Pinned dependencies:** `requirements.txt` (only `anthropic`, `matplotlib`, and `gender-guesser` are non-stdlib).
 - **Snapshot timestamps:** every Stage 1 row records the UTC time at which OpenAlex was queried.
 - **LLM determinism:** `temperature = 0`; model identifier and prompt version recorded per-row.
 - **Resumability:** Stage 3a and 3b scripts checkpoint every 50 calls and resume from the last saved row on rerun.

@@ -53,3 +53,12 @@ secrets/
 
 # --- Claude Code working directory (not relevant to replication) ---
 .claude/
+
+# --- Editor / tool scratch and backups (never commit) ---
+*.bak
+*.tmp
+.Rhistory
+~$*.docx
+
+# --- Full-text PDFs (copyrighted; obtained per-paper, not redistributable) ---
+fulltext/

@@ -48,14 +48,28 @@ this interpreter on the development machine.
 | 3a    | `03a_dev_borderline_classify.py` | Stage 2 output | `data/dev_classified.csv` | ~25 min | `anthropic` |
 | 3b    | `03b_rct_classify.py` | Stage 3a output | `data/rct_classified.csv` | ~75 min | `anthropic` |
 | 4     | `04_assemble.py` | Stage 3b output | `data/final_dataset.csv`, `data/summary_journal_year.csv` | <1 min | stdlib |
-| 5     | `05_make_charts.py` | Stage 4 output | `data/figures/*.{png,pdf}` | <1 min | `matplotlib` |
+| 5     | `05_make_charts.py` | Stage 4 output | `data/figures/fig{1..5}_*.{png,pdf}` (RCT share + subtype) | <1 min | `matplotlib` |
+| 3c    | `03c_topic_classify.py` | Stage 4 output | `data/topic_classified.csv` | ~20 min | `claude -p` (local subscription) |
+| 3d    | `03d_topic_validate.py` | Stage 3c output | `data/topic_validation_*` (blind sheet / report) | <1 min | stdlib |
+| 7     | `07_topic_bar_chart.py` | Stage 3c output | `data/figures/fig{14,15,16}_topic_*.{png,pdf}` (fig16 splits on RCT) | <1 min | `matplotlib` |
+| 10    | `10_topic_by_journal_tier.py` | Stage 3c output | `data/figures/fig19_topic_by_journal_tier.{png,pdf}` | <1 min | `matplotlib` |
 | 6a    | `06a_country_extract.py` | Stage 4 output + `data/lmic_countries.csv` | `data/country_classified.csv` | ~25 min | `anthropic` |
 | 6b    | `06b_poverty_pull.py` | (World Bank PIP + Indicators APIs) | `data/poverty_2021.csv` | 1-3 min | stdlib |
-| 6c    | `06c_country_analysis.py` | Stages 6a + 6b outputs | `data/country_summary.csv`, `data/figures/fig{6,7,7b,7c,8..13}_*.{png,pdf}` (plus `fig6_top_countries_bar_jde.{png,pdf}` for the JDE-only top-countries bar) | <1 min | `matplotlib` |
+| 6c    | `06c_country_analysis.py` | Stages 6a + 6b outputs | `data/country_summary.csv`, `data/figures/fig{6,7,7b,7c,8..13}_*.{png,pdf}` (plus `fig6_top_countries_bar_jde.{png,pdf}` for the JDE-only top-countries bar; fig13 is the RCT subsample) | <1 min | `matplotlib` |
+| 6a-f  | `06a_funders_metadata.py` | Stage 4 output (RCTs only) + Crossref/OpenAlex | `data/funders_6a.csv` (per-RCT metadata funders) | 2-5 min | stdlib |
+| 6a-n  | `06a_normalize_funders.py` | `funders_6a.csv` + Stage 4 output | `data/funders_6a_normalized.csv`, `data/rcts_need_fulltext.csv` (no-metadata-funder worklist) | <1 min | stdlib |
+| 6d    | `06d_match_fulltext_pdfs.py` | `funders_6a.csv` + `fulltext/*.pdf` | `data/fulltext_match_report.csv` | 2-4 min | `pdfplumber` |
+| 6f    | `06f_funders_fulltext.py` | `fulltext_match_report.csv` + `fulltext/*.pdf` | `data/funders_6f_fulltext.csv` | ~15 min | `pdfplumber` + `claude -p` |
+| 6g    | `06g_merge_funders.py` | `funders_6a.csv` + `funders_6f_fulltext.csv` | `data/funders_all.csv`, `data/figures/fig20_top_funders.{png,pdf}` | <1 min | `matplotlib` |
+| 11    | `11_funders_by_journal_tier.py` | `funders_all.csv` | `data/figures/fig{21,22,23}_funders_by_journal_tier*.{png,pdf}` | <1 min | `matplotlib` |
 | 8a    | `08a_author_countries.py` | Stage 4 output (OpenAlex re-pull by ID) | `data/author_countries.csv` | 1-2 min | stdlib |
 | 8     | `08_gender_classify.py` | Stage 4 output (+ Stage 8a, optional) | `data/author_gender.csv`, `data/paper_gender_summary.csv` | <1 min | `gender-guesser` |
 | 8b    | `08b_namsor_undetermined.py` | Stage 8 output | `data/namsor_cache.csv`, `data/author_gender_namsor.csv`, `data/paper_gender_summary_namsor.csv` | 1-2 min | stdlib + NamSor API key |
 | 9     | `09_gender_charts.py` | Stage 8/8b output + `data/topic_classified.csv` | `data/figures/fig{17,18}_gender_*.{png,pdf}` | <1 min | `matplotlib` |
+
+### Manual Not-RCT corrections (Stages 6e / 6h)
+
+LLM RCT classification (Stage 3b) is occasionally wrong on papers whose abstracts use experimental language but are not real-world randomized interventions (lab experiments, survey/measurement experiments, methods papers). Two batches of such papers were reclassified from RCT to non-RCT on author inspection by `scripts/06e_apply_not_rct_corrections.py` (10 papers, 2026-06-04) and `scripts/06h_apply_not_rct_corrections_batch2.py` (15 papers, 2026-06-09). Each script flips `rct_classification` yes→no, clears `rct_subtype`, sets `rct_confidence = manual_override`, appends an audit note to `rct_justification`, and writes timestamped `.bak` copies before modifying anything. The corrected papers remain in the development set; only the RCT flag changes. The batch-2 script also removes the corrected rows from `funders_6a.csv` and re-syncs the `rct_classification`/`rct_subtype` columns of the derived `country_classified.csv` and `topic_classified.csv` snapshots from the corrected `final_dataset.csv`, because the RCT-filtered figures fig13 and fig16 read the flag from those snapshots. After running a correction script, re-run the deterministic RCT figure pipeline (no LLM/network calls): `06a_normalize_funders` → `06g_merge_funders` → `11_funders_by_journal_tier` → `06c_country_analysis` → `05_make_charts` → `07_topic_bar_chart`.
 
 ### Setup
 
@@ -97,10 +111,23 @@ python 04_assemble.py
 # Stage 5: figures
 python 05_make_charts.py
 
+# Topic classification + topic figures (optional add-on)
+python 03c_topic_classify.py       # local Claude subscription via `claude -p`; resumable
+python 07_topic_bar_chart.py       # fig14-16 (fig16 splits dev papers by RCT status)
+python 10_topic_by_journal_tier.py # fig19
+
 # Stage 6: country-representation analysis (optional add-on)
 python 06a_country_extract.py   # uses Anthropic API; resumable
 python 06b_poverty_pull.py      # World Bank PIP + Indicators APIs; stdlib only
-python 06c_country_analysis.py  # summary CSV + figures
+python 06c_country_analysis.py  # summary CSV + figures (fig6-13; fig13 = RCT subsample)
+
+# Stage 6 (funders): per-RCT funding sources + funder figures (optional add-on)
+python 06a_funders_metadata.py     # Crossref/OpenAlex funder metadata for RCTs; resumable
+python 06a_normalize_funders.py    # canonicalize funders; build no-funder full-text worklist
+python 06d_match_fulltext_pdfs.py  # match collected fulltext/*.pdf to the worklist
+python 06f_funders_fulltext.py     # extract funders from PDFs via `claude -p`; resumable
+python 06g_merge_funders.py        # merge metadata + full-text funders; fig20
+python 11_funders_by_journal_tier.py  # fig21-23
 
 # Stage 8: name-based author-gender inference (optional add-on)
 python 08a_author_countries.py  # OpenAlex re-pull of author affiliation country; resumable
@@ -142,7 +169,7 @@ dev-econ-rct-review/
 ├── CITATION.cff               Machine-readable citation metadata
 ├── requirements.txt           Pinned Python dependencies
 ├── .gitignore                 Excludes licensed EconLit raw exports
-├── scripts/                   All pipeline scripts (Stages 0, 0b, 1a-c, 2, 3a-b, 4, 5, 6a-c, 8, 8a-b, 9)
+├── scripts/                   All pipeline scripts (Stages 0, 0b, 1a-c, 2, 3a-d, 4, 5, 6a-h, 7, 8, 8a-b, 9, 10, 11)
 ├── data/                      Inputs and outputs (CSV); figures in data/figures/
 └── docs/
     ├── codebook.md                       Column dictionary for final_dataset.csv

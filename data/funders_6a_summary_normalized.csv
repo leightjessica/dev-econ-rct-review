@@ -1,36 +1,32 @@
 funder,n_papers,variants_merged
-World Bank Group,27,World Bank
+World Bank Group,22,World Bank
 United States Agency for International Development,15,USAID
-Bill & Melinda Gates Foundation,14,Bill and Melinda Gates Foundation; Gates Foundation
-International Growth Centre,11,
+Bill & Melinda Gates Foundation,13,Bill and Melinda Gates Foundation; Gates Foundation
+International Growth Centre,10,
 Abdul Latif Jameel Poverty Action Lab (J-PAL),9,Abdul Latif Jameel Poverty Action Lab
-Inter-American Development Bank,8,
 Economic and Social Research Council,6,ESRC; UK Research and Innovation Economic and Social Research Council
+Inter-American Development Bank,6,
 National Institutes of Health,6,
-National Science Foundation,6,NSF
 Deutsche Forschungsgemeinschaft (DFG),5,Deutsche Forschungsgemeinschaft; German Research Foundation
+National Science Foundation,5,NSF
 Agricultural Technology Adoption Initiative,4,
-American Economic Association,4,AEA
-Boston University,4,
 Fundação para a Ciência e a Tecnologia,4,
 Social Sciences and Humanities Research Council of Canada,4,SSHRC
 "University of California, Berkeley",4,UC Berkeley; University of California Berkeley
+American Economic Association,3,AEA
+Boston University,3,
 Consortium of International Agricultural Research Centers,3,
 Department for International Development,3,"Department for International Development, UK Government"
-European Research Council,3,
 International Development Research Centre,3,IDRC
 UNICEF,3,
-"University of California, Davis",3,
-"University of California, San Diego",3,UC San Diego; UCSD
 University of Illinois at Urbana-Champaign,3,
-University of Michigan,3,
 William and Flora Hewlett Foundation,3,
 Australian Agency for International Development,2,AusAID
 Brown University,2,
 Centre for Economic Policy Research,2,CEPR
-CGIAR,2,
 Columbia University,2,
 "Department of Foreign Affairs and Trade, Australian Government",2,
+European Research Council,2,
 Fondo Nacional de Desarrollo Científico y Tecnológico,2,
 Grand Challenges Canada,2,
 International Fine Particle Research Institute,2,
@@ -40,18 +36,17 @@ Japan Society for the Promotion of Science,2,
 Lahore University of Management Sciences,2,
 Massachusetts Institute of Technology,2,MIT
 McGill University,2,
-Ministerio de Economía y Competitividad,2,
 Monash University,2,
-National Bureau of Economic Research,2,NBER
 National Natural Science Foundation of China,2,
 New York University,2,NYU
-Northwestern University,2,
 Princeton University,2,
-Riksbankens Jubileumsfond,2,
 Uganda National Council for Science and Technology,2,
 University College London,2,UCL
+"University of California, Davis",2,
 "University of California, Los Angeles",2,UCLA
+"University of California, San Diego",2,UCSD
 University of Melbourne,2,
+University of Michigan,2,
 University of the South,2,Sewanee: The University of the South
 UNU-WIDER,2,United Nations University World Institute for Development Economics Research
 Wellcome Trust,2,
@@ -59,8 +54,6 @@ Wellcome Trust,2,
 AERC,1,
 AFOSR and DARPA,1,
 African Economies Research Fund,1,
-Aga Khan Foundation,1,
-Agence Française de Développement,1,
 Agricultural and Applied Economics Association,1,
 Ahmedabad University,1,
 Alexander von Humboldt-Stiftung,1,
@@ -73,6 +66,7 @@ British Academy Early Childhood Development Programme,1,
 Bundesministerium für Bildung und Forschung,1,
 Centers for Disease Control and Prevention,1,
 Centro de Excelencia en Geotermia de Los Andes,1,
+CGIAR,1,
 Children's Investment Fund Foundation,1,
 COLCIENCIAS,1,
 CONICYT FONDECYT,1,
@@ -94,7 +88,6 @@ EU Framework Programme for Research and Innovation Marie Skłodowska-Curie Actio
 Eunice Kennedy Shriver National Institute of Child Health and Human Development,1,
 EUR,1,
 European Commission,1,
-European Refugee Fund,1,
 European Union,1,
 Ford Foundation,1,
 Fundación Probogotá,1,
@@ -111,10 +104,8 @@ Harvard Kennedy School,1,
 Health Systems Research Initiative,1,
 Hong Kong University of Science and Technology,1,
 Horizon 2020,1,Horizon 2020 Framework Programme
-IMMANA,1,
 Indian Council of Medical Research,1,
 Innovations for Poverty Action,1,
-Institute for Applied International Studies,1,
 "Institution for Social and Policy Studies, Yale University",1,
 International Finance Corporation,1,
 International Foundation for Science,1,
@@ -123,7 +114,6 @@ International Labour Organization,1,International Labour Organisation
 IPA's Peace & Recovery Program,1,
 Irish Aid,1,
 Irish Research Council,1,
-Islamic Development Bank,1,
 IZA Institute of Labor Economics,1,
 J-PAL Governance Initiative,1,
 J-PAL's Crime and Violence Initiative,1,
@@ -138,10 +128,11 @@ Luminarts Cultural Foundation,1,
 Makerere University,1,
 Microsoft Research,1,
 Middlebury College,1,
-Ministerio de Ciencia e Innovación,1,
+Ministerio de Economía y Competitividad,1,
 Ministry of Foreign Affairs,1,
 Ministry of Industry and Information Technology of the People's Republic of China,1,
 National Alliance for Accessible Golf,1,
+National Bureau of Economic Research,1,
 "National Heart, Lung, and Blood Institute",1,
 National Institute of Food and Agriculture,1,
 National Institute on Aging,1,
@@ -150,6 +141,7 @@ Netherlands Organisation for Scientific Research,1,
 Norad,1,
 North Carolina State University,1,
 Northeastern University,1,
+Northwestern University,1,
 NYUAD,1,
 Organización Ardila Lülle via Universidad de los Andes CESED,1,
 Pershing Square Foundation,1,
@@ -160,7 +152,7 @@ Power,1,
 Queen Mary University of London,1,
 Random Walk Imaging,1,
 RCT,1,
-Research Council of Norway,1,
+Riksbankens Jubileumsfond,1,
 Secretaría de Educación Pública,1,
 Shiv Nadar University,1,
 Society of Labor Economists,1,
@@ -177,7 +169,6 @@ Syracuse University,1,
 Technische Universität München,1,
 Tilburg University,1,
 U.S. Department of Agriculture,1,
-UCLA Anderson,1,
 UK Government,1,
 UKRI Medical Research Council,1,
 United Kingdom Research and Innovation Global Challenges Research Fund,1,
@@ -200,7 +191,6 @@ University of Dar es Salaam,1,
 University of Georgia,1,
 University of Ghana,1,
 University of Greenwich,1,
-University of Illinois System,1,
 University of Nottingham University Park Campus,1,
 University of Southern California,1,
 University of Texas at Austin,1,

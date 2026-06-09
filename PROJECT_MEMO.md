@@ -1,6 +1,6 @@
 # Project memo: Identifying development RCTs in top economics journals, 2021-2025
 
-**Last updated:** 2026-05-22
+**Last updated:** 2026-06-09
 **Owner:** Jessica Leight (J.Leight@cgiar.org)
 **Project root:** `~/IFPRI Dropbox/Jessica Leight/dev-econ-rct-review/`
 
@@ -179,9 +179,9 @@ We have followed several conventions to keep the project shareable.
 - **No raw PDF redistribution.** Where Stage 3 fetches article introductions, only the small text excerpts strictly needed for classification are stored (in the run log) and never the full article content.
 - **Versioning.** The project folder can be initialized as a git repository at any time; data files in `data/` are large and may be excluded via `.gitignore` if shared via GitHub. For Dropbox-based sharing, the entire folder is portable.
 
-## 7a. Final pipeline outturn (2026-05-07 run; manual exclusion 2026-05-22; Not-RCT corrections 2026-06-04)
+## 7a. Final pipeline outturn (2026-05-07 run; manual exclusion 2026-05-22; Not-RCT corrections 2026-06-04 and 2026-06-09)
 
-The full pipeline produced **1,600 development-economics articles** across the twelve in-scope journals over 2021-2025, of which **407 (25.4%)** are classified as randomized controlled trials. One article (DOI `10.1093/restud/rdae020`, "Estimating Equilibrium in Health Insurance Exchanges: Price Competition and Subsidy Design under the ACA", RES 2024) was manually excluded on review as a US ACA paper carrying O15 and O16 JEL codes but no development content; see Section 8 on the JEL-misassignment limitation. A further 10 articles were reclassified from RCT to non-RCT on author inspection (2026-06-04): they remain in the 1,600-paper development set but are not RCTs (lab/survey experiments, methods/measurement papers, and one government-lottery analysis), reducing the RCT count from 417 to 407. The reclassification was applied by `scripts/06e_apply_not_rct_corrections.py`, which flips `rct_classification` yes→no, clears `rct_subtype`, sets `rct_confidence` to `manual_override`, and appends an audit note to `rct_justification`; timestamped `.bak` copies of `final_dataset.csv` and `funders_6a.csv` were written before modification. Per-journal counts:
+The full pipeline produced **1,600 development-economics articles** across the twelve in-scope journals over 2021-2025, of which **392 (24.5%)** are classified as randomized controlled trials. One article (DOI `10.1093/restud/rdae020`, "Estimating Equilibrium in Health Insurance Exchanges: Price Competition and Subsidy Design under the ACA", RES 2024) was manually excluded on review as a US ACA paper carrying O15 and O16 JEL codes but no development content; see Section 8 on the JEL-misassignment limitation. A first batch of 10 articles was reclassified from RCT to non-RCT on author inspection (2026-06-04), reducing the RCT count from 417 to 407, applied by `scripts/06e_apply_not_rct_corrections.py`. A second batch of 15 articles was reclassified on the same basis (2026-06-09), reducing the count from 407 to 392, applied by `scripts/06h_apply_not_rct_corrections_batch2.py`. All 25 remain in the 1,600-paper development set but are not RCTs (lab experiments, survey/measurement experiments, and methods papers). Each correction script flips `rct_classification` yes→no, clears `rct_subtype`, sets `rct_confidence` to `manual_override`, and appends an audit note to `rct_justification`, writing timestamped `.bak` copies before modification. The batch-2 script additionally removes the 15 papers from `funders_6a.csv` (all 15 carried a metadata funder, unlike the batch-1 ten, which had none) and re-syncs the `rct_classification`/`rct_subtype` columns of the two derived classification snapshots (`country_classified.csv`, `topic_classified.csv`) from the corrected `final_dataset.csv`, so the RCT-filtered figures fig13 (top RCT countries) and fig16 (topic × RCT) — which read the flag from those snapshots, not from `final_dataset.csv` — are consistent for all 25 corrections (the batch-1 ten had never been propagated to the snapshots). Per-journal counts:
 
 | Journal      | Dev articles | RCTs | RCT rate |
 |--------------|-------------:|-----:|---------:|
@@ -189,28 +189,28 @@ The full pipeline produced **1,600 development-economics articles** across the t
 | AERI         | 32  | 14  | 43.8% |
 | AEJ:Applied  | 78  | 30  | 38.5% |
 | AEJ:EP       | 57  | 10  | 17.5% |
-| ECMA         | 48  | 10  | 20.8% |
+| ECMA         | 48  | 9   | 18.8% |
 | QJE          | 42  | 14  | 33.3% |
 | JPE          | 51  | 12  | 23.5% |
 | RES          | 67  | 13  | 19.4% |
 | RESTAT       | 138 | 32  | 23.2% |
-| EJ           | 146 | 41  | 28.1% |
-| JEEA         | 59  | 18  | 30.5% |
-| JDE          | 764 | 167 | 21.9% |
-| **Total**    | **1,600** | **407** | **25.4%** |
+| EJ           | 146 | 39  | 26.7% |
+| JEEA         | 59  | 17  | 28.8% |
+| JDE          | 764 | 156 | 20.4% |
+| **Total**    | **1,600** | **392** | **24.5%** |
 
-The 2026-06-04 reclassification reduced four journals: AEJ:Applied (32→30), ECMA (11→10), RESTAT (33→32), and JDE (173→167).
+The 2026-06-04 reclassification reduced four journals: AEJ:Applied (32→30), ECMA (11→10), RESTAT (33→32), and JDE (173→167). The 2026-06-09 reclassification reduced a further four: ECMA (10→9), EJ (41→39), JEEA (18→17), and JDE (167→156).
 
-RCT subtype distribution (across the 407 yeses):
+RCT subtype distribution (across the 392 yeses):
 
 | Subtype          | Count | Share |
 |------------------|------:|------:|
-| individual       | 207 | 51% |
-| cluster          | 123 | 30% |
-| field_experiment | 55  | 14% |
+| individual       | 200 | 51% |
+| cluster          | 123 | 31% |
+| field_experiment | 48  | 12% |
 | follow_up        | 16  | 4% |
 | encouragement    | 3   | 1% |
-| uncertain        | 2   | <1% |
+| uncertain        | 1   | <1% |
 | sub_component    | 1   | <1% |
 
 Stage 3 LLM cost was approximately **$7.00** total ($1.50 for Stage 3a, $5.50 for Stage 3b). The system prompt was below Sonnet 4.5's 1,024-token caching threshold, so prompt caching did not activate; switching to a longer prompt (or to Haiku for the simpler Stage 3a task) would reduce the cost further on a re-run.

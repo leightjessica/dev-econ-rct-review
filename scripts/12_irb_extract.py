@@ -15,10 +15,28 @@ project lead's specification:
 
     IRB                         \bIRBs?\b
     Institutional Review Board  institutional review board(s)
-    ethical / ethics            \bethic(al|s)\b   (catches "ethics committee",
-                                                    "ethical review", etc.)
+    Internal Review Board       internal review board(s)   (a common variant,
+                                                    e.g. Maitra et al. JEEA papers)
+    ethical / ethics            \bethic(al|s)\b   (broad recall net; note this
+                                                    fires on non-oversight prose
+                                                    such as "ethical judgments" in
+                                                    welfare economics -- the
+                                                    downstream pass must judge each
+                                                    window in context)
+    ethics committee/board      \bethic(al|s) (committee|board|panel|commission)s?\b
+    ethical / ethics review     \bethic(al|s) review\b
+    research ethics             \bresearch ethics\b   (catches "Research Ethics
+                                                    Board/Committee")
+    ethics in research          \bethics in research\b
     ethical / ethics approval   \bethic(al|s) approval\b
+    ethical / ethics clearance  \bethic(al|s) clearance\b
     human subjects [review]     \bhuman subjects?\b
+
+    (2026-06-15) The Internal-Review-Board / ethics-committee / research-ethics /
+    ethics-clearance terms were added after a full-text re-extraction found the
+    original net missed ~19% of papers that DO report an IRB (they used wording
+    such as "internal review board", "ethics committee", "research ethics board",
+    or "ethical clearance"). This file is updated but NOT yet re-run.
 
 Robustness notes:
   * Whitespace (including newlines that split a phrase across two lines) is
@@ -44,7 +62,12 @@ Output:
   data/irb_mentions.csv   one row per RCT (status: ok / no_mention / no_pdf / pdf_error)
   data/12_irb_extract.log
 
-Resumable: rerunning skips DOIs already written with status ok/no_mention.
+Resumable: rerunning skips the scan for DOIs already written with status
+ok/no_mention (only newly matched PDFs are scanned). NOTE: because resume reuses
+previously stored snippets, a run that changes SNIPPET_PAD/MAX_SNIPPETS will leave
+old rows at the old width. To regenerate uniformly wide snippets (as the Stage-13
+LLM pass expects), move the existing data/irb_mentions.csv aside first so the
+scanner rebuilds every row from scratch.
 
 Env flags:
   SMOKE_N=10   only process the first N matched PDFs (quick validation run)
@@ -75,22 +98,40 @@ OUT_CSV = DATA / "irb_mentions.csv"
 LOG_TXT = DATA / "12_irb_extract.log"
 
 SMOKE_N = int(os.environ.get("SMOKE_N", "0"))
-SNIPPET_PAD = 140        # chars of context on each side of a match
-MAX_SNIPPETS = 8         # cap snippets stored per paper
+SNIPPET_PAD = 240        # chars of context on each side of a match (wide enough
+                         # for the downstream LLM pass to read the approving
+                         # institution's name, which often sits a clause away
+                         # from the keyword, e.g. "...approved by the IRB of
+                         # <University>, <City>, <Country>")
+DESPACED_PAD = 120       # context for the no-space (Elsevier) despaced snippets
+MAX_SNIPPETS = 14        # cap snippets stored per paper
 DOI_PAGES = 3            # pages to read when sniffing a DOI for matching
 
 # --- term patterns (label -> compiled regex over whitespace-collapsed text) ---
 TERM_PATTERNS = {
     "IRB": re.compile(r"\bIRBs?\b"),
     "Institutional Review Board": re.compile(r"institutional\s+review\s+boards?", re.I),
+    "Internal Review Board": re.compile(r"internal\s+review\s+boards?", re.I),
+    "ethics committee/board": re.compile(r"\bethic(?:al|s)\s+(?:committee|board|panel|commission)s?\b", re.I),
+    "ethical/ethics review": re.compile(r"\bethic(?:al|s)\s+review\b", re.I),
+    "research ethics": re.compile(r"\bresearch\s+ethics\b", re.I),
+    "ethics in research": re.compile(r"\bethics\s+in\s+research\b", re.I),
     "ethical/ethics": re.compile(r"\bethic(?:al|s)\b", re.I),
     "ethical/ethics approval": re.compile(r"\bethic(?:al|s)\s+approval\b", re.I),
+    "ethical/ethics clearance": re.compile(r"\bethic(?:al|s)\s+clearance\b", re.I),
     "human subjects": re.compile(r"\bhuman\s+subjects?\b", re.I),
 }
 # Multi-word phrases in their no-space (Elsevier) form. label -> tuple of literals.
 DESPACED_PATTERNS = {
     "Institutional Review Board": ("institutionalreviewboards", "institutionalreviewboard"),
+    "Internal Review Board": ("internalreviewboards", "internalreviewboard"),
+    "ethics committee/board": ("ethicscommittee", "ethicalcommittee", "ethicsboard",
+                                "ethicspanel", "ethicscommission"),
+    "ethical/ethics review": ("ethicalreview", "ethicsreview"),
+    "research ethics": ("researchethics",),
+    "ethics in research": ("ethicsinresearch",),
     "ethical/ethics approval": ("ethicalapproval", "ethicsapproval"),
+    "ethical/ethics clearance": ("ethicalclearance", "ethicsclearance"),
     "human subjects": ("humansubjects", "humansubject"),
 }
 
@@ -195,8 +236,8 @@ def scan_pages(pages):
                     n_total += 1
                     pages_hit.add(pno)
                     if len(snippets) < MAX_SNIPPETS:
-                        a = max(0, idx - 60)
-                        b = min(len(despaced), idx + len(lit) + 60)
+                        a = max(0, idx - DESPACED_PAD)
+                        b = min(len(despaced), idx + len(lit) + DESPACED_PAD)
                         key = (pno, "despaced", label)
                         if key not in seen_windows:
                             seen_windows.add(key)

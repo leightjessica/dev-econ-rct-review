@@ -3,6 +3,16 @@
 # repository. Replicators must obtain their own exports per the procedure in
 # docs/econlit_export_instructions.md.
 data/EconLit/
+data/macro/EconLit/
+
+# --- Macro-journals development screen: regeneratable intermediates ---
+# (standalone AEJ:Macro + J. of Macroeconomics dev screen; mirror the main
+# pipeline's policy of ignoring large intermediates and keeping the final
+# product, data/macro/dev_classified_macro.csv, under version control)
+data/macro/*.log
+data/macro/raw_openalex_macro_2021_2025.csv
+data/macro/raw_with_abstracts_macro_2021_2025.csv
+data/macro/dev_filtered_macro.csv
 
 # --- Generated logs (regenerate on rerun; not necessary for replication) ---
 data/*.log

@@ -66,6 +66,18 @@ this interpreter on the development machine.
 | 8     | `08_gender_classify.py` | Stage 4 output (+ Stage 8a, optional) | `data/author_gender.csv`, `data/paper_gender_summary.csv` | <1 min | `gender-guesser` |
 | 8b    | `08b_namsor_undetermined.py` | Stage 8 output | `data/namsor_cache.csv`, `data/author_gender_namsor.csv`, `data/paper_gender_summary_namsor.csv` | 1-2 min | stdlib + NamSor API key |
 | 9     | `09_gender_charts.py` | Stage 8/8b output + `data/topic_classified.csv` | `data/figures/fig{17,18}_gender_*.{png,pdf}` | <1 min | `matplotlib` |
+| 12    | `12_irb_extract.py` | Stage 4 RCTs + `fulltext/*.pdf` | `data/irb_mentions.csv` | ~40 min | `pdfplumber` |
+| 13L   | `13_irb_classify_local.py` | `irb_mentions.csv` | `data/irb_classified.csv` | ~1 min | stdlib (institution-dictionary matcher) |
+| 13    | `13_irb_classify.py` (alternate) | `irb_mentions.csv` | `data/irb_classified.csv` | ~15 min | `anthropic` (keyed; LLM alternative to 13L) |
+| 13b   | `13b_classify_added_pdfs.py` | newly added `fulltext/*.pdf` | patches `irb_mentions.csv` + `irb_classified.csv` | ~1 min | stdlib |
+| 14    | `14_irb_charts.py` | `irb_classified.csv` | `data/figures/fig24_irb_reporting.{png,pdf}` | <1 min | `matplotlib` |
+| 15    | `15_irb_country_sites.py` | `irb_classified.csv` + `data/lmic_countries.csv` | `data/figures/fig25_irb_incountry_top_sites.{png,pdf}` | <1 min | `matplotlib` |
+| 16    | `16_ack_extract.py` | `irb_mentions.csv` (matched-PDF map) + `fulltext/*.pdf` | `data/ack_blocks.csv` | 2-4 min | poppler `pdftotext` |
+| 17    | `17_ack_classify.py` | `ack_blocks.csv` | `data/ack_classified.csv` | ~4-5 h (resumable) | `claude -p` (local subscription) |
+| 18    | `18_ack_charts.py` | `ack_classified.csv` | `data/figures/fig{26,27,28}_ack_*.{png,pdf}`, `data/ack_summary.csv`, `data/_ack_validation_sample.csv` | <1 min | `matplotlib` |
+| 19    | `19_ack_by_journal.py` | `ack_classified.csv` | `data/figures/fig{29,30,31,32}_ack_*.{png,pdf}`, `data/ack_by_journal.csv` | <1 min | `matplotlib` |
+| 24    | `24_prereg_extract.py` | `irb_mentions.csv` (matched-PDF map) + `fulltext/*.pdf` | `data/prereg_classified.csv` | ~4 min | poppler `pdftotext` |
+| 25    | `25_prereg_charts.py` | `prereg_classified.csv` | `data/figures/fig{35,36,37,38}_prereg_*.{png,pdf}`, `data/prereg_summary.csv`, `data/_prereg_validation_sample.csv` | <1 min | `matplotlib` |
 
 ### Manual Not-RCT corrections (Stages 6e / 6h)
 
@@ -134,6 +146,24 @@ python 08a_author_countries.py  # OpenAlex re-pull of author affiliation country
 python 08_gender_classify.py    # gender_guesser + country prior; offline, no API
 python 08b_namsor_undetermined.py  # OPTIONAL: resolve the residual via NamSor (needs key)
 python 09_gender_charts.py      # gender-composition figures (overall + by topic)
+
+# Stage 12-15: IRB / ethics-approval attribution (optional add-on; needs fulltext/*.pdf)
+python 12_irb_extract.py            # pdfplumber keyword scan -> irb_mentions.csv; resumable
+python 13_irb_classify_local.py     # rule-based location extraction -> irb_classified.csv
+#   (13_irb_classify.py is the keyed LLM alternative; 13b patches newly added PDFs)
+python 14_irb_charts.py             # fig24 (reporting + in/out-of-country composition)
+python 15_irb_country_sites.py      # fig25 (top study-site countries with in-country IRB)
+
+# Stage 16-18: acknowledgments / seminars (optional add-on; needs fulltext/*.pdf)
+python 16_ack_extract.py            # poppler pdftotext: locate the ack block -> ack_blocks.csv
+python 17_ack_classify.py           # `claude -p` count of thanked individuals + seminars; resumable
+python 18_ack_charts.py             # fig26-28 + ack_summary.csv + validation sample
+python 19_ack_by_journal.py         # fig29-32: individuals & seminars by tier and by journal
+
+# Stage 24-25: trial pre-registration + pre-analysis plans (optional add-on;
+#              needs fulltext/*.pdf; fully deterministic, NO API key required)
+python 24_prereg_extract.py         # pdftotext regex scan: registry IDs + PAP -> prereg_classified.csv; resumable
+python 25_prereg_charts.py          # fig35-38 + prereg_summary.csv + validation sample
 ```
 
 Stage 8 uses the offline `gender_guesser` dictionary; the country prior from
@@ -169,7 +199,7 @@ dev-econ-rct-review/
 ├── CITATION.cff               Machine-readable citation metadata
 ├── requirements.txt           Pinned Python dependencies
 ├── .gitignore                 Excludes licensed EconLit raw exports
-├── scripts/                   All pipeline scripts (Stages 0, 0b, 1a-c, 2, 3a-d, 4, 5, 6a-h, 7, 8, 8a-b, 9, 10, 11)
+├── scripts/                   All pipeline scripts (Stages 0, 0b, 1a-c, 2, 3a-d, 4, 5, 6a-h, 7, 8, 8a-b, 9, 10, 11, 12-15 IRB, 16-19 acknowledgments, 20-23 subnational poverty, 24-25 pre-registration)
 ├── data/                      Inputs and outputs (CSV); figures in data/figures/
 └── docs/
     ├── codebook.md                       Column dictionary for final_dataset.csv

@@ -55,6 +55,8 @@ Intermediate artifacts (`data/raw_openalex_2021_2025.csv`, `data/raw_with_abstra
 
 All other code uses the Python standard library. See `requirements.txt` for the pinned dependency list.
 
+On the original development machine (Windows), the working interpreter is a per-user install at `C:\Users\JLEIGHT\AppData\Local\Python\pythoncore-3.14-64\python.exe`. The bare `python`, `py`, and `python3` names on the `PATH` resolve to Microsoft Store "App execution alias" stubs that do not run; on that machine the `python` shown in the commands below must be read as the full path above. The interpreter location can be confirmed via `(Get-ItemProperty 'HKCU:\SOFTWARE\Python\PythonCore\3.14\InstallPath').'(default)'`. Replicators on a clean machine where `python` resolves to a real installation can ignore this note.
+
 ### Memory and runtime
 
 | Stage | Wall time | Notes |

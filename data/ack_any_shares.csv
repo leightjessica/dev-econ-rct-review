@@ -1,0 +1,17 @@
+group_type,group,tier,n,pct_any_ack,pct_any_seminar
+all,All,,392,77.8,68.6
+tier,Top 5,Top 5,94,83.0,72.3
+tier,Other general-interest,Other general-interest,142,82.4,78.9
+tier,JDE,JDE,156,70.5,57.1
+journal,Econometrica,Top 5,9,100.0,77.8
+journal,Economic Journal,Other general-interest,39,92.3,87.2
+journal,REStat,Other general-interest,32,90.6,84.4
+journal,REStud,Top 5,13,84.6,76.9
+journal,JPE,Top 5,12,83.3,41.7
+journal,JEEA,Other general-interest,17,82.4,82.4
+journal,AER,Top 5,46,80.4,73.9
+journal,AEJ: Econ Policy,Other general-interest,10,80.0,50.0
+journal,QJE,Top 5,14,78.6,85.7
+journal,AEJ: Applied,Other general-interest,30,73.3,76.7
+journal,JDE,JDE,156,70.5,57.1
+journal,AER: Insights,Other general-interest,14,57.1,64.3

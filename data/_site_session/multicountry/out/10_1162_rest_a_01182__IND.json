@@ -1,0 +1,15 @@
+{
+ "key": "10_1162_rest_a_01182",
+ "doi": "10.1162/rest_a_01182",
+ "iso3": "IND",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Uttar Pradesh"
+ ],
+ "raw_site_text": "Kanpur district of Uttar Pradesh, India",
+ "confidence": "high",
+ "justification": "Study villages are in Kanpur district, Uttar Pradesh.",
+ "note": ""
+}

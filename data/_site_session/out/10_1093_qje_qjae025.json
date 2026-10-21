@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_qje_qjae025",
+    "doi":  "10.1093/qje/qjae025",
+    "task":  "recheck",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Western Area"
+                      ],
+    "raw_site_text":  "120 clinics across 4 of Sierra Leone\u0027s 14 districts ... urban part of Western Area Rural",
+    "confidence":  "low",
+    "justification":  "Paper states 4 of 14 districts but names only Western Area (via a clinic in the urban part of Western Area Rural).",
+    "note":  "Incomplete list: four districts used, only Western Area named in main text (others likely in appendix map not in text).",
+    "first_pass_scope":  "unspecified"
+}

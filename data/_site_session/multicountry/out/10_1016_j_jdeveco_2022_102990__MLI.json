@@ -1,0 +1,15 @@
+{
+ "key": "10_1016_j_jdeveco_2022_102990",
+ "doi": "10.1016/j.jdeveco.2022.102990",
+ "iso3": "MLI",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Koulikoro"
+ ],
+ "raw_site_text": "the region of Koulikoro in Mali",
+ "confidence": "high",
+ "justification": "Trial was conducted in the Koulikoro region.",
+ "note": ""
+}

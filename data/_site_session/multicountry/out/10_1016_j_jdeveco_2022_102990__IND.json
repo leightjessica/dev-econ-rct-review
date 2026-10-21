@@ -1,0 +1,15 @@
+{
+ "key": "10_1016_j_jdeveco_2022_102990",
+ "doi": "10.1016/j.jdeveco.2022.102990",
+ "iso3": "IND",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Madhya Pradesh"
+ ],
+ "raw_site_text": "in 2 districts in Madhya Pradesh, India",
+ "confidence": "high",
+ "justification": "Study was in Dhar and Khargone districts, both in Madhya Pradesh.",
+ "note": "Dhar and Khargone districts named; rolled up to state."
+}

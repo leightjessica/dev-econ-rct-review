@@ -1,0 +1,258 @@
+[
+ {
+  "key": "10_1162_rest_a_01587",
+  "doi": "10.1162/rest_a_01587",
+  "title": "The Selection Effects of Part-Time Work: Experimental Evidence from a Large-Scale Recruitment Drive",
+  "iso3": "ETH",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Addis Ababa",
+   "Afar",
+   "Amhara",
+   "Beneshangul Gumu",
+   "Dire Dawa",
+   "Gambela",
+   "Hareri",
+   "Oromia",
+   "SNNPR",
+   "Somali",
+   "Tigray"
+  ],
+  "text_file": "data/_site_session/text_full/10_1162_rest_a_01587.txt",
+  "first_pass": {
+   "site_scope": "single_region",
+   "matched_units": "Oromia",
+   "raw_site_text": "Holeta and Ejere areas of Ethiopia ... The Oromia region of Ethiopia, where our study was implemented",
+   "agent_note": ""
+  }
+ },
+ {
+  "key": "10_1162_rest_a_278",
+  "doi": "10.1162/rest.a.278",
+  "title": "Agricultural Transformation and Farmers' Expectations: Experimental Evidence from Uganda",
+  "iso3": "UGA",
+  "target_level": "a World Bank survey region -- a GROUP of several districts/provinces (coarser than a single admin-1 unit); each admissible name lists the group's constituent units",
+  "admissible_units": [
+   "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira",
+   "Busia & Jinja & Kaberamaido & Mayuge & Amuria & Butaleja & Kaliro & Katakwi & Mbale & Tororo & Budaka & Namutumba & Manafwa & Bukedea & Bududa & Buyende & Kamuli & Bugiri & Bukwo & BulambuliIganga & Kapchorwa & Kween & Luuka & Ngora & Sironko & Soroti & Kibuku & Kumi & Serere & Namayingo & Pallisa",
+   "Hoima & Kabale & Kasese & Kibaale & Kisoro & Ntungamo & Kabarole & Kamwenge & Kanungu & Rukungiri & Ibanda & Isingiro & Kiruhura & Mbarara & Buliisa & Kyegegwa & Kyenjojo & Bundibugyo & Bushenyi & Sheema & Masindi & Buhweju & Ntoroko & Rubirizi & Kiryandongo & Mitooma",
+   "Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono"
+  ],
+  "text_file": "data/_site_session/text_full/10_1162_rest_a_278.txt",
+  "first_pass": {
+   "site_scope": "multi_region",
+   "matched_units": "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira;Busia & Jinja & Kaberamaido & Mayuge & Amuria & Butaleja & Kaliro & Katakwi & Mbale & Tororo & Budaka & Namutumba & Manafwa & Bukedea & Bududa & Buyende & Kamuli & Bugiri & Bukwo & BulambuliIganga & Kapchorwa & Kween & Luuka & Ngora & Sironko & Soroti & Kibuku & Kumi & Serere & Namayingo & Pallisa",
+   "raw_site_text": "two oilseeds hubs in Uganda (Mbale-Jinja and Gulu region) in the Eastern and Northern regions",
+   "agent_note": "Only Mbale, Jinja and Gulu hubs named; Lira hub mentioned in program description but not as a study hub."
+  }
+ },
+ {
+  "key": "10_1162_rest_a_286",
+  "doi": "10.1162/rest.a.286",
+  "title": "Monitoring Technology: The Impact of Body-Worn Cameras on Citizen-Police Interactions",
+  "iso3": "BRA",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Acre",
+   "Alagoas",
+   "Amapa",
+   "Amazonas",
+   "Bahia",
+   "Ceara",
+   "Distrito Federal",
+   "Espirito Santo",
+   "Goias",
+   "Maranhao",
+   "Mato Grosso",
+   "Mato Grosso Do Sul",
+   "Minas Gerais",
+   "Para",
+   "Paraiba",
+   "Parana",
+   "Pernambuco",
+   "Piaui",
+   "Rio De Janeiro",
+   "Rio Grande Do Norte",
+   "Rio Grande Do Sul",
+   "Rondonia",
+   "Roraima",
+   "Santa Catarina",
+   "Sao Paulo",
+   "Sergipe",
+   "Tocantins"
+  ],
+  "text_file": "data/_site_session/text_full/10_1162_rest_a_286.txt",
+  "first_pass": {
+   "site_scope": "single_region",
+   "matched_units": "Santa Catarina",
+   "raw_site_text": "We implemented the BWC intervention in Santa Catarina, Brazil",
+   "agent_note": "Rio de Janeiro mention is literature only."
+  }
+ },
+ {
+  "key": "10_1162_rest_a_1689",
+  "doi": "10.1162/rest.a.1689",
+  "title": "The Long-Term Impact of High School Financial Education: Evidence from Brazil",
+  "iso3": "BRA",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Acre",
+   "Alagoas",
+   "Amapa",
+   "Amazonas",
+   "Bahia",
+   "Ceara",
+   "Distrito Federal",
+   "Espirito Santo",
+   "Goias",
+   "Maranhao",
+   "Mato Grosso",
+   "Mato Grosso Do Sul",
+   "Minas Gerais",
+   "Para",
+   "Paraiba",
+   "Parana",
+   "Pernambuco",
+   "Piaui",
+   "Rio De Janeiro",
+   "Rio Grande Do Norte",
+   "Rio Grande Do Sul",
+   "Rondonia",
+   "Roraima",
+   "Santa Catarina",
+   "Sao Paulo",
+   "Sergipe",
+   "Tocantins"
+  ],
+  "text_file": "data/_site_session/text_full/10_1162_rest_a_1689.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "892 public high schools in six Brazilian states",
+   "agent_note": "Six states not named in provided text; none filled in."
+  }
+ },
+ {
+  "key": "10_1162_rest_a_1693",
+  "doi": "10.1162/rest.a.1693",
+  "title": "Sex, Power, and Adolescence: Intimate Partner Violence and Sexual Behaviors",
+  "iso3": "TZA",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Arusha",
+   "Dar es Salaam",
+   "Dodoma",
+   "Geita",
+   "Iringa",
+   "Kagera",
+   "Katavi",
+   "Kigoma",
+   "Kilimanjaro",
+   "Lindi",
+   "Manyara",
+   "Mara",
+   "Mbeya",
+   "Morogoro",
+   "Mtwara",
+   "Mwanza",
+   "Njombe",
+   "Pwani",
+   "Rukwa",
+   "Ruvuma",
+   "Shinyanga",
+   "Simiyu",
+   "Singida",
+   "Songwe",
+   "Tabora",
+   "Tanga"
+  ],
+  "text_file": "data/_site_session/text_full/10_1162_rest_a_1693.txt",
+  "first_pass": {
+   "site_scope": "multi_region",
+   "matched_units": "Dodoma;Iringa;Mbeya",
+   "raw_site_text": "three regions of Tanzania-Dodoma, Iringa, and Mbeya",
+   "agent_note": ""
+  }
+ },
+ {
+  "key": "10_1093_ej_ueab071",
+  "doi": "10.1093/ej/ueab071",
+  "title": "Screening and Signalling Non-Cognitive Skills: Experimental Evidence from Uganda",
+  "iso3": "UGA",
+  "target_level": "a World Bank survey region -- a GROUP of several districts/provinces (coarser than a single admin-1 unit); each admissible name lists the group's constituent units",
+  "admissible_units": [
+   "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira",
+   "Busia & Jinja & Kaberamaido & Mayuge & Amuria & Butaleja & Kaliro & Katakwi & Mbale & Tororo & Budaka & Namutumba & Manafwa & Bukedea & Bududa & Buyende & Kamuli & Bugiri & Bukwo & BulambuliIganga & Kapchorwa & Kween & Luuka & Ngora & Sironko & Soroti & Kibuku & Kumi & Serere & Namayingo & Pallisa",
+   "Hoima & Kabale & Kasese & Kibaale & Kisoro & Ntungamo & Kabarole & Kamwenge & Kanungu & Rukungiri & Ibanda & Isingiro & Kiruhura & Mbarara & Buliisa & Kyegegwa & Kyenjojo & Bundibugyo & Bushenyi & Sheema & Masindi & Buhweju & Ntoroko & Rubirizi & Kiryandongo & Mitooma",
+   "Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_ej_ueab071.txt",
+  "first_pass": {
+   "site_scope": "multi_region",
+   "matched_units": "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira;Busia & Jinja & Kaberamaido & Mayuge & Amuria & Butaleja & Kaliro & Katakwi & Mbale & Tororo & Budaka & Namutumba & Manafwa & Bukedea & Bududa & Buyende & Kamuli & Bugiri & Bukwo & BulambuliIganga & Kapchorwa & Kween & Luuka & Ngora & Sironko & Soroti & Kibuku & Kumi & Serere & Namayingo & Pallisa;Hoima & Kabale & Kasese & Kibaale & Kisoro & Ntungamo & Kabarole & Kamwenge & Kanungu & Rukungiri & Ibanda & Isingiro & Kiruhura & Mbarara & Buliisa & Kyegegwa & Kyenjojo & Bundibugyo & Bushenyi & Sheema & Masindi & Buhweju & Ntoroko & Rubirizi & Kiryandongo & Mitooma;Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono",
+   "raw_site_text": "census of SMEs conducted in urban areas of Uganda, covering all four regions of the country; 17 urban areas in 11 of the 121 districts",
+   "agent_note": "Specific districts not named; all four regions stated, so all four groups listed."
+  }
+ },
+ {
+  "key": "10_1093_ej_ueac084",
+  "doi": "10.1093/ej/ueac084",
+  "title": "Is School-Based Financial Education Effective? Immediate and Long-Lasting Impacts on High School Students",
+  "iso3": "PER",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Amazonas",
+   "Ancash",
+   "Apurímac",
+   "Arequipa",
+   "Ayacucho",
+   "Cajamarca",
+   "Callao",
+   "Cusco",
+   "Huancavelica",
+   "Huánuco",
+   "Ica",
+   "Junín",
+   "La Libertad",
+   "Lambayeque",
+   "Lima",
+   "Loreto",
+   "Madre de Dios",
+   "Moquegua",
+   "Pasco",
+   "Piura",
+   "Puno",
+   "San Martín",
+   "Tacna",
+   "Tumbes",
+   "Ucayali"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_ej_ueac084.txt",
+  "first_pass": {
+   "site_scope": "multi_region",
+   "matched_units": "Lima;Callao;Arequipa;Piura;Junín;Puno;San Martín",
+   "raw_site_text": "six regions in Peru: Lima and Callao, Arequipa, Piura, Junin, Puno and San Martin",
+   "agent_note": "Lima and Callao counted as one region in paper; both admissible units listed."
+  }
+ },
+ {
+  "key": "10_1093_ej_ueac018",
+  "doi": "10.1093/ej/ueac018",
+  "title": "Transfers, Diversification and Household Risk Strategies: Can Productive Safety Nets Help Households Manage Climatic Variability?",
+  "iso3": "NIC",
+  "target_level": "a World Bank survey region -- a GROUP of several districts/provinces (coarser than a single admin-1 unit); each admissible name lists the group's constituent units",
+  "admissible_units": [
+   "Atlantico Norte & Atlantico Sur & Rio San Juan",
+   "Boaco & Chontales & Esteli & Jinotega & Madriz & Matagalpa & Nueva Segovia",
+   "Masaya & Carazo & Granada & Rivas & Chinandega & Leon",
+   "Managua"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_ej_ueac018.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "six municipalities in the Northwest of Nicaragua",
+   "agent_note": "Municipalities not named in provided text; NW location alone not mapped to a WB region."
+  }
+ }
+]

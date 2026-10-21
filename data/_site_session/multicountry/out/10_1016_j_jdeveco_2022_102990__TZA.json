@@ -1,0 +1,13 @@
+{
+ "key": "10_1016_j_jdeveco_2022_102990",
+ "doi": "10.1016/j.jdeveco.2022.102990",
+ "iso3": "TZA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "unspecified",
+ "matched_units": [],
+ "raw_site_text": "The sample was drawn from 10 districts spread throughout the country selected by the Ministry of Water (MoW) and Ministry of Health and Social Welfare (MoHSW) to provide geographic diversity at the national level.",
+ "confidence": "low",
+ "justification": "Ten districts spread across the country are described but none are named, and the sample is not stated to be nationally representative.",
+ "note": "Could arguably be coded nationwide (purposive geographic diversity); districts unnamed."
+}

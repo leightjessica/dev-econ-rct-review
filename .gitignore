@@ -72,3 +72,19 @@ secrets/
 
 # --- Full-text PDFs (copyrighted; obtained per-paper, not redistributable) ---
 fulltext/
+
+# --- Text extracted from the full-text PDFs (copyrighted, same policy as fulltext/) ---
+# The subagent batches and per-paper answers in data/_site_session/ ARE kept.
+data/_site_session/text/
+data/_site_session/text_full/
+data/_site_session/multicountry/text/
+data/_nm_txt/
+
+# --- External source data downloaded into the project (large; re-download) ---
+# World Bank AM25 subnational release (PROJECT_MEMO 12.1) and the AEA RCT
+# Registry full export of 2026-10-21 (PROJECT_MEMO 12.8).
+World Bank subnational data/
+data/trials.csv
+
+# --- Run transcripts (regenerate on rerun) ---
+data/*.out

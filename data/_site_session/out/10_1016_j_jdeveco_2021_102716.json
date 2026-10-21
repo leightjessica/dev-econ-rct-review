@@ -1,0 +1,16 @@
+{
+    "key":  "10_1016_j_jdeveco_2021_102716",
+    "doi":  "10.1016/j.jdeveco.2021.102716",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Cochabamba",
+                          "La Paz",
+                          "Oruro",
+                          "Santa Cruz"
+                      ],
+    "raw_site_text":  "four metropolitan cities in Bolivia: Cochabamba, La Paz, Oruro and Santa Cruz",
+    "confidence":  "medium",
+    "justification":  "\"The evaluation covered four metropolitan cities in Bolivia: Cochabamba, La Paz, Oruro and Santa Cruz\".",
+    "note":  "Cities rolled up to the same-named departments."
+}

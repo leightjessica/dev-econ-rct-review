@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_qje_qjae003",
+    "doi":  "10.1093/qje/qjae003",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "Fenix International customers in Uganda",
+    "confidence":  "medium",
+    "justification":  "Sample is Fenix solar home system customers in Uganda with no district or region named.",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

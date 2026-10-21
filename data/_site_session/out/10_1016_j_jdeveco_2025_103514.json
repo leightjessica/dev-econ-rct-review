@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2025_103514",
+    "doi":  "10.1016/j.jdeveco.2025.103514",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Fatick"
+                      ],
+    "raw_site_text":  "randomized field experiment in the Fatick region of Senegal ... forty remote villages",
+    "confidence":  "high",
+    "justification":  "\u0027We conducted a randomized field experiment in the Fatick region of Senegal\u0027.",
+    "note":  "Dakar mentioned only as place where lamps were procured."
+}

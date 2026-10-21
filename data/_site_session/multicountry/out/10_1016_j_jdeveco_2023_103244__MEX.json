@@ -1,0 +1,13 @@
+{
+ "key": "10_1016_j_jdeveco_2023_103244",
+ "doi": "10.1016/j.jdeveco.2023.103244",
+ "iso3": "MEX",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "nationwide",
+ "matched_units": [],
+ "raw_site_text": "We were able to recruit small businesses from all 32 states in Mexico",
+ "confidence": "high",
+ "justification": "Online recruitment covered all 32 states, with 28% from Mexico City and State of Mexico.",
+ "note": ""
+}

@@ -1,0 +1,13 @@
+{
+ "key": "10_1093_ej_ueaf042",
+ "doi": "10.1093/ej/ueaf042",
+ "iso3": "LKA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "unspecified",
+ "matched_units": [],
+ "raw_site_text": "a representative sample of 385 microenterprises, with a capital stock of less than 100,000 LKR",
+ "confidence": "medium",
+ "justification": "Secondary analysis of de Mel et al. (2008) Sri Lanka data; the paper names no location within Sri Lanka.",
+ "note": "Sample is described as representative (of urban/semi-urban areas in the original study) but no places named here."
+}

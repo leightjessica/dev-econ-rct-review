@@ -1,0 +1,13 @@
+{
+    "key":  "10_1093_ej_uead102",
+    "doi":  "10.1093/ej/uead102",
+    "task":  "extract",
+    "site_scope":  "nationwide",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "nationwide Twitter experiment in Indonesia",
+    "confidence":  "high",
+    "justification":  "The abstract states \"We conduct a nationwide Twitter experiment in Indonesia\".",
+    "note":  "Online experiment; Jakarta mentioned only as the city originating the most tweets worldwide."
+}

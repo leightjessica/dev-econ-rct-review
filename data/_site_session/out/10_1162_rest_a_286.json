@@ -1,0 +1,14 @@
+{
+    "key":  "10_1162_rest_a_286",
+    "doi":  "10.1162/rest.a.286",
+    "task":  "recheck",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Santa Catarina"
+                      ],
+    "raw_site_text":  "We implemented the BWC intervention in Santa Catarina, Brazil; Five police precincts participated: Florianopolis, Sao Jose, Biguacu, Tubarao, and Jaragua do Sul",
+    "confidence":  "high",
+    "justification":  "Full text confirms all five precincts are in Santa Catarina state.",
+    "note":  "",
+    "first_pass_scope":  "single_region"
+}

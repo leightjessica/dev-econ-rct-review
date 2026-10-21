@@ -1,0 +1,30 @@
+{
+ "key": "10_1093_jeea_jvae011",
+ "doi": "10.1093/jeea/jvae011",
+ "task": "recheck",
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Baja California Sur",
+  "Campeche",
+  "Chiapas",
+  "Colima",
+  "Mexico",
+  "Guanajuato",
+  "Guerrero",
+  "Jalisco",
+  "Michoacan",
+  "Morelos",
+  "Nuevo Leon",
+  "Puebla",
+  "Queretaro",
+  "San Luis Potosi",
+  "Sonora",
+  "Tabasco",
+  "Yucatan"
+ ],
+ "raw_site_text": "128 municipalities ... located in one of the 17 states that held municipal elections in 2018 (footnote 11 lists the states)",
+ "confidence": "medium",
+ "justification": "Footnote 11 lists the 17 eligible states; the 128 sample municipalities lie in those states.",
+ "note": "Footnote lists states of eligibility; sample municipalities shown only in Online Appendix Fig B.1, so some listed states may have no sample municipality. 'Estado de Mexico' mapped to 'Mexico'.",
+ "first_pass_scope": "unspecified"
+}

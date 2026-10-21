@@ -1,0 +1,19 @@
+{
+    "key":  "10_1093_ej_uead067",
+    "doi":  "10.1093/ej/uead067",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Guerrero",
+                          "Hidalgo",
+                          "Michoacan",
+                          "Puebla",
+                          "Queretaro",
+                          "San Luis Potosi",
+                          "Veracruz"
+                      ],
+    "raw_site_text":  "506 rural localities (in 191 municipalities) in the states of Guerrero, Hidalgo, Michoacan, Puebla, Queretaro, San Luis de Potosi and Veracruz",
+    "confidence":  "high",
+    "justification":  "The paper states PROGRESA was implemented in 506 rural localities in the states of Guerrero, Hidalgo, Michoacan, Puebla, Queretaro, San Luis de Potosi and Veracruz.",
+    "note":  ""
+}

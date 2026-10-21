@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2023_103202",
+    "doi":  "10.1016/j.jdeveco.2023.103202",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "NamWater\u0027s residential customers in northern Namibia; most reside north of the Etosha National Park",
+    "confidence":  "medium",
+    "justification":  "Study region described only as northern Namibia (map in Fig. A1); no region named in text.",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

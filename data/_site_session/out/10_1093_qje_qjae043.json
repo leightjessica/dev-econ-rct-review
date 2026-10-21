@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_qje_qjae043",
+    "doi":  "10.1093/qje/qjae043",
+    "task":  "recheck",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Uttar Pradesh"
+                      ],
+    "raw_site_text":  "six Indian private primary schools in the region of Lucknow",
+    "confidence":  "high",
+    "justification":  "\u0027We conduct our experiment in six Indian private primary schools in the region of Lucknow\u0027 (Lucknow is in Uttar Pradesh).",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

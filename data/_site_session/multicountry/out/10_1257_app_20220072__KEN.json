@@ -1,0 +1,19 @@
+{
+ "key": "10_1257_app_20220072",
+ "doi": "10.1257/app.20220072",
+ "iso3": "KEN",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Busia",
+  "Kakamega",
+  "Siaya",
+  "Bungoma",
+  "Vihiga"
+ ],
+ "raw_site_text": "Busia, Bungoma, Kakamega, and Siaya (Kenya); Bungoma, Busia, Kakamega, and Vihiga (Kenya)",
+ "confidence": "high",
+ "justification": "Table 1 lists Kakamega and Siaya (KALRO), Busia and Kakamega, Busia/Bungoma/Kakamega/Siaya, and Bungoma/Busia/Kakamega/Vihiga counties across the Kenyan programs.",
+ "note": ""
+}

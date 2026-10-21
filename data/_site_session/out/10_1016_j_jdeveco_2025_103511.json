@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2025_103511",
+    "doi":  "10.1016/j.jdeveco.2025.103511",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "We selected 4 branches for this study; female microfinance groups in rural Ghana",
+    "confidence":  "medium",
+    "justification":  "Four OISL branches are used but no branch location or region is named anywhere in the text.",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

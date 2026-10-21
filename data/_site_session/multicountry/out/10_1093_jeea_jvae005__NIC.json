@@ -1,0 +1,13 @@
+{
+ "key": "10_1093_jeea_jvae005",
+ "doi": "10.1093/jeea/jvae005",
+ "iso3": "NIC",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "unspecified",
+ "matched_units": [],
+ "raw_site_text": "six rural municipalities from three regions in central and northern Nicaragua",
+ "confidence": "medium",
+ "justification": "Paper only says six rural municipalities in three regions of central and northern Nicaragua; no municipality or department is named.",
+ "note": "Actual sites (RPS) are in Madriz, Matagalpa, Nueva Segovia but the paper does not name them, so not coded."
+}

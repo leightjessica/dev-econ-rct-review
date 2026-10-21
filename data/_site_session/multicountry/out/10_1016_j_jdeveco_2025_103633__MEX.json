@@ -1,0 +1,13 @@
+{
+ "key": "10_1016_j_jdeveco_2025_103633",
+ "doi": "10.1016/j.jdeveco.2025.103633",
+ "iso3": "MEX",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "unspecified",
+ "matched_units": [],
+ "raw_site_text": "The study involved 15 countries (Appendix A) and contacting over 10,000 male clubs.",
+ "confidence": "medium",
+ "justification": "Amateur football clubs in each country were contacted by email/social media from public contact lists; no sub-national places are named in the text.",
+ "note": "Genuine study country (assignment stratified by country). Clubs' locations not stated; sub-national data used only for heterogeneity (Appendix H). Not explicitly described as national."
+}

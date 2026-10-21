@@ -1,0 +1,16 @@
+{
+    "key":  "10_1162_rest_a_1693",
+    "doi":  "10.1162/rest.a.1693",
+    "task":  "recheck",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Dodoma",
+                          "Iringa",
+                          "Mbeya"
+                      ],
+    "raw_site_text":  "three regions of Tanzania-Dodoma, Iringa, and Mbeya; baseline census of members of all 149 ELA clubs in Dodoma, Iringa, and Mbeya",
+    "confidence":  "high",
+    "justification":  "Full text confirms the baseline census covered ELA clubs in Dodoma, Iringa, and Mbeya.",
+    "note":  "",
+    "first_pass_scope":  "multi_region"
+}

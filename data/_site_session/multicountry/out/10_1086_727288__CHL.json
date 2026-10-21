@@ -1,0 +1,13 @@
+{
+ "key": "10_1086_727288",
+ "doi": "10.1086/727288",
+ "iso3": "CHL",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "nationwide",
+ "matched_units": [],
+ "raw_site_text": "NEP was implemented across Chile. Therefore, our study is based on a representative sample of health clinics located in both urban and rural areas all over the country.",
+ "confidence": "high",
+ "justification": "Sample of health clinics representative nationally; no regions named.",
+ "note": ""
+}

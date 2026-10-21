@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2024_103414",
+    "doi":  "10.1016/j.jdeveco.2024.103414",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "104 women\u0027s livestock marketing cooperatives; rural Nepal; three training centers",
+    "confidence":  "high",
+    "justification":  "Cooperatives and training centers are not located by name; only stratification by \u0027geographic zone\u0027.",
+    "note":  "Full text re-read; place names needed to map to admissible units are not given.",
+    "first_pass_scope":  "unspecified"
+}

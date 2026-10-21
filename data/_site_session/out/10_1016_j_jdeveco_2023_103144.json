@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2023_103144",
+    "doi":  "10.1016/j.jdeveco.2023.103144",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Dowa",
+                          "Kasungu"
+                      ],
+    "raw_site_text":  "15 villages in Chibvala EPA (Dowa district) and 15 villages in Mtunthama EPA (Kasungu district)",
+    "confidence":  "high",
+    "justification":  "Footnote 12: \u0027Our final sample for this study includes 15 villages in Chibvala EPA (Dowa district) and 15 villages in Mtunthama EPA (Kasungu district)\u0027.",
+    "note":  ""
+}

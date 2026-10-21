@@ -1,0 +1,15 @@
+{
+    "key":  "10_1162_rest_a_278",
+    "doi":  "10.1162/rest.a.278",
+    "task":  "recheck",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Adjumani \u0026 Moyo \u0026 Yumbe \u0026 Amolatar \u0026 Kaabong \u0026 Koboko \u0026 Abim \u0026 Amuru \u0026 Kotido \u0026 Maracha \u0026 Oyam \u0026 Dokolo \u0026 Arua \u0026 Amudat \u0026 Kitgum \u0026 Lamwo \u0026 Nakapiripirit \u0026 Nebbi \u0026 Otuke \u0026 Zombo \u0026 Apac \u0026 Kole \u0026 Moroto \u0026 Napak \u0026 Pader \u0026 Agago \u0026 Alebtong \u0026 Gulu \u0026 Nwoya \u0026 Lira",
+                          "Busia \u0026 Jinja \u0026 Kaberamaido \u0026 Mayuge \u0026 Amuria \u0026 Butaleja \u0026 Kaliro \u0026 Katakwi \u0026 Mbale \u0026 Tororo \u0026 Budaka \u0026 Namutumba \u0026 Manafwa \u0026 Bukedea \u0026 Bududa \u0026 Buyende \u0026 Kamuli \u0026 Bugiri \u0026 Bukwo \u0026 BulambuliIganga \u0026 Kapchorwa \u0026 Kween \u0026 Luuka \u0026 Ngora \u0026 Sironko \u0026 Soroti \u0026 Kibuku \u0026 Kumi \u0026 Serere \u0026 Namayingo \u0026 Pallisa"
+                      ],
+    "raw_site_text":  "two oilseeds hubs in Uganda (Mbale-Jinja and Gulu region) in the Eastern and Northern regions",
+    "confidence":  "high",
+    "justification":  "Paper states it focuses on the Mbale-Jinja and Gulu hubs in the Eastern and Northern regions; Lira and West Nile hubs are program background only.",
+    "note":  "",
+    "first_pass_scope":  "multi_region"
+}

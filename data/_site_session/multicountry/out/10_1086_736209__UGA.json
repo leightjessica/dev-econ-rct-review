@@ -1,0 +1,15 @@
+{
+ "key": "10_1086_736209",
+ "doi": "10.1086/736209",
+ "iso3": "UGA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono"
+ ],
+ "raw_site_text": "Kampala, the capital city and the site of our study; native microentrepreneurs in the capital city of Uganda",
+ "confidence": "high",
+ "justification": "Experiment conducted with microentrepreneurs in Kampala, which falls in the central group.",
+ "note": ""
+}

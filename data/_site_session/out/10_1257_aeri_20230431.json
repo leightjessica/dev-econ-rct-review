@@ -1,0 +1,13 @@
+{
+    "key":  "10_1257_aeri_20230431",
+    "doi":  "10.1257/aeri.20230431",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Punjab"
+                      ],
+    "raw_site_text":  "171 Punjabi villages; North Indian state of Punjab",
+    "confidence":  "high",
+    "justification":  "The RCT was conducted \u0027in 171 Punjabi villages\u0027 in the state of Punjab.",
+    "note":  "Delhi, Haryana, Uttar Pradesh mentioned only as pollution/policy context."
+}

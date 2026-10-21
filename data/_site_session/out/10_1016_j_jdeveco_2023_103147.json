@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2023_103147",
+    "doi":  "10.1016/j.jdeveco.2023.103147",
+    "task":  "extract",
+    "site_scope":  "nationwide",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "\"respondents come from all over Kenya and are representative in terms of residency at the county level\"",
+    "confidence":  "high",
+    "justification":  "Online survey of 1000 Kenyan respondents with quotas for county of residency, representative at county level.",
+    "note":  "Online experiment; urban over-represented."
+}

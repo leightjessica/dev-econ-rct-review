@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2022_102915",
+    "doi":  "10.1016/j.jdeveco.2022.102915",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Mwanza"
+                      ],
+    "raw_site_text":  "Misungwi district, located 47 kilometers south of Mwanza city ... Lake zone of Tanzania",
+    "confidence":  "high",
+    "justification":  "\u0027We selected Misungwi district, which is located 47 kilometers south of Mwanza city\u0027 (Misungwi District is in Mwanza Region); 30 hamlets.",
+    "note":  ""
+}

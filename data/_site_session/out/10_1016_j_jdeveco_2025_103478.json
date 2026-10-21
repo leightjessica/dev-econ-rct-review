@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2025_103478",
+    "doi":  "10.1016/j.jdeveco.2025.103478",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "214 clusters (rural villages) spread across twelve geographical zones in ten Ugandan districts",
+    "confidence":  "medium",
+    "justification":  "Ten study districts are shown only in Fig. B1 and not named in the text, so no survey region can be supported.",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

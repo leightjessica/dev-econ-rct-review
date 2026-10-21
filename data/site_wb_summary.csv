@@ -1,0 +1,8 @@
+scope,group,n_sites,mean_rank_pct_poor300,ci95_half_width,share_poorer_half
+overall,All placed sites,296,0.429,0.033,0.416
+Journal tier,Top 5,66,0.412,0.070,0.409
+Journal tier,Other general-interest,118,0.395,0.050,0.364
+Journal tier,JDE,112,0.475,0.054,0.473
+WB level of geography,Admin-1,245,0.428,0.035,0.437
+WB level of geography,Admin-2,29,0.408,0.100,0.276
+WB level of geography,Grouped regions,22,0.467,0.155,0.364

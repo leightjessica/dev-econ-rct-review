@@ -1,0 +1,13 @@
+{
+    "key":  "10_1257_aeri_20200667",
+    "doi":  "10.1257/aeri.20200667",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "West Bengal"
+                      ],
+    "raw_site_text":  "TUP program in West Bengal, India; 120 village hamlets",
+    "confidence":  "high",
+    "justification":  "The trial tracks a TUP program run by Bandhan \u0027in West Bengal, India\u0027.",
+    "note":  "Delhi/Kolkata mentioned only as migration destinations."
+}

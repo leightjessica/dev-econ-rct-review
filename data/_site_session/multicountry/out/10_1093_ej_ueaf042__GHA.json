@@ -1,0 +1,15 @@
+{
+ "key": "10_1093_ej_ueaf042",
+ "doi": "10.1093/ej/ueaf042",
+ "iso3": "GHA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Greater Accra"
+ ],
+ "raw_site_text": "surveyed 793 microenterprises ... in Accra and the neighbouring port town of Tema",
+ "confidence": "medium",
+ "justification": "Accra and Tema both lie in Greater Accra region.",
+ "note": ""
+}

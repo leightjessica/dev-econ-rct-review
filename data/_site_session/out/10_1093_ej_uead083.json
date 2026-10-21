@@ -1,0 +1,12 @@
+{
+ "key": "10_1093_ej_uead083",
+ "doi": "10.1093/ej/uead083",
+ "task": "recheck",
+ "site_scope": "nationwide",
+ "matched_units": [],
+ "raw_site_text": "geographical region fixed effects (central, northern, southern); phone registered in urban or rural area",
+ "confidence": "medium",
+ "justification": "Sample is drawn from Airtel Malawi mobile money users (administrative KYC data spanning central/northern/southern regions, urban/rural) with no district restriction.",
+ "note": "Countrywide user base inferred from region controls covering all three Malawi regions; no explicit 'nationwide' phrase.",
+ "first_pass_scope": "unspecified"
+}

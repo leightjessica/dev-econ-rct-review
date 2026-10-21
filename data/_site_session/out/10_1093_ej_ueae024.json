@@ -1,0 +1,17 @@
+{
+    "key":  "10_1093_ej_ueae024",
+    "doi":  "10.1093/ej/ueae024",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Dar es Salaam",
+                          "Mwanza",
+                          "Shinyanga",
+                          "Tabora",
+                          "Singida"
+                      ],
+    "raw_site_text":  "20 branches in the regions of Dar es Salaam, Mwanza, Shinyanga, Tabora and Singida; 69 villages in 8 randomly selected branches",
+    "confidence":  "medium",
+    "justification":  "The NGO programme operated at 20 branches in the regions of Dar es Salaam, Mwanza, Shinyanga, Tabora and Singida, from which 8 study branches were randomly selected.",
+    "note":  "The 8 study branches are not identified by region, so the exact subset of the 5 regions is not stated."
+}

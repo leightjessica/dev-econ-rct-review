@@ -1,0 +1,15 @@
+{
+ "key": "10_1016_j_jdeveco_2024_103405",
+ "doi": "10.1016/j.jdeveco.2024.103405",
+ "iso3": "CHL",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Metropolitana"
+ ],
+ "raw_site_text": "23 BancoEstado branches in vulnerable urban municipalities in Chile's Metropolitan Region; 6242 participants in Santiago, Chile",
+ "confidence": "high",
+ "justification": "Branches were in the Metropolitan Region (Santiago).",
+ "note": ""
+}

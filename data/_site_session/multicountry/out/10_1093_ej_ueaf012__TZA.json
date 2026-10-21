@@ -1,0 +1,15 @@
+{
+ "key": "10_1093_ej_ueaf012",
+ "doi": "10.1093/ej/ueaf012",
+ "iso3": "TZA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Dar es Salaam"
+ ],
+ "raw_site_text": "seventy-three clinics in Tanzania (Dar es Salaam)",
+ "confidence": "high",
+ "justification": "Clinics enrolled in Dar es Salaam.",
+ "note": ""
+}

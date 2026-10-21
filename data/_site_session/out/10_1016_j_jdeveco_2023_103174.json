@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2023_103174",
+    "doi":  "10.1016/j.jdeveco.2023.103174",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "four factories in Bangladesh",
+    "confidence":  "medium",
+    "justification":  "Full text says only \u0027four factories in Bangladesh\u0027; no division, city or district is named.",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

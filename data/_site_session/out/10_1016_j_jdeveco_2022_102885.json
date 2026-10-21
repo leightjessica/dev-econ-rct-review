@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2022_102885",
+    "doi":  "10.1016/j.jdeveco.2022.102885",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "100 new demonstration plots across western and central Kenya; 36 sites randomly selected (Fig. 4 map)",
+    "confidence":  "medium",
+    "justification":  "Text names only \u0027western and central Kenya\u0027 and agro-ecological zones; no county named (sites shown only in Fig. 4).",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

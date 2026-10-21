@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2022_103044",
+    "doi":  "10.1016/j.jdeveco.2022.103044",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "80 elementary schools (222 classrooms) in Southeast Turkey; the study provinces",
+    "confidence":  "high",
+    "justification":  "Full text names only \u0027Southeast Turkey\u0027 and \u0027the study provinces\u0027; no province is named.",
+    "note":  "Full text re-read; place names needed to map to admissible units are not given.",
+    "first_pass_scope":  "unspecified"
+}

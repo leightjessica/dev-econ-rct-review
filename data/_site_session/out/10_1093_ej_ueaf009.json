@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_ej_ueaf009",
+    "doi":  "10.1093/ej/ueaf009",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Dodoma",
+                          "Manyara"
+                      ],
+    "raw_site_text":  "The experiment took place in the Dodoma and Manyara regions",
+    "confidence":  "high",
+    "justification":  "The paper states \"The experiment took place in the Dodoma and Manyara regions\" (49 villages including Babati and Dodoma towns).",
+    "note":  ""
+}

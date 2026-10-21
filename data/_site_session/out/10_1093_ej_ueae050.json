@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_ej_ueae050",
+    "doi":  "10.1093/ej/ueae050",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Kayonza",
+                          "Nyabihu"
+                      ],
+    "raw_site_text":  "248 villages located in Kayonza and Nyabihu districts of Rwanda",
+    "confidence":  "high",
+    "justification":  "The paper states a cluster-randomised trial across 248 villages located in Kayonza and Nyabihu districts of Rwanda.",
+    "note":  ""
+}

@@ -1,0 +1,16 @@
+{
+ "key": "10_1093_jeea_jvab053",
+ "doi": "10.1093/jeea/jvab053",
+ "task": "recheck",
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Busia & Jinja & Kaberamaido & Mayuge & Amuria & Butaleja & Kaliro & Katakwi & Mbale & Tororo & Budaka & Namutumba & Manafwa & Bukedea & Bududa & Buyende & Kamuli & Bugiri & Bukwo & BulambuliIganga & Kapchorwa & Kween & Luuka & Ngora & Sironko & Soroti & Kibuku & Kumi & Serere & Namayingo & Pallisa",
+  "Hoima & Kabale & Kasese & Kibaale & Kisoro & Ntungamo & Kabarole & Kamwenge & Kanungu & Rukungiri & Ibanda & Isingiro & Kiruhura & Mbarara & Buliisa & Kyegegwa & Kyenjojo & Bundibugyo & Bushenyi & Sheema & Masindi & Buhweju & Ntoroko & Rubirizi & Kiryandongo & Mitooma",
+  "Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono"
+ ],
+ "raw_site_text": "data from four districts (Bushenji, Mbale, Mbarara, and Mpigi)",
+ "confidence": "high",
+ "justification": "Drug quality study uses four districts; Mbale in the eastern group, Bushenyi and Mbarara in the western group, Mpigi in the central group.",
+ "note": "Four named districts rolled up to three WB survey regions (Mbale -> eastern; Bushenyi, Mbarara -> western; Mpigi -> central). Household survey covers 99 villages in the same districts.",
+ "first_pass_scope": "unspecified"
+}

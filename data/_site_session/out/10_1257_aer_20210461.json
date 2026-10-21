@@ -1,0 +1,13 @@
+{
+    "key":  "10_1257_aer_20210461",
+    "doi":  "10.1257/aer.20210461",
+    "task":  "extract",
+    "site_scope":  "nationwide",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "105 districts ... spread across Indonesia\u0027s diverse landscape",
+    "confidence":  "medium",
+    "justification":  "The 105 randomized districts are described as \u0027spread across Indonesia\u0027s diverse landscape\u0027 (about a fifth of the population) with no named provinces for the sample.",
+    "note":  "Sample districts not named; East Java mentioned only for districts chosen for sure in 2018 and outside the randomized sample, so not matched."
+}

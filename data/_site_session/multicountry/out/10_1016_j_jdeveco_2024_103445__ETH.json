@@ -1,0 +1,15 @@
+{
+ "key": "10_1016_j_jdeveco_2024_103445",
+ "doi": "10.1016/j.jdeveco.2024.103445",
+ "iso3": "ETH",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Oromia"
+ ],
+ "raw_site_text": "The program studied here was implemented in the Borana zone of Southern Ethiopia.",
+ "confidence": "medium",
+ "justification": "Study sites are eight woredas in Borana zone, which lies in Oromia region (roll-up from geographic knowledge; Oromia not named in text).",
+ "note": ""
+}

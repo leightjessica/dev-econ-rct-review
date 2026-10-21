@@ -1,0 +1,13 @@
+{
+    "key":  "10_1257_aer_20210778",
+    "doi":  "10.1257/aer.20210778",
+    "task":  "extract",
+    "site_scope":  "nationwide",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "698 municipalities (more than half in the country)",
+    "confidence":  "medium",
+    "justification":  "Experiment covers 698 Colombian municipalities, \u0027more than half in the country\u0027, with no subnational concentration named.",
+    "note":  "No departments named."
+}

@@ -1,0 +1,18 @@
+{
+ "key": "10_1016_j_jdeveco_2024_103311",
+ "doi": "10.1016/j.jdeveco.2024.103311",
+ "iso3": "GHA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Greater Accra",
+  "Ashanti",
+  "Western",
+  "Northern"
+ ],
+ "raw_site_text": "Registration was possible in the capital cities of Greater Accra, Ashanti, Western, and Northern regions between November and December 2020 (Batch I) and August and September 2021 (Batch II).",
+ "confidence": "high",
+ "justification": "Baseline interviews and the information experiment took place at registration in the capital cities of four regions (Accra, Kumasi, Takoradi, Tamale).",
+ "note": "Participants were later surveyed by phone; follow-up covers residence regions, but experiment sites are the four regional capitals."
+}

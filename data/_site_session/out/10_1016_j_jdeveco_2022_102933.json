@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2022_102933",
+    "doi":  "10.1016/j.jdeveco.2022.102933",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Sindh",
+                          "Punjab \u0026 Islamabad"
+                      ],
+    "raw_site_text":  "The study is situated in the provinces Sindh (district Badin) and Punjab (districts Bahawalpur and Rahimyar Khan)",
+    "confidence":  "high",
+    "justification":  "\u0027The study is situated in the provinces Sindh (district Badin) and Punjab (districts Bahawalpur and Rahimyar Khan)\u0027.",
+    "note":  ""
+}

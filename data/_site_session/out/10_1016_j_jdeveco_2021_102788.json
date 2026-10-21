@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2021_102788",
+    "doi":  "10.1016/j.jdeveco.2021.102788",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Amhara",
+                          "Oromia"
+                      ],
+    "raw_site_text":  "West Gojjam, Jimma, East Showa, West Showa, East Wellega zones; Bako",
+    "confidence":  "high",
+    "justification":  "Fieldwork in \"West Gojjam, Jimma, East Showa, West Showa, and East Wellega zones\" and Bako; West Gojjam is in Amhara and the others in Oromia.",
+    "note":  "Zones rolled up to regions using geographic knowledge (Bako is in West Shewa zone, Oromia)."
+}

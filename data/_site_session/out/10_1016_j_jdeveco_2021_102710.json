@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2021_102710",
+    "doi":  "10.1016/j.jdeveco.2021.102710",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Adamaoua"
+                      ],
+    "raw_site_text":  "Adamawa region of northern Cameroon; 199 villages sampled from the region",
+    "confidence":  "high",
+    "justification":  "\"Our study was conducted in the Adamawa region of northern Cameroon\" with villages drawn from that region.",
+    "note":  ""
+}

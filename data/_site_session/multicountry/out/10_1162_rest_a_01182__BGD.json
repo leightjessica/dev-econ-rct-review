@@ -1,0 +1,15 @@
+{
+ "key": "10_1162_rest_a_01182",
+ "doi": "10.1162/rest_a_01182",
+ "iso3": "BGD",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Khulna"
+ ],
+ "raw_site_text": "Khulna and Satkhira districts of Bangladesh",
+ "confidence": "medium",
+ "justification": "Both study districts (Khulna, Satkhira) lie in Khulna division (roll-up from geographic knowledge).",
+ "note": ""
+}

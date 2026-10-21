@@ -1,0 +1,13 @@
+{
+    "key":  "10_1093_ej_ueab027",
+    "doi":  "10.1093/ej/ueab027",
+    "task":  "extract",
+    "site_scope":  "nationwide",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "12,160 polling stations across the country; official results from all provinces of Kenya; randomisation stratified by county",
+    "confidence":  "high",
+    "justification":  "SMS experiment in 12,160 of 24,560 polling stations across the country, stratified by county, with data from all provinces.",
+    "note":  "No individual counties named."
+}

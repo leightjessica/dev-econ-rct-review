@@ -1,0 +1,13 @@
+{
+    "key":  "10_1257_aer_20191657",
+    "doi":  "10.1257/aer.20191657",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Mulanje"
+                      ],
+    "raw_site_text":  "Lujeri Tea Estates, a large agricultural firm in rural Malawi",
+    "confidence":  "medium",
+    "justification":  "Study is set at Lujeri Tea Estates (11 of its 20 divisions), which lies in Mulanje district.",
+    "note":  "District not named in the text; Lujeri Tea Estate placed in Mulanje district from geographic knowledge."
+}

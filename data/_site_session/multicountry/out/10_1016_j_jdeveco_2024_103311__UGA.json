@@ -1,0 +1,18 @@
+{
+ "key": "10_1016_j_jdeveco_2024_103311",
+ "doi": "10.1016/j.jdeveco.2024.103311",
+ "iso3": "UGA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono",
+  "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira",
+  "Busia & Jinja & Kaberamaido & Mayuge & Amuria & Butaleja & Kaliro & Katakwi & Mbale & Tororo & Budaka & Namutumba & Manafwa & Bukedea & Bududa & Buyende & Kamuli & Bugiri & Bukwo & BulambuliIganga & Kapchorwa & Kween & Luuka & Ngora & Sironko & Soroti & Kibuku & Kumi & Serere & Namayingo & Pallisa",
+  "Hoima & Kabale & Kasese & Kibaale & Kisoro & Ntungamo & Kabarole & Kamwenge & Kanungu & Rukungiri & Ibanda & Isingiro & Kiruhura & Mbarara & Buliisa & Kyegegwa & Kyenjojo & Bundibugyo & Bushenyi & Sheema & Masindi & Buhweju & Ntoroko & Rubirizi & Kiryandongo & Mitooma"
+ ],
+ "raw_site_text": "Table 1 residence regions: Kampala (UG), Central (UG), Eastern (UG), Northern (UG), Western (UG); \"Uganda's four different regions plus the capital city Kampala\"",
+ "confidence": "medium",
+ "justification": "Ugandan S4C participants were interviewed by phone and reside across Kampala and the Central, Eastern, Northern and Western regions, which map to the four WB survey-region groups.",
+ "note": "Mapping of Uganda's four statistical regions to WB groups by geographic knowledge; sample is former S4C program participants (region of residence rather than a single field site). District-level composition not reported."
+}

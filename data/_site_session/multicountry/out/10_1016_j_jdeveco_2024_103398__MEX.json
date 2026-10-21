@@ -1,0 +1,13 @@
+{
+ "key": "10_1016_j_jdeveco_2024_103398",
+ "doi": "10.1016/j.jdeveco.2024.103398",
+ "iso3": "MEX",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "nationwide",
+ "matched_units": [],
+ "raw_site_text": "randomized survey experiment ... broadly representative of the population with internet access in each country",
+ "confidence": "high",
+ "justification": "Online RIWI survey experiment with a broadly representative sample of internet users in the country; no subnational site.",
+ "note": "Online survey; location only used as a covariate."
+}

@@ -1,0 +1,13 @@
+{
+    "key":  "10_1093_ej_uead075",
+    "doi":  "10.1093/ej/uead075",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Dar es Salaam"
+                      ],
+    "raw_site_text":  "facilities located in 64 districts, covering 18 of the 22 regions of mainland Tanzania; around four-fifths located outside Dar Es Salaam",
+    "confidence":  "medium",
+    "justification":  "Footnote 11 states facilities are located in 64 districts covering 18 of the 22 regions of mainland Tanzania, with some inside Dar Es Salaam.",
+    "note":  "Only Dar es Salaam is named; the other 17 regions are not listed, so matched_units is incomplete."
+}

@@ -1,0 +1,18 @@
+{
+ "key": "10_1016_j_jdeveco_2021_102807",
+ "doi": "10.1016/j.jdeveco.2021.102807",
+ "iso3": "ETH",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Oromia",
+  "SNNPR",
+  "Addis Ababa",
+  "Tigray"
+ ],
+ "raw_site_text": "Our sample of young people comes from job applicants to 5 industrial firms, in 5 different sectors and 4 regions of the country (Table 2: Oromia, SNNP, Addis, Tigray)",
+ "confidence": "high",
+ "justification": "Table 2 lists firm sites in Oromia, SNNP, Addis and Tigray.",
+ "note": ""
+}

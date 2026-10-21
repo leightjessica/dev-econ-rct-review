@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_ej_ueac018",
+    "doi":  "10.1093/ej/ueac018",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "six municipalities in the Northwest of Nicaragua",
+    "confidence":  "low",
+    "justification":  "Full text only says six municipalities in the Northwest of Nicaragua without naming them or their departments.",
+    "note":  "Municipalities/departments never named; Northwest alone not mapped to a WB region.",
+    "first_pass_scope":  "unspecified"
+}

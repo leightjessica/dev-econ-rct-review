@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2022_102959",
+    "doi":  "10.1016/j.jdeveco.2022.102959",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "COPSA-C facilitated 29 village warehouses in southwest Burkina Faso; 38 villages near one of 13 village warehouses",
+    "confidence":  "medium",
+    "justification":  "Only the directional phrase \u0027southwest Burkina Faso\u0027 is given; no region, province or commune is named.",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

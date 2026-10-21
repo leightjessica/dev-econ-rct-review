@@ -1,0 +1,20 @@
+{
+    "key":  "10_1093_ej_ueac084",
+    "doi":  "10.1093/ej/ueac084",
+    "task":  "recheck",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Lima",
+                          "Callao",
+                          "Arequipa",
+                          "Piura",
+                          "Junín",
+                          "Puno",
+                          "San Martín"
+                      ],
+    "raw_site_text":  "full-day public high schools in urban areas in six regions of the country: Lima and Callao, Arequipa, Piura, Junin, Puno and San Martin",
+    "confidence":  "high",
+    "justification":  "Paper names the six intervention regions (Lima and Callao counted as one).",
+    "note":  "",
+    "first_pass_scope":  "multi_region"
+}

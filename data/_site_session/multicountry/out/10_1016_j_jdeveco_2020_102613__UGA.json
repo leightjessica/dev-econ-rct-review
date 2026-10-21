@@ -1,0 +1,17 @@
+{
+ "key": "10_1016_j_jdeveco_2020_102613",
+ "doi": "10.1016/j.jdeveco.2020.102613",
+ "iso3": "UGA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira",
+  "Hoima & Kabale & Kasese & Kibaale & Kisoro & Ntungamo & Kabarole & Kamwenge & Kanungu & Rukungiri & Ibanda & Isingiro & Kiruhura & Mbarara & Buliisa & Kyegegwa & Kyenjojo & Bundibugyo & Bushenyi & Sheema & Masindi & Buhweju & Ntoroko & Rubirizi & Kiryandongo & Mitooma",
+  "Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono"
+ ],
+ "raw_site_text": "Four sub-regions were randomly selected (Central, Mid-Northern, Mid-Western, SouthWestern) out of the six Ugandan sub-regions.",
+ "confidence": "medium",
+ "justification": "Sub-regions mapped to WB regions: Central -> Kalangala/Kampala group; Mid-Northern -> Northern group (Gulu, Lira, Arua); Mid-Western and South-Western -> Western group (Hoima, Mbarara, Kabale). Eastern not sampled.",
+ "note": "Roll-up of Ugandan sub-regions to WB regions via geographic knowledge; no clinic districts named."
+}

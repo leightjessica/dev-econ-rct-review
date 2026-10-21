@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2025_103546",
+    "doi":  "10.1016/j.jdeveco.2025.103546",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "Our sample also covers 15 different counties in the country; three clusters of five counties",
+    "confidence":  "high",
+    "justification":  "Fifteen counties in three clusters, but none is named for this sample (Nairobi County is mentioned only for another study).",
+    "note":  "Full text re-read; place names needed to map to admissible units are not given.",
+    "first_pass_scope":  "unspecified"
+}

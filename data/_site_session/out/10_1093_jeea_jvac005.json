@@ -1,0 +1,16 @@
+{
+ "key": "10_1093_jeea_jvac005",
+ "doi": "10.1093/jeea/jvac005",
+ "task": "recheck",
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Cundinamarca",
+  "Boyaca",
+  "Santander"
+ ],
+ "raw_site_text": "The study towns were located in three departments in central Colombia (Cundinamarca, Boyaca, and Santander)",
+ "confidence": "high",
+ "justification": "Setting section names the three departments of the 46/87 municipalities.",
+ "note": "",
+ "first_pass_scope": "unspecified"
+}

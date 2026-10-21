@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2021_102632",
+    "doi":  "10.1016/j.jdeveco.2021.102632",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Eastern"
+                      ],
+    "raw_site_text":  "four chiefdoms in Chipata District of Eastern Province (Mnukwa, Mkanda, Mshawa, Maguya)",
+    "confidence":  "high",
+    "justification":  "\"rolled out across four chiefdoms in Chipata District of Eastern Province, Zambia\".",
+    "note":  ""
+}

@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2020_102600",
+    "doi":  "10.1016/j.jdeveco.2020.102600",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Volta"
+                      ],
+    "raw_site_text":  "Hohoe town and its outlying suburbs ... capital of Hohoe District ... in the Volta Region",
+    "confidence":  "high",
+    "justification":  "\u0027Hohoe town is the capital of Hohoe District ... in the Volta Region\u0027; Greater Accra/Northern mentions are non-site (designer in Accra etc.).",
+    "note":  ""
+}

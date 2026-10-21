@@ -1,0 +1,14 @@
+{
+    "key":  "10_3982_ecta19127",
+    "doi":  "10.3982/ecta19127",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "200 BRAC branches located in flood-prone areas",
+    "confidence":  "medium",
+    "justification":  "Branches are described as flood-prone and within 15 km of FFWC river gauges, stratified by district, but no district or division is named.",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

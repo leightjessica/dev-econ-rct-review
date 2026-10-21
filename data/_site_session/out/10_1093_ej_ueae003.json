@@ -1,0 +1,13 @@
+{
+    "key":  "10_1093_ej_ueae003",
+    "doi":  "10.1093/ej/ueae003",
+    "task":  "extract",
+    "site_scope":  "nationwide",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "single 500-school, nationwide, randomised controlled trial; randomly selected nationwide sample",
+    "confidence":  "high",
+    "justification":  "The paper describes a single 500-school, nationwide, randomised controlled trial across a randomly selected nationwide sample.",
+    "note":  ""
+}

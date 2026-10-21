@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_ej_uead001",
+    "doi":  "10.1093/ej/uead001",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Bombali",
+                          "Bonthe"
+                      ],
+    "raw_site_text":  "236 communities ... located in two districts, Bombali and Bonthe",
+    "confidence":  "high",
+    "justification":  "The paper states the 236 communities are located in two districts, Bombali and Bonthe.",
+    "note":  ""
+}

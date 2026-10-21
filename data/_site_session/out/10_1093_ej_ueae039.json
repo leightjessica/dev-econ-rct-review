@@ -1,0 +1,13 @@
+{
+    "key":  "10_1093_ej_ueae039",
+    "doi":  "10.1093/ej/ueae039",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Sud-Kivu"
+                      ],
+    "raw_site_text":  "educational sub-provinces of Shabunda 1 and Walungu 1, in South Kivu; eastern province of South Kivu",
+    "confidence":  "high",
+    "justification":  "The paper states schools are in Shabunda 1 and Walungu 1, in South Kivu (ninety primary schools in the eastern province of South Kivu).",
+    "note":  "Kinshasa and Ituri hits are background only."
+}

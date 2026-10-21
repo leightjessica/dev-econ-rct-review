@@ -1,0 +1,587 @@
+[
+ {
+  "doi": "10.1257/aer.20190586",
+  "key": "10_1257_aer_20190586",
+  "setting": "single_country",
+  "country_source": "paper_text: Ethiopia (country_justification)",
+  "iso3": "ETH",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1257/aer.20220471",
+  "key": "10_1257_aer_20220471",
+  "setting": "single_country",
+  "country_source": "paper_text: Addis Ababa, Ethiopia",
+  "iso3": "ETH",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1257/app.20220072",
+  "key": "10_1257_app_20220072",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "KEN",
+  "matching_level": "GADM1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1257/app.20220072",
+  "key": "10_1257_app_20220072",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "RWA",
+  "matching_level": "GAUL2",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1257/pol.20200778",
+  "key": "10_1257_pol_20200778",
+  "setting": "no_country",
+  "country_source": "paper_text: American University of Beirut, Lebanon",
+  "iso3": "LBN",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1086/717891",
+  "key": "10_1086_717891",
+  "setting": "single_country",
+  "country_source": "paper_text: unnamed lower-middle-income country in Southeast Asia (firm anonymized); country cannot be resolved",
+  "iso3": "",
+  "matching_level": "",
+  "status": "country_unresolved"
+ },
+ {
+  "doi": "10.1086/727288",
+  "key": "10_1086_727288",
+  "setting": "single_country",
+  "country_source": "paper_text: Chile's national health system",
+  "iso3": "CHL",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1086/736209",
+  "key": "10_1086_736209",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "UGA",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1086/736209",
+  "key": "10_1086_736209",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "KEN",
+  "matching_level": "GADM1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1162/rest_a_01182",
+  "key": "10_1162_rest_a_01182",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "BGD",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1162/rest_a_01182",
+  "key": "10_1162_rest_a_01182",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "IND",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/ej/ueae012",
+  "key": "10_1093_ej_ueae012",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "KEN",
+  "matching_level": "GADM1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/ej/ueae012",
+  "key": "10_1093_ej_ueae012",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "TZA",
+  "matching_level": "GADM1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/ej/ueae012",
+  "key": "10_1093_ej_ueae012",
+  "setting": "multi_country",
+  "country_source": "paper_text: Manica and Sofala sites named in the paper; missing from country_classified (KEN;TZA)",
+  "iso3": "MOZ",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/ej/ueaf012",
+  "key": "10_1093_ej_ueaf012",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "TZA",
+  "matching_level": "GADM1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/ej/ueaf012",
+  "key": "10_1093_ej_ueaf012",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "BFA",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/ej/ueaf012",
+  "key": "10_1093_ej_ueaf012",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "PAK",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/ej/ueaf042",
+  "key": "10_1093_ej_ueaf042",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "LKA",
+  "matching_level": "GAUL2",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/ej/ueaf042",
+  "key": "10_1093_ej_ueaf042",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "GHA",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1093/jeea/jvae005",
+  "key": "10_1093_jeea_jvae005",
+  "setting": "no_country",
+  "country_source": "paper_text: CCT in rural Nicaragua (Red de Proteccion Social)",
+  "iso3": "NIC",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2021.102807",
+  "key": "10_1016_j_jdeveco_2021_102807",
+  "setting": "single_country",
+  "country_source": "paper_text: Ethiopia (country_justification)",
+  "iso3": "ETH",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2022.102990",
+  "key": "10_1016_j_jdeveco_2022_102990",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "IND",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2022.102990",
+  "key": "10_1016_j_jdeveco_2022_102990",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "IDN",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2022.102990",
+  "key": "10_1016_j_jdeveco_2022_102990",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "MLI",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2022.102990",
+  "key": "10_1016_j_jdeveco_2022_102990",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "TZA",
+  "matching_level": "GADM1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2023.103166",
+  "key": "10_1016_j_jdeveco_2023_103166",
+  "setting": "no_country",
+  "country_source": "paper_text: rural northwest China",
+  "iso3": "CHN",
+  "matching_level": "",
+  "status": "country_not_covered"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2023.103244",
+  "key": "10_1016_j_jdeveco_2023_103244",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "MEX",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2023.103244",
+  "key": "10_1016_j_jdeveco_2023_103244",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "GTM",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103445",
+  "key": "10_1016_j_jdeveco_2024_103445",
+  "setting": "single_country",
+  "country_source": "paper_text: southern Ethiopia",
+  "iso3": "ETH",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103398",
+  "key": "10_1016_j_jdeveco_2024_103398",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "COL",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103398",
+  "key": "10_1016_j_jdeveco_2024_103398",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "GHA",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103398",
+  "key": "10_1016_j_jdeveco_2024_103398",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "IDN",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103398",
+  "key": "10_1016_j_jdeveco_2024_103398",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "JOR",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103398",
+  "key": "10_1016_j_jdeveco_2024_103398",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "LKA",
+  "matching_level": "GAUL2",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103398",
+  "key": "10_1016_j_jdeveco_2024_103398",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "MEX",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103398",
+  "key": "10_1016_j_jdeveco_2024_103398",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "TZA",
+  "matching_level": "GADM1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103398",
+  "key": "10_1016_j_jdeveco_2024_103398",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "ZAF",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103405",
+  "key": "10_1016_j_jdeveco_2024_103405",
+  "setting": "single_country",
+  "country_source": "paper_text: Chile (country_justification)",
+  "iso3": "CHL",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2020.102613",
+  "key": "10_1016_j_jdeveco_2020_102613",
+  "setting": "no_country",
+  "country_source": "paper_text: Uganda (paper text)",
+  "iso3": "UGA",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103311",
+  "key": "10_1016_j_jdeveco_2024_103311",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "GHA",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103311",
+  "key": "10_1016_j_jdeveco_2024_103311",
+  "setting": "multi_country",
+  "country_source": "country_classified",
+  "iso3": "UGA",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2024.103315",
+  "key": "10_1016_j_jdeveco_2024_103315",
+  "setting": "single_country",
+  "country_source": "paper_text: Chile 2016 municipal elections",
+  "iso3": "CHL",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2020.102615",
+  "key": "10_1016_j_jdeveco_2020_102615",
+  "setting": "no_country",
+  "country_source": "paper_text: Bangladesh (paper text)",
+  "iso3": "BGD",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "ARG",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "BOL",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "BRA",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "CHL",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "COL",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "CRI",
+  "matching_level": "NSO1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "ECU",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "GTM",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "HND",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "MEX",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "NIC",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "PAN",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "PER",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "PRY",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103633",
+  "key": "10_1016_j_jdeveco_2025_103633",
+  "setting": "cross_country",
+  "country_source": "country_classified",
+  "iso3": "URY",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103687",
+  "key": "10_1016_j_jdeveco_2025_103687",
+  "setting": "cross_country",
+  "country_source": "paper_text: seven countries named in the abstract",
+  "iso3": "ARG",
+  "matching_level": "GAULx",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103687",
+  "key": "10_1016_j_jdeveco_2025_103687",
+  "setting": "cross_country",
+  "country_source": "paper_text: seven countries named in the abstract",
+  "iso3": "BRA",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103687",
+  "key": "10_1016_j_jdeveco_2025_103687",
+  "setting": "cross_country",
+  "country_source": "paper_text: seven countries named in the abstract",
+  "iso3": "SLV",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103687",
+  "key": "10_1016_j_jdeveco_2025_103687",
+  "setting": "cross_country",
+  "country_source": "paper_text: seven countries named in the abstract",
+  "iso3": "GTM",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103687",
+  "key": "10_1016_j_jdeveco_2025_103687",
+  "setting": "cross_country",
+  "country_source": "paper_text: seven countries named in the abstract",
+  "iso3": "MEX",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103687",
+  "key": "10_1016_j_jdeveco_2025_103687",
+  "setting": "cross_country",
+  "country_source": "paper_text: seven countries named in the abstract",
+  "iso3": "PRY",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ },
+ {
+  "doi": "10.1016/j.jdeveco.2025.103687",
+  "key": "10_1016_j_jdeveco_2025_103687",
+  "setting": "cross_country",
+  "country_source": "paper_text: seven countries named in the abstract",
+  "iso3": "PER",
+  "matching_level": "GAUL1",
+  "status": "ok"
+ }
+]

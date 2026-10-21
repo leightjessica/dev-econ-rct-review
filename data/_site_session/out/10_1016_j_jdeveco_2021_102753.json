@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2021_102753",
+    "doi":  "10.1016/j.jdeveco.2021.102753",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "206 experimental villages randomly selected among the universe of eligible rural villages of Mexico (PAL); one village from the state of Quintana Roo (dropped)",
+    "confidence":  "medium",
+    "justification":  "Full text names no state for the experimental villages; Quintana Roo appears only as a single village dropped from analysis, so no unit is supported.",
+    "note":  "",
+    "first_pass_scope":  "unspecified"
+}

@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2024_103264",
+    "doi":  "10.1016/j.jdeveco.2024.103264",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Dhaka"
+                      ],
+    "raw_site_text":  "a large garment factory in Tongi, a town north of Dhaka, Bangladesh",
+    "confidence":  "high",
+    "justification":  "Experiment was \u0027conducted in a large garment factory in Tongi, a town north of Dhaka\u0027 (Tongi is in Gazipur district, Dhaka division).",
+    "note":  ""
+}

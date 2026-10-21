@@ -1,0 +1,8 @@
+{"key": "10_1093_ej_ueae012", "doi": "10.1093/ej/ueae012", "iso3": "MOZ", "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "multi_region",
+ "matched_units": ["Manica", "Sofala"],
+ "raw_site_text": "In Mozambique, three districts in the provinces of Manica (Machaze district, Tambara district) and Zambezia (Morrumbala district) were initially chosen. Because of civil unrest, travel to Zambezia and Northern Manica became unsafe, and we had to drop both the Morrumbala and Tambara districts from the study, replacing them with the Nhamatanda district in Sofala province.",
+ "confidence": "high",
+ "justification": "The paper names the final Mozambique sites as Machaze district (Manica province) and Nhamatanda district (Sofala province); Zambezia (Morrumbala) and Tambara were dropped, so Zambezia is excluded.",
+ "note": "Machaze rolled up to Manica by geographic knowledge; Sofala is named explicitly in the text."}

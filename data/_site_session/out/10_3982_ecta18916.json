@@ -1,0 +1,14 @@
+{
+    "key":  "10_3982_ecta18916",
+    "doi":  "10.3982/ecta18916",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "198 villages ... Southern Mali",
+    "confidence":  "medium",
+    "justification":  "Paper says only \u0027Southern Mali\u0027 and 198 Soro villages (cercle fixed effects) with no region or cercle named.",
+    "note":  "Study area described only as Southern Mali; no admissible region named (Sikasso is likely but unsupported by text).",
+    "first_pass_scope":  "unspecified"
+}

@@ -1,0 +1,15 @@
+{
+    "key":  "10_1016_j_jdeveco_2021_102776",
+    "doi":  "10.1016/j.jdeveco.2021.102776",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Boucle Du Mouhoun",
+                          "Centre-ouest",
+                          "Hauts-bassins"
+                      ],
+    "raw_site_text":  "60 communes ... within three targeted regions of Burkina Faso (Boucle du Mouhoun, Centre-Ouest, and Hauts-Bassins)",
+    "confidence":  "high",
+    "justification":  "\u002760 communes (rural and peri-urban) within three targeted regions of Burkina Faso (Boucle du Mouhoun, Centre-Ouest, and Hauts-Bassins)\u0027.",
+    "note":  ""
+}

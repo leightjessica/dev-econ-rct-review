@@ -1,0 +1,15 @@
+{
+ "key": "10_1257_pol_20200778",
+ "doi": "10.1257/pol.20200778",
+ "iso3": "LBN",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Beirut"
+ ],
+ "raw_site_text": "American University of Beirut (AUB), a private four-year university located in Lebanon",
+ "confidence": "medium",
+ "justification": "Students and advisers at the American University of Beirut; the university is located in Beirut (geographic knowledge roll-up).",
+ "note": "Setting is a university rather than a field site."
+}

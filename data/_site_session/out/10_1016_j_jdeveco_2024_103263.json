@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2024_103263",
+    "doi":  "10.1016/j.jdeveco.2024.103263",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "412 villages in four rural districts in southwest Uganda",
+    "confidence":  "high",
+    "justification":  "Full text names no district; only \u0027four rural districts in southwest Uganda\u0027.",
+    "note":  "Full text re-read; place names needed to map to admissible units are not given.",
+    "first_pass_scope":  "unspecified"
+}

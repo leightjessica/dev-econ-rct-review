@@ -1,0 +1,14 @@
+{
+    "key":  "10_3982_ecta19408",
+    "doi":  "10.3982/ecta19408",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "84 supplier factories ... Bangladesh",
+    "confidence":  "medium",
+    "justification":  "Factories are described only as Alliance supplier factories in Bangladesh; Chittagong appears only for two excluded factories.",
+    "note":  "Chittagong mentioned only for two factories excluded from the sample; not an experimental site.",
+    "first_pass_scope":  "unspecified"
+}

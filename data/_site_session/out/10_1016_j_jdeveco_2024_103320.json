@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2024_103320",
+    "doi":  "10.1016/j.jdeveco.2024.103320",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "about 70 different localities across 19 Nigerian states; southern and central states of Nigeria",
+    "confidence":  "high",
+    "justification":  "Full text names no individual state among the 19 (southern and central only).",
+    "note":  "Full text re-read; place names needed to map to admissible units are not given.",
+    "first_pass_scope":  "unspecified"
+}

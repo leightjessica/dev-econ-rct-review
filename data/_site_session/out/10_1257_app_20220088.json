@@ -1,0 +1,1 @@
+{"key": "10_1257_app_20220088", "doi": "10.1257/app.20220088", "task": "verify", "verdict": "confirmed", "site_scope": "single_region", "matched_units": ["Delhi"], "raw_site_text": "240 of Delhi's 272 wards", "confidence": "high", "justification": "Experiment covers 240 of Delhi's municipal wards.", "note": ""}

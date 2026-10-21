@@ -1,0 +1,18 @@
+{
+ "key": "10_1093_ej_ueae012",
+ "doi": "10.1093/ej/ueae012",
+ "iso3": "TZA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Singida",
+  "Dodoma",
+  "Manyara",
+  "Morogoro"
+ ],
+ "raw_site_text": "the provinces of Singida, Iramba, Kongwa, Kiteto, Morogoro and Mvomero were identified as suitable for the project",
+ "confidence": "medium",
+ "justification": "Districts Singida/Iramba (Singida region), Kongwa (Dodoma), Kiteto (Manyara), Morogoro/Mvomero (Morogoro) rolled up from geographic knowledge.",
+ "note": "Paper also studies Mozambique (Manica/Sofala districts), not in paper_countries."
+}

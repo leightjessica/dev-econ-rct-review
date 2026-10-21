@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2025_103598",
+    "doi":  "10.1016/j.jdeveco.2025.103598",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "NEA collected applications from 510 job seekers; advertised through national media",
+    "confidence":  "high",
+    "justification":  "National program with applicants drawn via administrative data; no region of residence stated.",
+    "note":  "Full text re-read; place names needed to map to admissible units are not given.",
+    "first_pass_scope":  "unspecified"
+}

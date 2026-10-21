@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2022_102976",
+    "doi":  "10.1016/j.jdeveco.2022.102976",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "60 of the 194 AIR stations ... located in ten states which contain 67% of the country\u0027s population",
+    "confidence":  "high",
+    "justification":  "Full text gives only \u0027ten states\u0027 and five languages (Hindi, Kannada, Marathi, Odiya, Telugu); no state is named.",
+    "note":  "Full text re-read; place names needed to map to admissible units are not given.",
+    "first_pass_scope":  "unspecified"
+}

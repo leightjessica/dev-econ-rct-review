@@ -1,0 +1,15 @@
+{
+ "key": "10_1016_j_jdeveco_2020_102615",
+ "doi": "10.1016/j.jdeveco.2020.102615",
+ "iso3": "BGD",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Khulna"
+ ],
+ "raw_site_text": "The intervention took place in primary schools in rural communities in two districts- Khulna and Satkhira—in southwest Bangladesh in January–February 2016.",
+ "confidence": "medium",
+ "justification": "Khulna and Satkhira districts both lie in Khulna division.",
+ "note": "Roll-up from districts to division uses geographic knowledge."
+}

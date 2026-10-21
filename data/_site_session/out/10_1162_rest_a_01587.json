@@ -1,0 +1,14 @@
+{
+    "key":  "10_1162_rest_a_01587",
+    "doi":  "10.1162/rest_a_01587",
+    "task":  "recheck",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Oromia"
+                      ],
+    "raw_site_text":  "Holeta and Ejere areas of Ethiopia ... The Oromia region of Ethiopia, where our study was implemented",
+    "confidence":  "high",
+    "justification":  "Study implemented in Holeta and Ejere near Addis Ababa, which the paper places in the Oromia region.",
+    "note":  "",
+    "first_pass_scope":  "single_region"
+}

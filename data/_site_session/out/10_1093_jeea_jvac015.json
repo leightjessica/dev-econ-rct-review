@@ -1,0 +1,17 @@
+{
+ "key": "10_1093_jeea_jvac015",
+ "doi": "10.1093/jeea/jvac015",
+ "task": "recheck",
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Guanajuato",
+  "Mexico",
+  "San Luis Potosi",
+  "Queretaro"
+ ],
+ "raw_site_text": "26 municipalities in the central states of Guanajuato, Mexico, San Luis Potosi, and Queretaro",
+ "confidence": "high",
+ "justification": "Setting section names the four central states.",
+ "note": "",
+ "first_pass_scope": "unspecified"
+}

@@ -1,0 +1,13 @@
+{
+ "key": "10_1086_736209",
+ "doi": "10.1086/736209",
+ "iso3": "KEN",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "unspecified",
+ "matched_units": [],
+ "raw_site_text": "In Kenya, we selected 7,078 households across 235 villages sampled as part of Barnett-Howell et al. (2025); few refugees live in the sampled Kenyan counties",
+ "confidence": "medium",
+ "justification": "Rural Kenyan villages from a separate project; counties are not named in the text.",
+ "note": "Counties not named."
+}

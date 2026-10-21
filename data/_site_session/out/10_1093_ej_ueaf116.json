@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_ej_ueaf116",
+    "doi":  "10.1093/ej/ueaf116",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Atlantico",
+                          "Bolivar"
+                      ],
+    "raw_site_text":  "The experiment took place in the urban branches of Barranquilla and Cartagena",
+    "confidence":  "high",
+    "justification":  "The paper states the experiment took place in the urban branches of Barranquilla and Cartagena (Barranquilla is in Atlantico, Cartagena in Bolivar).",
+    "note":  ""
+}

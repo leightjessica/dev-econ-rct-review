@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2022_102942",
+    "doi":  "10.1016/j.jdeveco.2022.102942",
+    "task":  "extract",
+    "site_scope":  "nationwide",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "at-scale programs reaching Syrian refugees \"throughout Lebanon\"; VASyR nationally representative, representative by district",
+    "confidence":  "high",
+    "justification":  "Data are from the nationally representative VASyR survey covering refugees throughout Lebanon.",
+    "note":  "Study is a quasi-experimental RDD, not a site-based RCT."
+}

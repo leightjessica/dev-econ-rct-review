@@ -1,0 +1,239 @@
+[
+ {
+  "key": "10_3982_ecta18916",
+  "doi": "10.3982/ecta18916",
+  "title": "Selection Into Credit Markets: Evidence From Agriculture in Mali",
+  "iso3": "MLI",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Bamako",
+   "Gao",
+   "Kayes",
+   "Kidal",
+   "Koulikoro",
+   "Mopti",
+   "Segou",
+   "Sikasso",
+   "Tombouctou"
+  ],
+  "text_file": "data/_site_session/text_full/10_3982_ecta18916.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "198 villages ... rural Mali",
+   "agent_note": ""
+  }
+ },
+ {
+  "key": "10_3982_ecta19127",
+  "doi": "10.3982/ecta19127",
+  "title": "Adapting to Climate Risk With Guaranteed Credit: Evidence From Bangladesh",
+  "iso3": "BGD",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Barisal",
+   "Chittagong",
+   "Dhaka",
+   "Khulna",
+   "Rajshahi",
+   "Rangpur",
+   "Sylhet"
+  ],
+  "text_file": "data/_site_session/text_full/10_3982_ecta19127.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "200 bank branches located in flood-prone areas",
+   "agent_note": ""
+  }
+ },
+ {
+  "key": "10_3982_ecta19408",
+  "doi": "10.3982/ecta19408",
+  "title": "Multinational Enforcement of Labor Law: Experimental Evidence on Strengthening Occupational Safety and Health Committees",
+  "iso3": "BGD",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Barisal",
+   "Chittagong",
+   "Dhaka",
+   "Khulna",
+   "Rajshahi",
+   "Rangpur",
+   "Sylhet"
+  ],
+  "text_file": "data/_site_session/text_full/10_3982_ecta19408.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "84 supplier factories",
+   "agent_note": "units_found hint Chittagong not found in text file."
+  }
+ },
+ {
+  "key": "10_1093_qje_qjae025",
+  "doi": "10.1093/qje/qjae025",
+  "title": "Social Signaling and Childhood Immunization: A Field Experiment in Sierra Leone",
+  "iso3": "SLE",
+  "target_level": "a second-level administrative unit (district / department / municipality)",
+  "admissible_units": [
+   "Bo",
+   "Bombali",
+   "Bonthe",
+   "Kailahun",
+   "Kambia",
+   "Kenema",
+   "Koinadugu",
+   "Kono",
+   "Moyamba",
+   "Port Loko",
+   "Pujehun",
+   "Tonkolili",
+   "Western Area"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_qje_qjae025.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "120 clinics ... 10% of [Sierra Leone's 1,221] public clinics",
+   "agent_note": ""
+  }
+ },
+ {
+  "key": "10_1093_qje_qjac034",
+  "doi": "10.1093/qje/qjac034",
+  "title": "Improving Workplace Climate in Large Corporations: A Clustered Randomized Intervention",
+  "iso3": "TUR",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Adana, Mersin",
+   "Ankara",
+   "Antalya, Isparta, Burdur",
+   "Aydın, Denizli, Muğla",
+   "Ağrı, Kars, Iğdır, Ardahan",
+   "Balıkesir, Çanakkale",
+   "Bursa, Eskişehir, Bilecik",
+   "Erzurum, Erzincan, Bayburt",
+   "Gaziantep, Adıyaman, Kilis",
+   "Hatay, Kahramanmaraş, Osmaniye",
+   "Kastamonu, Çankırı, Sinop",
+   "Kayseri, Sivas, Yozgat",
+   "Kocaeli, Sakarya, Düzce, Bolu, Yalova",
+   "Konya, Karaman",
+   "Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",
+   "Malatya, Elazığ, Bingöl, Tunceli",
+   "Manisa, Afyonkarahisar, Kütahya, Uşak",
+   "Mardin, Batman, Şırnak, Siirt",
+   "Samsun, Tokat, Çorum, Amasya",
+   "Tekirdağ, Edirne, Kırklareli",
+   "Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",
+   "Van, Muş, Bitlis, Hakkari",
+   "Zonguldak, Karabük, Bartın",
+   "İstanbul",
+   "İzmir",
+   "Şanlıurfa, Diyarbakır"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_qje_qjac034.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "20 large corporations in Turkey ... company headquarters",
+   "agent_note": "Study country Turkey confirmed; no subnational place named in the available text (units_found 'Van...' hit not supported)."
+  }
+ },
+ {
+  "key": "10_1093_qje_qjae003",
+  "doi": "10.1093/qje/qjae003",
+  "title": "Digital Collateral",
+  "iso3": "UGA",
+  "target_level": "a World Bank survey region -- a GROUP of several districts/provinces (coarser than a single admin-1 unit); each admissible name lists the group's constituent units",
+  "admissible_units": [
+   "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira",
+   "Busia & Jinja & Kaberamaido & Mayuge & Amuria & Butaleja & Kaliro & Katakwi & Mbale & Tororo & Budaka & Namutumba & Manafwa & Bukedea & Bududa & Buyende & Kamuli & Bugiri & Bukwo & BulambuliIganga & Kapchorwa & Kween & Luuka & Ngora & Sironko & Soroti & Kibuku & Kumi & Serere & Namayingo & Pallisa",
+   "Hoima & Kabale & Kasese & Kibaale & Kisoro & Ntungamo & Kabarole & Kamwenge & Kanungu & Rukungiri & Ibanda & Isingiro & Kiruhura & Mbarara & Buliisa & Kyegegwa & Kyenjojo & Bundibugyo & Bushenyi & Sheema & Masindi & Buhweju & Ntoroko & Rubirizi & Kiryandongo & Mitooma",
+   "Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_qje_qjae003.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "Fenix International customers in Uganda",
+   "agent_note": "No subnational place named in the available text."
+  }
+ },
+ {
+  "key": "10_1093_qje_qjae043",
+  "doi": "10.1093/qje/qjae043",
+  "title": "Cognitive Endurance as Human Capital",
+  "iso3": "IND",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Andaman and Nicobar",
+   "Andhra Pradesh",
+   "Arunachal Pradesh",
+   "Assam",
+   "Bihar",
+   "Chandigarh",
+   "Chhattisgarh",
+   "Dadra and Nagar Haveli",
+   "Daman and Diu",
+   "Delhi",
+   "Goa",
+   "Gujarat",
+   "Haryana",
+   "Himachal Pradesh",
+   "Jharkhand",
+   "Karnataka",
+   "Kerala",
+   "Lakshadweep",
+   "Madhya Pradesh",
+   "Maharashtra",
+   "Manipur",
+   "Meghalaya",
+   "Mizoram",
+   "Nagaland",
+   "Orissa",
+   "Puducherry",
+   "Punjab",
+   "Rajasthan",
+   "Sikkim",
+   "Tamil Nadu",
+   "Tripura",
+   "Uttar Pradesh",
+   "Uttarakhand",
+   "West Bengal",
+   "Telangana",
+   "Jammu and Kashmir"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_qje_qjae043.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "six low-income primary schools in India",
+   "agent_note": "Available text is truncated before the setting section; units_found hint 'Uttar Pradesh' not present in the text, so not used."
+  }
+ },
+ {
+  "key": "10_1093_qje_qjab045",
+  "doi": "10.1093/qje/qjab045",
+  "title": "Why Do People Stay Poor?",
+  "iso3": "BGD",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Barisal",
+   "Chittagong",
+   "Dhaka",
+   "Khulna",
+   "Rajshahi",
+   "Rangpur",
+   "Sylhet"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_qje_qjab045.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "1,309 villages in the 13 poorest districts of the country",
+   "agent_note": "Districts unnamed in the available text; cannot map to divisions."
+  }
+ }
+]

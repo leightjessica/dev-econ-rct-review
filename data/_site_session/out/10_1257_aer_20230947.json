@@ -1,0 +1,16 @@
+{
+    "key":  "10_1257_aer_20230947",
+    "doi":  "10.1257/aer.20230947",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Maule",
+                          "Biobio",
+                          "Valparaiso",
+                          "Metropolitana"
+                      ],
+    "raw_site_text":  "four most populous regions in Chile: Maule, Biobio, Valparaiso, and Metropolitan",
+    "confidence":  "high",
+    "justification":  "Program expanded and randomized in \u0027the four most populous regions in Chile: Maule, Biobio, Valparaiso, and Metropolitan\u0027.",
+    "note":  ""
+}

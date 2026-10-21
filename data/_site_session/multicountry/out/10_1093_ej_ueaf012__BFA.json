@@ -1,0 +1,17 @@
+{
+ "key": "10_1093_ej_ueaf012",
+ "doi": "10.1093/ej/ueaf012",
+ "iso3": "BFA",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Centre",
+  "Cascades",
+  "Hauts-bassins"
+ ],
+ "raw_site_text": "seventy-eight clinics in Burkina Faso (Ouagadougou, Banfora and Bobo)",
+ "confidence": "medium",
+ "justification": "Ouagadougou is in Centre, Banfora in Cascades, Bobo-Dioulasso in Hauts-bassins (roll-up from geographic knowledge).",
+ "note": ""
+}

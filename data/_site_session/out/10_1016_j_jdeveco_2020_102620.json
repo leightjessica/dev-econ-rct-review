@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2020_102620",
+    "doi":  "10.1016/j.jdeveco.2020.102620",
+    "task":  "extract",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Northern",
+                          "Upper East"
+                      ],
+    "raw_site_text":  "20 villages in the Northern Region and 20 villages in the Upper East Region of Ghana",
+    "confidence":  "high",
+    "justification":  "\"1,005 farmers selected from 20 villages in the Northern Region and 20 villages in the Upper East Region of Ghana\".",
+    "note":  ""
+}

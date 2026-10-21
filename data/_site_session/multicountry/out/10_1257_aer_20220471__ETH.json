@@ -1,0 +1,15 @@
+{
+ "key": "10_1257_aer_20220471",
+ "doi": "10.1257/aer.20220471",
+ "iso3": "ETH",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Addis Ababa"
+ ],
+ "raw_site_text": "We evaluate the program in the capital city of Addis Ababa",
+ "confidence": "high",
+ "justification": "Randomization of woredas within Addis Ababa subcities.",
+ "note": ""
+}

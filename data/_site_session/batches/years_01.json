@@ -1,0 +1,66 @@
+[
+ {
+  "key": "10_1257_pol_20200778",
+  "doi": "10.1257/pol.20200778",
+  "title": "Adviser Value Added and Student Outcomes: Evidence from Randomly Assigned College Advisers",
+  "iso3": "LBN",
+  "publication_year": "2022",
+  "text_file": "data/_site_session/text_full/10_1257_pol_20200778.txt"
+ },
+ {
+  "key": "10_1162_rest_a_01182",
+  "doi": "10.1162/rest_a_01182",
+  "title": "Raising Health Awareness in Rural Communities: A Randomized Experiment in Bangladesh and India",
+  "iso3": "BGD",
+  "publication_year": "2022",
+  "text_file": "data/_site_session/text_full/10_1162_rest_a_01182.txt"
+ },
+ {
+  "key": "10_1093_ej_ueae012",
+  "doi": "10.1093/ej/ueae012",
+  "title": "Bundling Genetic and Financial Technologies for More Resilient and Productive Small-Scale Farmers in Africa",
+  "iso3": "TZA",
+  "publication_year": "2024",
+  "text_file": "data/_site_session/text_full/10_1093_ej_ueae012.txt"
+ },
+ {
+  "key": "10_1093_ej_ueaf042",
+  "doi": "10.1093/ej/ueaf042",
+  "title": "Do capital grants improve microenterprise productivity?",
+  "iso3": "GHA",
+  "publication_year": "2025",
+  "text_file": "data/_site_session/text_full/10_1093_ej_ueaf042.txt"
+ },
+ {
+  "key": "10_1016_j_jdeveco_2022_102990",
+  "doi": "10.1016/j.jdeveco.2022.102990",
+  "title": "The dirty business of eliminating open defecation: The effect of village sanitation on child height from field experiments in four countries",
+  "iso3": "IND",
+  "publication_year": "2022",
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2022_102990.txt"
+ },
+ {
+  "key": "10_1016_j_jdeveco_2024_103445",
+  "doi": "10.1016/j.jdeveco.2024.103445",
+  "title": "The protective role of index insurance in the experience of violent conflict: Evidence from Ethiopia",
+  "iso3": "ETH",
+  "publication_year": "2024",
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2024_103445.txt"
+ },
+ {
+  "key": "10_1016_j_jdeveco_2024_103405",
+  "doi": "10.1016/j.jdeveco.2024.103405",
+  "title": "Better strategies for saving more: Evidence from three interventions in Chile",
+  "iso3": "CHL",
+  "publication_year": "2024",
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2024_103405.txt"
+ },
+ {
+  "key": "10_1016_j_jdeveco_2020_102615",
+  "doi": "10.1016/j.jdeveco.2020.102615",
+  "title": "The Effects of Chess Instruction on Academic and Non-cognitive Outcomes: Field Experimental Evidence from a Developing Country",
+  "iso3": "BGD",
+  "publication_year": "2021",
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2020_102615.txt"
+ }
+]

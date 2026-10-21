@@ -1,0 +1,14 @@
+{
+    "key":  "10_1162_rest_a_1689",
+    "doi":  "10.1162/rest.a.1689",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "892 public high schools in six Brazilian states",
+    "confidence":  "low",
+    "justification":  "Full text only says the original experiment spanned six Brazilian states and never names them.",
+    "note":  "Six states not named anywhere in the paper; none filled in from outside knowledge.",
+    "first_pass_scope":  "unspecified"
+}

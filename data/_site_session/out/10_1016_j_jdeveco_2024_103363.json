@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2024_103363",
+    "doi":  "10.1016/j.jdeveco.2024.103363",
+    "task":  "extract",
+    "site_scope":  "nationwide",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "Salvadorans over 18 recruited via social media; online training; residence in El Salvador",
+    "confidence":  "medium",
+    "justification":  "Online training program open to applicants nationwide in El Salvador (eligibility: nationality and residence in El Salvador), with no subnational site named.",
+    "note":  ""
+}

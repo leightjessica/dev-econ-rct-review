@@ -1,0 +1,14 @@
+{
+ "key": "10_1093_ej_ueae025",
+ "doi": "10.1093/ej/ueae025",
+ "task": "recheck",
+ "site_scope": "single_region",
+ "matched_units": [
+  "Garissa"
+ ],
+ "raw_site_text": "seventeen villages across Garissa County in Eastern Kenya",
+ "confidence": "high",
+ "justification": "Data collection took place in seventeen villages across Garissa County; Nairobi was only a pilot site.",
+ "note": "",
+ "first_pass_scope": "single_region"
+}

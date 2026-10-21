@@ -1,0 +1,14 @@
+{
+    "key":  "10_1093_qje_qjab045",
+    "doi":  "10.1093/qje/qjab045",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "1,309 villages in the 13 poorest districts of the country",
+    "confidence":  "medium",
+    "justification":  "Villages are in the \u002713 poorest districts\u0027 of Bangladesh but districts are not named in the text.",
+    "note":  "Districts unnamed; cannot map to divisions.",
+    "first_pass_scope":  "unspecified"
+}

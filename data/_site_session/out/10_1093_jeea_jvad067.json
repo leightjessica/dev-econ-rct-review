@@ -1,0 +1,15 @@
+{
+ "key": "10_1093_jeea_jvad067",
+ "doi": "10.1093/jeea/jvad067",
+ "task": "recheck",
+ "site_scope": "multi_region",
+ "matched_units": [
+  "Amman",
+  "Irbid & Mafraq & Jarash & Ajloon"
+ ],
+ "raw_site_text": "The program was active in three cities: the capital Amman, and the northern cities of Irbid, and Mafraq.",
+ "confidence": "high",
+ "justification": "Project Match operated in Amman, Irbid and Mafraq.",
+ "note": "",
+ "first_pass_scope": "unspecified"
+}

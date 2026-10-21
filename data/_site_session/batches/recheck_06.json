@@ -1,0 +1,251 @@
+[
+ {
+  "key": "10_1093_jeea_jvaf026",
+  "doi": "10.1093/jeea/jvaf026",
+  "title": "Safe Spaces for Teenage Girls in a Time of Crisis",
+  "iso3": "SLE",
+  "target_level": "a second-level administrative unit (district / department / municipality)",
+  "admissible_units": [
+   "Bo",
+   "Bombali",
+   "Bonthe",
+   "Kailahun",
+   "Kambia",
+   "Kenema",
+   "Koinadugu",
+   "Kono",
+   "Moyamba",
+   "Port Loko",
+   "Pujehun",
+   "Tonkolili",
+   "Western Area"
+  ],
+  "text_file": "data/_site_session/text_full/10_1093_jeea_jvaf026.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "200 villages in four districts of Sierra Leone",
+   "agent_note": "Four districts are unnamed in the supplied text; units_found hits (Kailahun, Port Loko, etc.) do not appear in the text file and are not used."
+  }
+ },
+ {
+  "key": "10_1016_j_jdeveco_2021_102781",
+  "doi": "10.1016/j.jdeveco.2021.102781",
+  "title": "Unpacking a multi-faceted program to build sustainable income for the very poor",
+  "iso3": "GHA",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Ashanti",
+   "Brong Ahafo",
+   "Central",
+   "Eastern",
+   "Greater Accra",
+   "Northern",
+   "Upper East",
+   "Upper West",
+   "Volta",
+   "Western"
+  ],
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2021_102781.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "\"poor communities in poor regions of the country\" (Ghana site of Banerjee et al. 2015)",
+   "agent_note": "Region not named in the leading text; Banerjee et al. (2015) would have to be consulted."
+  }
+ },
+ {
+  "key": "10_1016_j_jdeveco_2021_102810",
+  "doi": "10.1016/j.jdeveco.2021.102810",
+  "title": "Restricted access: How the internet can be used to promote reading and learning",
+  "iso3": "MWI",
+  "target_level": "a second-level administrative unit (district / department / municipality)",
+  "admissible_units": [
+   "Balaka",
+   "Blantyre",
+   "Chikwawa",
+   "Chiradzulu",
+   "Chitipa",
+   "Dedza",
+   "Dowa",
+   "Karonga",
+   "Kasungu",
+   "Likoma",
+   "Lilongwe",
+   "Machinga",
+   "Mangochi",
+   "Mchinji",
+   "Mulanje",
+   "Mwanza",
+   "Mzimba",
+   "Neno",
+   "Nkhata Bay",
+   "Nkhotakota",
+   "Nsanje",
+   "Ntcheu",
+   "Ntchisi",
+   "Phalombe",
+   "Rumphi",
+   "Salima",
+   "Thyolo",
+   "Zomba"
+  ],
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2021_102810.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "four government boarding schools in Malawi",
+   "agent_note": "District of the four schools is not stated in the leading text."
+  }
+ },
+ {
+  "key": "10_1016_j_jdeveco_2023_103181",
+  "doi": "10.1016/j.jdeveco.2023.103181",
+  "title": "Helping families help themselves: The (Un)intended impacts of a digital parenting program",
+  "iso3": "SLV",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Ahuachapan",
+   "Cabanas",
+   "Chalatenango",
+   "Cuscatlan",
+   "La Libertad",
+   "La Paz",
+   "La Union",
+   "Morazan",
+   "San Miguel",
+   "San Salvador",
+   "San Vicente",
+   "Santa Ana",
+   "Sonsonate",
+   "Usulutan"
+  ],
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2023_103181.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "caregivers in El Salvador recruited via SMS/WhatsApp, NGO network and Facebook",
+   "agent_note": "Possibly national in reach but not stated as nationally representative or nationwide."
+  }
+ },
+ {
+  "key": "10_1016_j_jdeveco_2022_102981",
+  "doi": "10.1016/j.jdeveco.2022.102981",
+  "title": "Trust and saving in financial institutions by the poor",
+  "iso3": "PER",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Amazonas",
+   "Ancash",
+   "Apurímac",
+   "Arequipa",
+   "Ayacucho",
+   "Cajamarca",
+   "Callao",
+   "Cusco",
+   "Huancavelica",
+   "Huánuco",
+   "Ica",
+   "Junín",
+   "La Libertad",
+   "Lambayeque",
+   "Lima",
+   "Loreto",
+   "Madre de Dios",
+   "Moquegua",
+   "Pasco",
+   "Piura",
+   "Puno",
+   "San Martín",
+   "Tacna",
+   "Tumbes",
+   "Ucayali"
+  ],
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2022_102981.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "rural villages in 17 districts in the Sierra region of Peru",
+   "agent_note": "Sierra is a multi-department natural region, not an admissible unit; no department or district named in the text."
+  }
+ },
+ {
+  "key": "10_1016_j_jdeveco_2020_102609",
+  "doi": "10.1016/j.jdeveco.2020.102609",
+  "title": "How does delegating decisions to communities affect the provision and use of a public service? Evidence from a field experiment in Bangladesh",
+  "iso3": "BGD",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Barisal",
+   "Chittagong",
+   "Dhaka",
+   "Khulna",
+   "Rajshahi",
+   "Rangpur",
+   "Sylhet"
+  ],
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2020_102609.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "rural Bangladesh",
+   "agent_note": "Site-selection section (Section 5) is not in the extracted text."
+  }
+ },
+ {
+  "key": "10_1016_j_jdeveco_2022_102958",
+  "doi": "10.1016/j.jdeveco.2022.102958",
+  "title": "Knowledge, stigma, and HIV testing: An analysis of a widespread HIV/AIDS program",
+  "iso3": "MOZ",
+  "target_level": "a first-level administrative unit (state / province / region)",
+  "admissible_units": [
+   "Cabo Delgado",
+   "Gaza",
+   "Inhambane",
+   "Manica",
+   "Nampula",
+   "Niassa",
+   "Sofala",
+   "Tete",
+   "Zambezia",
+   "Maputo",
+   "Cidade de Maputo"
+  ],
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2022_102958.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "76 communities; study districts (not named)",
+   "agent_note": "Companion paper (Yu, 2023) places the same FCC communities in Manica, Sofala and Zambezia, but this text does not name them, so not used."
+  }
+ },
+ {
+  "key": "10_1016_j_jdeveco_2023_103114",
+  "doi": "10.1016/j.jdeveco.2023.103114",
+  "title": "Live tutoring calls did not improve learning during the COVID-19 pandemic in Sierra Leone",
+  "iso3": "SLE",
+  "target_level": "a second-level administrative unit (district / department / municipality)",
+  "admissible_units": [
+   "Bo",
+   "Bombali",
+   "Bonthe",
+   "Kailahun",
+   "Kambia",
+   "Kenema",
+   "Koinadugu",
+   "Kono",
+   "Moyamba",
+   "Port Loko",
+   "Pujehun",
+   "Tonkolili",
+   "Western Area"
+  ],
+  "text_file": "data/_site_session/text_full/10_1016_j_jdeveco_2023_103114.txt",
+  "first_pass": {
+   "site_scope": "unspecified",
+   "matched_units": "",
+   "raw_site_text": "25 government schools supported by Rising Academies (Education Innovation Challenge); 36% in Freetown",
+   "agent_note": "Keyword hits (Kenema, Kailahun, Bo) not found in the supplied text; school map is in an appendix not available. Freetown is Western Area, not in admissible list."
+  }
+ }
+]

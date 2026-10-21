@@ -1,0 +1,13 @@
+{
+ "key": "10_1016_j_jdeveco_2024_103315",
+ "doi": "10.1016/j.jdeveco.2024.103315",
+ "iso3": "CHL",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "unspecified",
+ "matched_units": [],
+ "raw_site_text": "Our sample contains 59 large, urban municipalities in Chile in which the mayor is running for reelection.",
+ "confidence": "medium",
+ "justification": "Sample is 59 urban municipalities (population >50,000, <20% rural) out of 345, but none are named in the text.",
+ "note": "Municipalities unnamed in main text; not a nationwide sample."
+}

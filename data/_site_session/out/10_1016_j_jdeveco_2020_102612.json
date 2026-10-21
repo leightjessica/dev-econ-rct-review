@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2020_102612",
+    "doi":  "10.1016/j.jdeveco.2020.102612",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Kirinyaga"
+                      ],
+    "raw_site_text":  "a small rural community of Kenya called Kianyaga, 3 h north of Nairobi ... rural Central Province",
+    "confidence":  "medium",
+    "justification":  "\u0027Our project was implemented in a small rural community of Kenya called Kianyaga\u0027 (Kianyaga is in Kirinyaga County, Central Province).",
+    "note":  "Kianyaga rolled up to Kirinyaga county by geographic knowledge; Nairobi/Embu/Nyeri are reference mentions only."
+}

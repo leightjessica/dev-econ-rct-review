@@ -1,0 +1,15 @@
+{
+ "key": "10_1257_aer_20190586",
+ "doi": "10.1257/aer.20190586",
+ "iso3": "ETH",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "single_region",
+ "matched_units": [
+  "Addis Ababa"
+ ],
+ "raw_site_text": "a sample of young adults in Addis Ababa; a three-months fixed term appointment based in Addis Ababa",
+ "confidence": "high",
+ "justification": "Job-search panel, recruitment experiment, and firm sampling all take place in Addis Ababa.",
+ "note": ""
+}

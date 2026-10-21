@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2021_102626",
+    "doi":  "10.1016/j.jdeveco.2021.102626",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Collines"
+                      ],
+    "raw_site_text":  "four municipalities within Collines (ESOP Bante)",
+    "confidence":  "high",
+    "justification":  "\"We work with smallholder rice farmers in four municipalities with Collines\" (Bante-based ESOP); Atakora and Alibori are mentioned only as other rice-producing departments.",
+    "note":  ""
+}

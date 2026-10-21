@@ -1,0 +1,13 @@
+{
+ "key": "10_1016_j_jdeveco_2025_103687",
+ "doi": "10.1016/j.jdeveco.2025.103687",
+ "iso3": "SLV",
+ "task": "multicountry",
+ "country_is_study_site": true,
+ "site_scope": "unspecified",
+ "matched_units": [],
+ "raw_site_text": "The interventions were implemented in a group of schools within a subset of administrative units, so the samples are not nationally representative.",
+ "confidence": "medium",
+ "justification": "Schools/students in a subset of administrative units; units not named in the main text (Appendix Table A.1).",
+ "note": "Genuine study country. Specific units are in the appendix, which is not in the text file."
+}

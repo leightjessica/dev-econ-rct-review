@@ -1,0 +1,17 @@
+{
+    "key":  "10_1093_ej_ueab071",
+    "doi":  "10.1093/ej/ueab071",
+    "task":  "recheck",
+    "site_scope":  "multi_region",
+    "matched_units":  [
+                          "Adjumani \u0026 Moyo \u0026 Yumbe \u0026 Amolatar \u0026 Kaabong \u0026 Koboko \u0026 Abim \u0026 Amuru \u0026 Kotido \u0026 Maracha \u0026 Oyam \u0026 Dokolo \u0026 Arua \u0026 Amudat \u0026 Kitgum \u0026 Lamwo \u0026 Nakapiripirit \u0026 Nebbi \u0026 Otuke \u0026 Zombo \u0026 Apac \u0026 Kole \u0026 Moroto \u0026 Napak \u0026 Pader \u0026 Agago \u0026 Alebtong \u0026 Gulu \u0026 Nwoya \u0026 Lira",
+                          "Busia \u0026 Jinja \u0026 Kaberamaido \u0026 Mayuge \u0026 Amuria \u0026 Butaleja \u0026 Kaliro \u0026 Katakwi \u0026 Mbale \u0026 Tororo \u0026 Budaka \u0026 Namutumba \u0026 Manafwa \u0026 Bukedea \u0026 Bududa \u0026 Buyende \u0026 Kamuli \u0026 Bugiri \u0026 Bukwo \u0026 BulambuliIganga \u0026 Kapchorwa \u0026 Kween \u0026 Luuka \u0026 Ngora \u0026 Sironko \u0026 Soroti \u0026 Kibuku \u0026 Kumi \u0026 Serere \u0026 Namayingo \u0026 Pallisa",
+                          "Hoima \u0026 Kabale \u0026 Kasese \u0026 Kibaale \u0026 Kisoro \u0026 Ntungamo \u0026 Kabarole \u0026 Kamwenge \u0026 Kanungu \u0026 Rukungiri \u0026 Ibanda \u0026 Isingiro \u0026 Kiruhura \u0026 Mbarara \u0026 Buliisa \u0026 Kyegegwa \u0026 Kyenjojo \u0026 Bundibugyo \u0026 Bushenyi \u0026 Sheema \u0026 Masindi \u0026 Buhweju \u0026 Ntoroko \u0026 Rubirizi \u0026 Kiryandongo \u0026 Mitooma",
+                          "Kalangala \u0026 Ssembabule \u0026 Kampala \u0026 Kayunga \u0026 Nakasongola \u0026 Wakiso \u0026 Luwero \u0026 Mityana \u0026 Mubende \u0026 Nakaseke \u0026 Rakai \u0026 Lyantonde \u0026 Buikwe \u0026 Bukomansimbi \u0026 Butambala \u0026 Kalungu \u0026 Masaka \u0026 Buvuma \u0026 Gomba \u0026 Kiboga \u0026 Kyankwanzi \u0026 Mpigi \u0026 Lwengo \u0026 Mukono"
+                      ],
+    "raw_site_text":  "census of SMEs conducted in urban areas of Uganda, covering all four regions of the country; 17 urban areas in 11 of the 121 districts; Panel C region: Kampala, North, East, West",
+    "confidence":  "medium",
+    "justification":  "Census covers all four regions (Kampala, North, East, West in the sample table) though the eleven districts are not named.",
+    "note":  "Specific districts not named; four WB groups listed based on the paper\u0027s Kampala/North/East/West breakdown (Kampala mapped to the Central group).",
+    "first_pass_scope":  "multi_region"
+}

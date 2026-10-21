@@ -1,0 +1,13 @@
+{
+    "key":  "10_1093_ej_ueaf122",
+    "doi":  "10.1093/ej/ueaf122",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Southern"
+                      ],
+    "raw_site_text":  "three districts ... Monze, Mazabuka, and Kalomo, in the Southern province",
+    "confidence":  "high",
+    "justification":  "The paper states the three study districts were Monze, Mazabuka, and Kalomo, in the Southern province.",
+    "note":  ""
+}

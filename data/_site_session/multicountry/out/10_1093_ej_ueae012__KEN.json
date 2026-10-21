@@ -1,0 +1,13 @@
+{
+ "key": "10_1093_ej_ueae012",
+ "doi": "10.1093/ej/ueae012",
+ "iso3": "KEN",
+ "task": "multicountry",
+ "country_is_study_site": false,
+ "site_scope": "unspecified",
+ "matched_units": [],
+ "raw_site_text": "Kenyan farmers in drought-prone areas (Vosper and Cecchi 2022)",
+ "confidence": "high",
+ "justification": "Kenya appears only in the literature review; the study countries are Tanzania and Mozambique.",
+ "note": "Study countries are TZA and MOZ (Mozambique not in paper_countries); KEN miscoded."
+}

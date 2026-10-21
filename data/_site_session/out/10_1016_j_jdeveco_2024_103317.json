@@ -1,0 +1,14 @@
+{
+    "key":  "10_1016_j_jdeveco_2024_103317",
+    "doi":  "10.1016/j.jdeveco.2024.103317",
+    "task":  "recheck",
+    "site_scope":  "unspecified",
+    "matched_units":  [
+
+                      ],
+    "raw_site_text":  "junior deputy ministers at a training facility in Pakistan",
+    "confidence":  "high",
+    "justification":  "Facility location is never stated; Lahore School of Economics appears only as source of a placebo lecture and ethics board.",
+    "note":  "Full text re-read; place names needed to map to admissible units are not given.",
+    "first_pass_scope":  "unspecified"
+}

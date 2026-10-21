@@ -1,0 +1,13 @@
+{
+    "key":  "10_1016_j_jdeveco_2021_102747",
+    "doi":  "10.1016/j.jdeveco.2021.102747",
+    "task":  "extract",
+    "site_scope":  "single_region",
+    "matched_units":  [
+                          "Bihar"
+                      ],
+    "raw_site_text":  "Saran district in the state of Bihar",
+    "confidence":  "high",
+    "justification":  "\"The experiment took place in Saran, a rural district in the western part of Bihar\".",
+    "note":  "Pre-registration mentioned Maharashtra but the study was moved to Bihar."
+}

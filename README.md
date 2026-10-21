@@ -76,6 +76,15 @@ this interpreter on the development machine.
 | 17    | `17_ack_classify.py` | `ack_blocks.csv` | `data/ack_classified.csv` | ~4-5 h (resumable) | `claude -p` (local subscription) |
 | 18    | `18_ack_charts.py` | `ack_classified.csv` | `data/figures/fig{26,27,28}_ack_*.{png,pdf}`, `data/ack_summary.csv`, `data/_ack_validation_sample.csv` | <1 min | `matplotlib` |
 | 19    | `19_ack_by_journal.py` | `ack_classified.csv` | `data/figures/fig{29,30,31,32}_ack_*.{png,pdf}`, `data/ack_by_journal.csv` | <1 min | `matplotlib` |
+| 20    | `20_wb_coverage_profile.py` | `World Bank subnational data/AM25_-_SPID_data.xlsx` (downloaded, not committed) | `data/wb_subnat_coverage_profile.csv`, `data/wb_subnat_gazetteer.csv` | 1-2 min | `openpyxl` |
+| 21b   | `21b_site_match_local.py` | Stage 20 outputs + `irb_mentions.csv` + `fulltext/*.pdf` | `data/site_local_matched.csv` (deterministic keyword pass) | ~10 min | poppler `pdftotext` |
+| 21c   | `21c_site_session_prep.py` | Stage 21b output (`RECHECK=1` / `YEARS=1` modes for later passes) | `data/_site_session/` batches + paper text (text gitignored) | ~5 min | poppler `pdftotext` |
+| —     | (in-session subagents) | `data/_site_session/batches/*.json` | `data/_site_session/{out,years_out}/*.json` | ~1 h | Claude Code session (no API key) |
+| 21e   | `21e_fieldwork_years.py` | `prereg_classified.csv` + `data/trials.csv` (AEA registry export, not committed) + `years_out/` | `data/site_fieldwork_years.csv`, `data/aea_title_matches.csv` | ~1 min | stdlib |
+| 21d   | `21d_site_session_merge.py` | Stage 21b + subagent outputs + Stage 21e | `data/site_extracted.csv` | <1 min | stdlib |
+| 21f-g | `21f_multicountry_prep.py`, `21g_multicountry_merge.py` | multi-country RCTs + subagent outputs | `data/site_extracted_multicountry.csv` | <1 min (+ subagents) | stdlib |
+| 22    | `22_site_wb_merge.py` | Stages 21d/21g outputs + World Bank SPID and MPM workbooks | `data/site_wb_merged.csv`, `data/site_wb_merged_units.csv` | 1-2 min | `openpyxl` |
+| 23    | `23_site_charts.py` | Stage 22 output | `data/figures/fig{39,40,41,42}_site_*.{png,pdf}`, `data/site_wb_summary.csv`, `data/_site_validation_sample.csv` | <1 min | `matplotlib` |
 | 24    | `24_prereg_extract.py` | `irb_mentions.csv` (matched-PDF map) + `fulltext/*.pdf` | `data/prereg_classified.csv` | ~4 min | poppler `pdftotext` |
 | 25    | `25_prereg_charts.py` | `prereg_classified.csv` | `data/figures/fig{35,36,37,38}_prereg_*.{png,pdf}`, `data/prereg_summary.csv`, `data/_prereg_validation_sample.csv` | <1 min | `matplotlib` |
 
@@ -159,6 +168,24 @@ python 16_ack_extract.py            # poppler pdftotext: locate the ack block ->
 python 17_ack_classify.py           # `claude -p` count of thanked individuals + seminars; resumable
 python 18_ack_charts.py             # fig26-28 + ack_summary.csv + validation sample
 python 19_ack_by_journal.py         # fig29-32: individuals & seminars by tier and by journal
+
+# Stage 20-23: subnational study sites matched to World Bank subnational poverty
+#              (optional add-on; needs fulltext/*.pdf, the World Bank AM25 workbooks
+#              in "World Bank subnational data/", and the AEA registry export at
+#              data/trials.csv; see PROJECT_MEMO Sections 12.8-12.11). The site and
+#              year readings come from Claude Code subagents run inside a session;
+#              their answers are committed in data/_site_session/, so a replicator
+#              can rerun from 21e onward without repeating them.
+python 20_wb_coverage_profile.py    # WB matching level per country + unit gazetteer
+python 21b_site_match_local.py      # deterministic keyword pass over the full text
+python 21c_site_session_prep.py     # batches for the subagent verify/extract pass
+#   ... subagents write data/_site_session/out/; then RECHECK=1 and YEARS=1 passes
+python 21e_fieldwork_years.py       # AEA registry (ID or title match) > paper text > hint
+python 21d_site_session_merge.py    # -> site_extracted.csv (run after 21e)
+python 21f_multicountry_prep.py     # multi-country arms; subagents; then
+python 21g_multicountry_merge.py    # -> site_extracted_multicountry.csv
+python 22_site_wb_merge.py          # -> site_wb_merged.csv (+ per-unit audit file)
+python 23_site_charts.py            # fig39-42 + site_wb_summary.csv + validation sample
 
 # Stage 24-25: trial pre-registration + pre-analysis plans (optional add-on;
 #              needs fulltext/*.pdf; fully deterministic, NO API key required)

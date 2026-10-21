@@ -1,0 +1,65 @@
+journal,year,programs,title,doi
+AEJ_Applied,2023,EITC,Tax Refund Uncertainty: Evidence and Welfare Implications,10.1257/app.20210383
+AEJ_Applied,2023,Medicaid,The Impact of Youth Medicaid Eligibility on Adult Incarceration,10.1257/app.20200785
+AEJ_Applied,2023,Medicaid,What Difference Does a Health Plan Make? Evidence from Random Plan Assignment in Medicaid,10.1257/app.20210843
+AEJ_Applied,2024,Medicaid,Patient versus Provider Incentives in Long-Term Care,10.1257/app.20210264
+AEJ_Applied,2024,Medicaid,"The Impacts of Physician Payments on Patient Access, Use, and Health",10.1257/app.20210227
+AEJ_Applied,2025,Medicare,Disadvantaging Rivals: Vertical Integration in the Pharmaceutical Market,10.1257/app.20240011
+AEJ_Applied,2025,EITC,New Gig Work or Changes in Reporting? Understanding Self-Employment Trends in Tax Data,10.1257/app.20220483
+AEJ_EP,2021,EITC,"Political Alignment, Attitudes Toward Government, and Tax Evasion",10.1257/pol.20190409
+AEJ_EP,2021,Medicare,Preferred Pharmacy Networks and Drug Costs,10.1257/pol.20180489
+AEJ_EP,2021,SNAP,Program Recertification Costs: Evidence from SNAP,10.1257/pol.20190272
+AEJ_EP,2021,SNAP,The Effect of SNAP on the Composition of Purchased Foods: Evidence and Implications,10.1257/pol.20190350
+AEJ_EP,2022,EITC,Can Nudges Increase Take-Up of the EITC? Evidence from Multiple Field Experiments,10.1257/pol.20200603
+AEJ_EP,2022,Medicaid,Health Care Rationing in Public Insurance Programs: Evidence from Medicaid,10.1257/pol.20190628
+AEJ_EP,2022,SNAP,"Hungry for Success? SNAP Timing, High-Stakes Exam Performance, and College Attendance",10.1257/pol.20210026
+AEJ_EP,2022,SNAP,Issuance and Incidence: SNAP Benefit Cycles and Grocery Prices,10.1257/pol.20190777
+AEJ_EP,2022,Medicaid,Out of the Woodwork: Enrollment Spillovers in the Oregon Health Insurance Experiment,10.1257/pol.20200172
+AEJ_EP,2023,Medicare,Common Practice: Spillovers from Medicare on Private Health Care,10.1257/pol.20200553
+AEJ_EP,2023,SNAP,Employed in a SNAP? The Impact of Work Requirements on Program Participation and Labor Supply,10.1257/pol.20200561
+AEJ_EP,2023,Medicaid,Housing in Medicaid: Should It Really Change?,10.1257/pol.20200178
+AEJ_EP,2023,Medicaid,Profiting from Most-Favored-Customer Procurement Rules: Evidence from Medicaid,10.1257/pol.20200688
+AEJ_EP,2023,EITC,Spending Responses to High-Frequency Shifts in Payment Timing: Evidence from the Earned Income Tax Credit,10.1257/pol.20200590
+AEJ_EP,2023,Medicaid,What Does a Provider Network Do? Evidence from Random Assignment in Medicaid Managed Care,10.1257/pol.20210162
+AEJ_EP,2024,SNAP,Administrative Burden and Procedural Denials: Experimental Evidence from SNAP,10.1257/pol.20220701
+AEJ_EP,2024,Medicare,How Do Copayment Coupons Affect Branded Drug Prices and Quantities Purchased?,10.1257/pol.20220355
+AEJ_EP,2025,Medicare,Physician Group Influences on Treatment Intensity and Health: Evidence from Physician Switchers,10.1257/pol.20220555
+AEJ_EP,2025,Medicaid+Medicare,The Impact of Provider Payments on Health Care Utilization of Low-Income Individuals: Evidence from Medicare and Medicaid,10.1257/pol.20220775
+AER,2021,Medicare,Inattention and Switching Costs as Sources of Inertia in Medicare Part D,10.1257/aer.20170471
+AER,2021,Medicare,Place-Based Drivers of Mortality: Evidence from Migration,10.1257/aer.20190825
+AER,2021,Medicare,Team-Specific Human Capital and Team Performance: Evidence from Doctors,10.1257/aer.20201238
+AER,2021,Medicaid,"The Long-Run Effects of Childhood Insurance Coverage: Medicaid Implementation, Adult Health, and Labor Market Outcomes",10.1257/aer.20171671
+AER,2023,Medicare,Is There a VA Advantage? Evidence from Dually Eligible Veterans,10.1257/aer.20211638
+AER,2023,Medicare,Optimal Contracting with Altruistic Agents: Medicare Payments for Dialysis Drugs,10.1257/aer.20210208
+AER,2023,Medicare,The Behavioral Foundations of Default Effects: Theory and Evidence from Medicare Part D,10.1257/aer.20210013
+AER,2024,Medicare,Dying or Lying? For-Profit Hospices and End-of-Life Care,10.1257/aer.20230328
+AER,2024,EITC,Long-Run Effects of Incentivizing Work after Childbirth,10.1257/aer.20220792
+AERI,2022,Medicare,The Liquidity Sensitivity of Healthcare Consumption: Evidence from Social Security Payments,10.1257/aeri.20200830
+ECMA,2023,EITC,Pareto‐Improving Tax Reforms and the Earned Income Tax Credit,10.3982/ecta18600
+ECMA,2025,EITC,"Minimum Wages, Efficiency, and Welfare",10.3982/ecta21466
+ECMA,2025,Medicare,Producing Health: Measuring Value Added of Nursing Homes,10.3982/ecta21016
+ECMA,2025,Medicare,Quality Disclosure and Regulation: Scoring Design in Medicare Advantage,10.3982/ecta21182
+JPE,2021,Medicare,Index to Volume 129,10.1086/717571
+JPE,2021,TANF,Welfare Reform and the Intergenerational Transmission of Dependence,10.1086/717893
+JPE,2024,Medicare,Ambulance Taxis: The Impact of Regulation and Litigation on Health-Care Fraud,10.1086/734134
+JPE,2024,Medicaid,Long-Term Care Insurance and the Family,10.1086/732887
+QJE,2021,Medicaid,Medicaid and Mortality: New Evidence From Linked Survey and Administrative Data,10.1093/qje/qjab004
+QJE,2021,Medicare,Mortality Effects and Choice Across Private Health Insurance Plans,10.1093/qje/qjab017
+QJE,2021,Medicare,Voluntary Regulation: Evidence from Medicare Payment Reform,10.1093/qje/qjab035
+QJE,2021,Medicare,What do Consumers Consider Before They Choose? Identification from Asymmetric Demand Responses,10.1093/qje/qjab008
+QJE,2023,Medicaid+Medicare,A Denial a Day Keeps the Doctor Away,10.1093/qje/qjad035
+QJE,2023,Medicare,Monitoring for Waste: Evidence from Medicare Audits,10.1093/qje/qjad049
+QJE,2024,EITC,Measuring and Mitigating Racial Disparities in Tax Audits,10.1093/qje/qjae027
+QJE,2024,Medicare,The Health Costs of Cost Sharing,10.1093/qje/qjae015
+QJE,2025,Medicare,The Earnings and Labor Supply of U.S. Physicians,10.1093/qje/qjaf001
+RES,2023,SNAP,Is the Social Safety Net a Long-Term Investment? Large-Scale Evidence From the Food Stamps Program,10.1093/restud/rdad063
+RESTAT,2021,Medicare,Long-Term Care Hospitals: A Case Study in Waste,10.1162/rest_a_01092
+RESTAT,2021,Medicare,Performance Pay in Insurance Markets: Evidence from Medicare,10.1162/rest_a_01127
+RESTAT,2022,Medicare,Getting the Price Right? The Impact of Competitive Bidding in the Medicare Program,10.1162/rest_a_01249
+RESTAT,2022,Medicare,Regulated Revenues and Hospital Behavior: Evidence from a Medicare Overhaul,10.1162/rest_a_01254
+RESTAT,2022,Medicaid,The Value of Health Insurance during a Crisis: Effects of Medicaid Implementation on Pandemic Influenza Mortality,10.1162/rest_a_01239
+RESTAT,2023,Medicare,Can Whistleblowers Root Out Public Expenditure Fraud? Evidence from Medicare,10.1162/rest_a_01339
+RESTAT,2024,Medicaid,Alleviating Worker Shortages Through Targeted Subsidies: Evidence from Incentive Payments in Healthcare,10.1162/rest_a_01530
+RESTAT,2024,Medicare,Imposing Policy on Reluctant Actors: The Hospital Desegregation Campaign and Black Postneonatal Mortality in the Deep South,10.1162/rest_a_01467
+RESTAT,2025,Medicare,Partial Outsourcing of Public Programs: Evidence on Determinants of Choice in Medicare,10.1162/rest_a_01575
+RESTAT,2025,Medicaid,The Effect of Medicaid on Crime: Evidence from the Oregon Health Insurance Experiment,10.1162/rest.a.1625

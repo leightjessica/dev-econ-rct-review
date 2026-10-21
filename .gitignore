@@ -88,3 +88,6 @@ data/trials.csv
 
 # --- Run transcripts (regenerate on rerun) ---
 data/*.out
+
+# --- Personal drafts (not part of the replication package) ---
+Blog post.docx
